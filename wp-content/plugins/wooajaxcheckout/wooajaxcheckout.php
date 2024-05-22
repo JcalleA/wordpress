@@ -16,12 +16,18 @@ function insert_woocommerce_checkout_rows(  ) {
     $checkout = WC()->checkout();
 
     // Get the checkout fields
-    
+    echo('<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">');
+    echo('<div class="col2-set" id="customer_details">
+			<div class="col-1">');
+				
+			
     foreach ( $checkout->get_checkout_fields( 'billing' ) as $key => $field ){
         woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
     }
-    wc_cart_totals_shipping_html();
-    wc_cart_totals_order_total_html();
+    
+    
+    include  'template-checkout.php';
+    
 }
 
 
