@@ -16,32 +16,10 @@ function insert_woocommerce_checkout_rows(  ) {
     $checkout = WC()->checkout();
 
     // Get the checkout fields
-    $checkout_fields = $checkout->get_checkout_fields();
-
-    // Start generating the HTML output
-    $html = '<div class="woocommerce-checkout-rows">';
-
-    // Loop through each checkout field
-    foreach ( $checkout_fields as $field_name => $field ) {
-        // Skip fields that don't have a label
-        if ( ! isset( $field['label'] ) ) {
-            continue;
-        }
-
-        // Get the field value
-        $field_value = $checkout->get_value( $field_name );
-
-        // Generate the HTML for the checkout row
-        $html .= '<div class="woocommerce-checkout-row">';
-        $html .= '<label for="' . esc_attr( $field_name ) . '">' . esc_html( $field['label'] ) . ':</label>';
-        $html .= '<span class="woocommerce-checkout-value">' . esc_html( $field_value ) . '</span>';
-        $html .= '</div>';
+    
+    foreach ( $checkout->get_checkout_fields( 'billing' ) as $key => $field ){
+        woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
     }
-
-    // Close the HTML output
-    $html .= '</div>';
-    echo $html;
-    // Insert the HTML into the specified hook
 }
 
 
