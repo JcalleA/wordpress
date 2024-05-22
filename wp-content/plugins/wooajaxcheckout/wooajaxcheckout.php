@@ -9,89 +9,41 @@ Author URI: https://example.com/bard
 License: GPLv2 or later
 */
 
-add_action( 'woocommerce_after_single_product_summary', 'woocommerce_ajax_checkout_button', 20 );
 
-function woocommerce_ajax_checkout_button() {
-    global $product;
+function insert_woocommerce_checkout_rows(  ) {
+    echo('<h1>Hola mundoooooo</h1>');
+    // Retrieve the checkout object
+    $checkout = WC()->checkout();
 
-    if ( ! $product->is_purchasable() ) {
-        return;
+    // Get the checkout fields
+    $checkout_fields = $checkout->get_checkout_fields();
+
+    // Start generating the HTML output
+    $html = '<div class="woocommerce-checkout-rows">';
+
+    // Loop through each checkout field
+    foreach ( $checkout_fields as $field_name => $field ) {
+        // Skip fields that don't have a label
+        if ( ! isset( $field['label'] ) ) {
+            continue;
+        }
+
+        // Get the field value
+        $field_value = $checkout->get_value( $field_name );
+
+        // Generate the HTML for the checkout row
+        $html .= '<div class="woocommerce-checkout-row">';
+        $html .= '<label for="' . esc_attr( $field_name ) . '">' . esc_html( $field['label'] ) . ':</label>';
+        $html .= '<span class="woocommerce-checkout-value">' . esc_html( $field_value ) . '</span>';
+        $html .= '</div>';
     }
 
-    ?>
-    <button id="woocommerce-ajax-checkout-button" data-product-id="<?php echo $product->get_id(); ?>" data-quantity="1">Agregar al carrito</button>
-
-    <script type="text/javascript">
-        jQuery(function($) {
-            $(document).on('click', '#woocommerce-ajax-checkout-button', function(event) {
-                event.preventDefault();
-
-                var product_id = $(this).data('product-id');
-                var quantity = $(this).data('quantity');
-
-                $.ajax({
-                    url: '<?php echo admin_url('admin-ajax.php'); ?>',
-                    method: 'POST',
-                    data: {
-                        action: 'woocommerce_ajax_checkout',
-                        nonce: '<?php echo wp_create_nonce('woocommerce-ajax-checkout'); ?>',
-                        product_id: product_id,
-                        quantity: quantity
-                    },
-                    dataType: 'json',
-                    success: function(response) {
-                        if (response.success) {
-                            alert(response.message);
-
-                            if (response.checkout_url) {
-                                $('<div id="woocommerce-ajax-checkout-modal"></div>').appendTo('body');
-
-                                $('#woocommerce-ajax-checkout-modal').load(response.checkout_url, function() {
-                                    $(this).dialog({
-                                        modal: true,
-                                        width: 'auto',
-                                        height: 'auto'
-                                    });
-                                });
-                            }
-                        } else {
-                            alert(response.message);
-                        }
-                    },
-                    error: function(xhr, status, error) {
-                        alert('Error: ' + error);
-                    }
-                });
-            });
-        });
-    </script>
-    <?php
+    // Close the HTML output
+    $html .= '</div>';
+    echo $html;
+    // Insert the HTML into the specified hook
 }
 
-add_action( 'wp_ajax_woocommerce_ajax_checkout', 'woocommerce_ajax_checkout_handler' );
 
-function woocommerce_ajax_checkout_handler() {
-    if ( ! check_ajax_referer( 'woocommerce-ajax-checkout', 'nonce' ) ) {
-        wp_send_json_error( array(
-            'message' => __( 'Invalid nonce.', 'woocommerce' )
-        ) );
-    }
 
-    $product_id = intval( $_POST['product_id'] );
-    $quantity = intval( $_POST['quantity'] );
-
-    if ( ! $product_id || ! $quantity ) {
-        wp_send_json_error( array(
-            'message' => __( 'Invalid product ID or quantity.', 'woocommerce' )
-        ) );
-    }
-
-    WC()->cart->add_to_cart( $product_id, $quantity );
-
-    $checkout_url = wc_get_checkout_url();
-
-    wp_send_json_success( array(
-        'message' => __( 'Product added to cart.', 'woocommerce' ),
-        'checkout_url' => $checkout_url
-    ) );
-}
+add_action('woocommerce_after_single_product','insert_woocommerce_checkout_rows' );
