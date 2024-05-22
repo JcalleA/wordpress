@@ -1,0 +1,27 @@
+.image-select-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+.image-select-option {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .image-select-option_img {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    margin-right: 10px;
+  }
+  
+  .image-select-option input[type="radio"] {
+    display: none; /* Hide the radio buttons */
+  }
+  

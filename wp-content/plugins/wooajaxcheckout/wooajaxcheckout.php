@@ -11,25 +11,27 @@ License: GPLv2 or later
 
 
 function insert_woocommerce_checkout_rows(  ) {
-    echo('<h1>Hola mundoooooo</h1>');
+    echo('<h1>Checout Pro</h1>');
     // Retrieve the checkout object
     $checkout = WC()->checkout();
 
     // Get the checkout fields
-    echo('<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">');
-    echo('<div class="col2-set" id="customer_details">
-			<div class="col-1">');
+    
+
 				
 			
-    foreach ( $checkout->get_checkout_fields( 'billing' ) as $key => $field ){
-        woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
-    }
-    
     
     include  'template-checkout.php';
     
 }
 
-
-
 add_action('woocommerce_after_single_product','insert_woocommerce_checkout_rows' );
+
+
+function utm_user_scripts() {
+    $plugin_url = plugin_dir_url( __FILE__ );
+
+wp_enqueue_style( 'style',  $plugin_url . "pro-checkout.css");
+}
+
+add_action( 'admin_print_styles', 'utm_user_scripts' );

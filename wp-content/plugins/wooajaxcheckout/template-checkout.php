@@ -1,87 +1,92 @@
+<form>
 
-
-<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
-<div class="producto">
-  <input  type="checkbox" name="opcion_seleccionada" id="opcion_1" value="opcion_1">
-  <label for="opcion_1">Opción 1 (agregar 1 unidad)</label><br>
-
-  <input  type="checkbox" name="opcion_seleccionada" id="opcion_2" value="opcion_2">
-  <label for="opcion_2">Opción 2 (agregar 2 unidades)</label><br>
-  <a href="<?php echo wc_get_product()->add_to_cart_url() ?>" id="add_to_cart_button" value="<?php echo esc_attr( wc_get_product()->get_id() ); ?>" class="ajax_add_to_cart add_to_cart_button" data-product_id="<?php echo wc_get_product()->get_id(); ?>" aria-label="Add “<?php the_title_attribute() ?>” to your cart"> 
-Add to Cart 
-</a>
-  <button class="add_to_cart_button" data-product_id="<?php echo wc_get_product()->get_id(); ?>" data-quantity="1">Agregar al carrito</button>
+<?php
+$checkout = WC()->checkout();
+$product=wc_get_product();
+echo $product;
+$image_url = wp_get_attachment_image_url( $product->image_id, 'full' );
+?>
+<div class="image-select-wrapper">
+<div class="image-select-option" data-value="option1">
+<img class="image-select-option_img" src="<?php echo $image_url; ?>">
+  <input type="radio" name="image-select" value="option1" id="option1">
 </div>
-	<?php if ( $checkout->get_checkout_fields() ) : ?>
-
-		<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
-
-		<div class="col2-set" id="customer_details">
-			<div class="col-1">
-				<?php do_action( 'woocommerce_checkout_billing' ); ?>
-			</div>
-
-			<div class="col-2">
-				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
-			</div>
-		</div>
-
-		<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
-
-	<?php endif; ?>
-	
-	<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
-	
-	<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
-	
-	<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
-
-	<div id="order_review" class="woocommerce-checkout-review-order">
-		<?php do_action( 'woocommerce_checkout_order_review' ); ?>
-	</div>
-
-	<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
-
-</form>
-
-<?php $wc_ajax=new WC_AJAX();
-$wc_ajax->add_ajax_events();
- ?>
-<?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
-<script>
-jQuery(document).ready(function($) {
-
-$('#add_to_cart_button').click(function(event) {
-  event.preventDefault();
-
-
-  var product_id = $(this).data('product_id');
-  var quantity = $(this).data('quantity');
-
-  var data = {
-    action: 'add_to_cart',
-    product_id: product_id,
-    quantity: quantity
-  };
-
-  $.ajax({
-    url: '',
-    method: 'POST',
-    data: data,
-    success: function(response) {
-      if (response.success) {
-        alert('Producto agregado al carrito!');
-
-        // Actualizar el fragmento del carrito
-        $(document).trigger('wc_fragment_refresh');
-      } else {
-        alert('Error al agregar producto al carrito.');
+</div>
+<?php
+foreach ( $checkout->get_checkout_fields( 'billing' ) as $key => $field ){
+        woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
+    }
+    ?>
+    <div id="payment" class="woocommerce-checkout-payment">
+    <ul class="wc_payment_methods payment_methods methods">
+    <?php
+    $methods = WC()->payment_gateways->payment_gateways();
+    foreach ( $methods as $method ){
+      
+      if ('yes' === $method->enabled ) {
+        wc_get_template( 'checkout/payment-method.php', array( 'gateway' => $method ) );
       }
     }
-  });
-});
+    ?>
+    
+    </ul>
+	<div class="form-row place-order">
+		<noscript>
+			<?php
+			/* translators: $1 and $2 opening and closing emphasis tags respectively */
+			printf( esc_html__( 'Since your browser does not support JavaScript, or it is disabled, please ensure you click the %1$sUpdate Totals%2$s button before placing your order. You may be charged more than the amount stated above if you fail to do so.', 'woocommerce' ), '<em>', '</em>' );
+			?>
+			<br/><button type="submit" class="button alt<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="woocommerce_checkout_update_totals" value="<?php esc_attr_e( 'Update totals', 'woocommerce' ); ?>"><?php esc_html_e( 'Update totals', 'woocommerce' ); ?></button>
+		</noscript>
+</form>
 
-});
+<?php /*wc_order_add_discount( $order_id, __("Fixed discount"), 12 ); 
+$order = new WC_Order();
+// $order = wc_create_order(); 
 
+// add products
+$order->add_product( wc_get_product( 136 ), 2 );
+$order->add_product( wc_get_product( 70 ) );
 
-</script>
+// add shipping
+$shipping = new WC_Order_Item_Shipping();
+$shipping->set_method_title( 'Free shipping' );
+$shipping->set_method_id( 'free_shipping:1' ); // set an existing Shipping method ID
+$shipping->set_total( 0 ); // optional
+$order->add_item( $shipping );
+
+// add billing and shipping addresses
+$address = array(
+	'first_name' => 'Misha',
+	'last_name'  => 'Rudrastyh',
+	'company'    => 'rudrastyh.com',
+	'email'      => 'no-reply@rudrastyh.com',
+	'phone'      => '+995-123-4567',
+	'address_1'  => '29 Kote Marjanishvili St',
+	'address_2'  => '',
+	'city'       => 'Tbilisi',
+	'state'      => '',
+	'postcode'   => '0108',
+	'country'    => 'GE'
+);
+
+$order->set_address( $address, 'billing' );
+$order->set_address( $address, 'shipping' );
+
+// add payment method
+$order->set_payment_method( 'stripe' );
+$order->set_payment_method_title( 'Credit/Debit card' );
+
+// order status
+$order->set_status( 'wc-completed', 'Order is created programmatically' );
+
+// add two meta values of the same meta key
+$order->add_meta_data( 'my_custom_key', 'value-1' );
+$order->add_meta_data( 'my_custom_key', 'value-2' );
+
+// calculate and save
+$order->calculate_totals();
+$order->save();
+
+*/
+?>
