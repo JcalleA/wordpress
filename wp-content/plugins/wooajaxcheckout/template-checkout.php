@@ -6,9 +6,9 @@ $product=wc_get_product();
 echo $product;
 $image_url = wp_get_attachment_image_url( $product->image_id, 'full' );
 ?>
-<div class="image-select-wrapper">
-<div class="image-select-option" data-value="option1">
-<img class="image-select-option_img" src="<?php echo $image_url; ?>">
+<div class=" flex flex-wrap">
+<div class=" flex align-center  m-0 p-0 border-2 border-black" data-value="option1">
+<img class="w-[25%] mr-4 " src="<?php echo $image_url; ?>">
   <input type="radio" name="image-select" value="option1" id="option1">
 </div>
 </div>

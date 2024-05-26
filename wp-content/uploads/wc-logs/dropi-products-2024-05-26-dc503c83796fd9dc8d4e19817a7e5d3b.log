@@ -1,0 +1,1668 @@
+2024-05-26T22:08:14+00:00 INFO $per_page 10
+2024-05-26T22:08:14+00:00 INFO $current_page 1
+2024-05-26T22:08:15+00:00 INFO Array
+(
+    [isSuccess] => 
+    [message] => Authorization Token not found
+    [status] => 400
+    [objects] => Array
+        (
+        )
+
+)
+
+2024-05-26T22:08:15+00:00 INFO Array
+(
+    [isSuccess] => 
+    [message] => Authorization Token not found
+    [status] => 400
+    [objects] => Array
+        (
+        )
+
+)
+
+2024-05-26T22:08:15+00:00 INFO Authorization Token not found
+2024-05-26T22:09:53+00:00 INFO $per_page 10
+2024-05-26T22:09:53+00:00 INFO $current_page 1
+2024-05-26T22:09:53+00:00 INFO Array
+(
+    [isSuccess] => 
+    [message] => Token not compatible with this api, pleasse generate a new token
+    [status] => 401
+    [objects] => Array
+        (
+        )
+
+)
+
+2024-05-26T22:09:53+00:00 INFO Array
+(
+    [isSuccess] => 
+    [message] => Token not compatible with this api, pleasse generate a new token
+    [status] => 401
+    [objects] => Array
+        (
+        )
+
+)
+
+2024-05-26T22:09:53+00:00 INFO Token not compatible with this api, pleasse generate a new token
+2024-05-26T22:10:50+00:00 INFO $per_page 10
+2024-05-26T22:10:50+00:00 INFO $current_page 1
+2024-05-26T22:10:50+00:00 INFO Array
+(
+    [isSuccess] => 1
+    [status] => 200
+    [objects] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [id] => 871224
+                    [id_lista] => 0
+                    [name] => Blusa Camiseta Dama
+                    [name_in_order] => Blusa Camiseta Dama - $11000.00 - Stock 0.00
+                    [description] => <p>Blusa piel de durazno</p>
+                    [type] => SIMPLE
+                    [stock] => 0.00
+                    [sale_price] => 10000.00
+                    [suggested_price] => 11000.00
+                    [user_id] => 10639
+                    [privated_product] => 1
+                    [active] => 1
+                    [sku] => 1010
+                    [weight] => 0.15
+                    [length] => 0.00
+                    [width] => 0.00
+                    [height] => 0.00
+                    [deleted_at] => 
+                    [created_at] => 2024-05-19T17:54:14.000000Z
+                    [updated_at] => 
+                    [is_warehouse_white_brand] => 
+                    [dropi_percent_product_supplier] => 
+                    [dropi_percent_product_drops] => 
+                    [user] => stdClass Object
+                        (
+                            [id] => 10639
+                            [subscription_plan_id] => 4
+                            [verified_user] => 
+                            [warranty_policies] => 
+                            [name] => Jhonatan
+                            [surname] => Calle
+                            [white_brand_id] => 1
+                            [category_id] => 
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                )
+
+                            [category_user] => 
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [attributes] => Array
+                        (
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 844094
+                                    [url] => 
+                                    [main] => 
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [product_hunter_id] => 
+                                    [urlS3] => colombia/products/871224/1716141255Blusa negra (7).webp
+                                    [external_id] => 
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [id] => 844093
+                                    [url] => 
+                                    [main] => 1
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [product_hunter_id] => 
+                                    [urlS3] => colombia/products/871224/1716141255Blusa rosa (10).webp
+                                    [external_id] => 
+                                )
+
+                            [2] => stdClass Object
+                                (
+                                    [id] => 844092
+                                    [url] => 
+                                    [main] => 
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [product_hunter_id] => 
+                                    [urlS3] => colombia/products/871224/1716141255Blusa terracota (8).webp
+                                    [external_id] => 
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 3
+                                    [name] => Moda
+                                    [parent_category] => 0
+                                )
+
+                        )
+
+                    [warehouses] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 1750
+                                    [name] => Palmira
+                                    [user_id] => 10639
+                                    [user] => stdClass Object
+                                        (
+                                            [id] => 10639
+                                            [name] => Jhonatan
+                                            [surname] => Calle
+                                            [email] => kalle-1413@hotmail.com
+                                            [birthday] => 
+                                            [status] => Activo
+                                            [remember_token] => 
+                                            [created_at] => 2022-07-23 14:32:06
+                                            [updated_at] => 2024-05-21 09:53:28
+                                            [register_approved] => 1
+                                            [banned] => 
+                                            [approve_product] => 
+                                            [subscription_plan_id] => 4
+                                            [phone] => 3216403592
+                                            [notes] => 
+                                            [url] => 
+                                            [store_name] => Bim You
+                                            [store_url] => app.bimyou.online
+                                            [dni] => 
+                                            [referred_by] => 
+                                            [parent_seller_id] => 
+                                            [created_by] => 
+                                            [deleted_at] => 
+                                            [last_login] => 2023-06-28 11:05:04
+                                            [store_phone] => 324 7595546
+                                            [can_create_products_and_edit_stock] => 
+                                            [where_do_you_come_from] => Otro
+                                            [smtp_server] => 
+                                            [smtp_port] => 
+                                            [smtp_security] => 
+                                            [smtp_from_name] => 
+                                            [smtp_from_email] => 
+                                            [smtp_requireauth] => 
+                                            [make_rotulo_dropi] => 1
+                                            [pts_st] => 0.00
+                                            [white_brand_id] => 1
+                                            [topic_ticket_id] => 
+                                            [verified_user] => 
+                                            [warranty_policies] => 
+                                            [debug_mode] => 
+                                            [merchant_registration] => 
+                                            [type_liability_id] => 
+                                            [type_regime_id] => 
+                                            [municipality_id] => 
+                                            [type_organization_id] => 
+                                            [tax_detail_id] => 
+                                            [type_document_identification_id] => 
+                                            [file_dni] => 
+                                            [file_rut] => 
+                                            [default_order_state] => PENDIENTE
+                                            [phone_otp] => 3216403592
+                                            [cobrar_orden_con_recaudo] => 
+                                            [comercial_id] => 
+                                            [send_email_notification_orders] => 1
+                                            [failed_login_count] => 0
+                                            [password_temp] => 
+                                            [email_to_guide] => 
+                                            [name_by_default_in_guide] => 
+                                            [email_to_invoice] => 
+                                            [name_to_invoice] => 
+                                            [cod_area_phone] => 
+                                            [cod_area_phone_otp] => 57
+                                            [external_id] => 
+                                            [urlS3_logo] => 
+                                            [urlS3_dni] => 
+                                            [urlS3_rut] => 
+                                            [billing_type] => 
+                                            [is_address_normalization_activated] => 0
+                                            [dni_type] => 
+                                            [category_id] => 
+                                            [checked_files] => 
+                                            [last_password_updated_at] => 2024-05-16 08:14:00
+                                            [password_expiration_days] => 30
+                                            [password_expired] => 
+                                        )
+
+                                    [city_id] => 312
+                                    [city] => stdClass Object
+                                        (
+                                            [id] => 312
+                                            [name] => PALMIRA
+                                            [department_id] => 12
+                                            [department] => stdClass Object
+                                                (
+                                                    [id] => 12
+                                                    [name] => VALLE
+                                                    [country_id] => 1
+                                                    [department_code] => 76
+                                                )
+
+                                            [rate_type] => Array
+                                                (
+                                                    [0] => CON RECAUDO
+                                                    [1] => SIN RECAUDO
+                                                )
+
+                                            [rate_type_json] => Array
+                                                (
+                                                    [0] => CON RECAUDO
+                                                    [1] => SIN RECAUDO
+                                                )
+
+                                            [trajectory_type] => URBANO
+                                            [cod_dane] => 76520000
+                                            [zip_code] => 
+                                            [distribution_companies] => stdClass Object
+                                                (
+                                                    [id] => 1551
+                                                    [city_id] => 312
+                                                    [distribution_company_id] => 3
+                                                    [rate_type] => Array
+                                                        (
+                                                            [0] => CON RECAUDO
+                                                            [1] => SIN RECAUDO
+                                                        )
+
+                                                    [created_at] => 
+                                                    [updated_at] => 
+                                                    [city_code] => 
+                                                    [delivery_type] => 
+                                                )
+
+                                        )
+
+                                    [address] => Carrera 20 # 71 B - 17 La cosecha Palmira
+                                    [phone] => 3216403592
+                                    [warehouse_white_brand] => 
+                                    [created_at] => 2022-07-25T20:36:19.000000Z
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 90535
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [variation] => 
+                                    [user_id] => 10641
+                                    [stock] => 394.00
+                                    [last_quantity_separed] => 400.00
+                                    [user] => stdClass Object
+                                        (
+                                            [id] => 10641
+                                            [name] => Jhonatan
+                                            [surname] => Calle
+                                            [email] => kalle.3411@gmail.com
+                                            [birthday] => 
+                                            [status] => Activo
+                                            [remember_token] => 
+                                            [created_at] => 2022-07-23 14:43:29
+                                            [updated_at] => 2024-05-20 13:34:27
+                                            [register_approved] => 1
+                                            [banned] => 
+                                            [approve_product] => 
+                                            [subscription_plan_id] => 2
+                                            [phone] => 3216403592
+                                            [notes] => Carrera 3 #3-06
+                                            [url] => 
+                                            [store_name] => 
+                                            [store_url] => 
+                                            [dni] => 1112880596
+                                            [referred_by] => 1760
+                                            [parent_seller_id] => 
+                                            [created_by] => 
+                                            [deleted_at] => 
+                                            [last_login] => 2023-03-18 16:56:09
+                                            [store_phone] => 3216403592
+                                            [can_create_products_and_edit_stock] => 
+                                            [where_do_you_come_from] => Otro
+                                            [smtp_server] => 
+                                            [smtp_port] => 
+                                            [smtp_security] => 
+                                            [smtp_from_name] => 
+                                            [smtp_from_email] => 
+                                            [smtp_requireauth] => 
+                                            [make_rotulo_dropi] => 1
+                                            [pts_st] => 0.00
+                                            [white_brand_id] => 1
+                                            [topic_ticket_id] => 
+                                            [verified_user] => 
+                                            [warranty_policies] => 
+                                            [debug_mode] => 
+                                            [merchant_registration] => 
+                                            [type_liability_id] => 
+                                            [type_regime_id] => 2
+                                            [municipality_id] => 599
+                                            [type_organization_id] => 
+                                            [tax_detail_id] => 5
+                                            [type_document_identification_id] => 3
+                                            [file_dni] => 
+                                            [file_rut] => 
+                                            [default_order_state] => PENDIENTE
+                                            [phone_otp] => 3216403592
+                                            [cobrar_orden_con_recaudo] => 
+                                            [comercial_id] => 
+                                            [send_email_notification_orders] => 1
+                                            [failed_login_count] => 0
+                                            [password_temp] => 
+                                            [email_to_guide] => 
+                                            [name_by_default_in_guide] => 
+                                            [email_to_invoice] => kalle.3411@gmail.com
+                                            [name_to_invoice] => JHONATAN CALLE ARBELAEZ
+                                            [cod_area_phone] => 57
+                                            [cod_area_phone_otp] => 57
+                                            [external_id] => 
+                                            [urlS3_logo] => 
+                                            [urlS3_dni] => colombia/user/10641/dni/1705577155Cédula Jhonatan Calle.pdf
+                                            [urlS3_rut] => 
+                                            [billing_type] => 
+                                            [is_address_normalization_activated] => 1
+                                            [dni_type] => 
+                                            [category_id] => 
+                                            [checked_files] => 1
+                                            [last_password_updated_at] => 2024-05-16 08:14:00
+                                            [password_expiration_days] => 30
+                                            [password_expired] => 
+                                        )
+
+                                    [created_at] => 2024-05-19T17:54:49.000000Z
+                                    [updated_at] => 2024-05-25T18:13:47.000000Z
+                                )
+
+                        )
+
+                    [user_profit_percentage_product] => Array
+                        (
+                        )
+
+                    [persistanceState] => Unchanged
+                    [shops] => Array
+                        (
+                        )
+
+                    [external_code] => 
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [name_in_guide] => Camiseta Dama
+                    [dropi_product_supplier_increment_fixed] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 2
+                            [store] => test
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE0MzAsImV4cCI6NDg3MjQzNTAzMCwibmJmIjoxNzE2NzYxNDMwLCJqdGkiOiJNb0NROU5pdHQ4RGNKQ0ltIiwic3ViIjoxMDYzOSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.E9UnJXmzEAGZLW51EApbuLMOFFKzCOReAzSMo0rhkuM
+                            [create_prod_empr] => 
+                            [sync] => MANUALMENTE
+                        )
+
+                )
+
+        )
+
+    [count] => 1
+)
+
+2024-05-26T22:10:50+00:00 INFO Array
+(
+    [isSuccess] => 1
+    [status] => 200
+    [objects] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [id] => 871224
+                    [id_lista] => 0
+                    [name] => Blusa Camiseta Dama
+                    [name_in_order] => Blusa Camiseta Dama - $11000.00 - Stock 0.00
+                    [description] => <p>Blusa piel de durazno</p>
+                    [type] => SIMPLE
+                    [stock] => 0.00
+                    [sale_price] => 10000.00
+                    [suggested_price] => 11000.00
+                    [user_id] => 10639
+                    [privated_product] => 1
+                    [active] => 1
+                    [sku] => 1010
+                    [weight] => 0.15
+                    [length] => 0.00
+                    [width] => 0.00
+                    [height] => 0.00
+                    [deleted_at] => 
+                    [created_at] => 2024-05-19T17:54:14.000000Z
+                    [updated_at] => 
+                    [is_warehouse_white_brand] => 
+                    [dropi_percent_product_supplier] => 
+                    [dropi_percent_product_drops] => 
+                    [user] => stdClass Object
+                        (
+                            [id] => 10639
+                            [subscription_plan_id] => 4
+                            [verified_user] => 
+                            [warranty_policies] => 
+                            [name] => Jhonatan
+                            [surname] => Calle
+                            [white_brand_id] => 1
+                            [category_id] => 
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                )
+
+                            [category_user] => 
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [attributes] => Array
+                        (
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 844094
+                                    [url] => 
+                                    [main] => 
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [product_hunter_id] => 
+                                    [urlS3] => colombia/products/871224/1716141255Blusa negra (7).webp
+                                    [external_id] => 
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [id] => 844093
+                                    [url] => 
+                                    [main] => 1
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [product_hunter_id] => 
+                                    [urlS3] => colombia/products/871224/1716141255Blusa rosa (10).webp
+                                    [external_id] => 
+                                )
+
+                            [2] => stdClass Object
+                                (
+                                    [id] => 844092
+                                    [url] => 
+                                    [main] => 
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [product_hunter_id] => 
+                                    [urlS3] => colombia/products/871224/1716141255Blusa terracota (8).webp
+                                    [external_id] => 
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 3
+                                    [name] => Moda
+                                    [parent_category] => 0
+                                )
+
+                        )
+
+                    [warehouses] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 1750
+                                    [name] => Palmira
+                                    [user_id] => 10639
+                                    [user] => stdClass Object
+                                        (
+                                            [id] => 10639
+                                            [name] => Jhonatan
+                                            [surname] => Calle
+                                            [email] => kalle-1413@hotmail.com
+                                            [birthday] => 
+                                            [status] => Activo
+                                            [remember_token] => 
+                                            [created_at] => 2022-07-23 14:32:06
+                                            [updated_at] => 2024-05-21 09:53:28
+                                            [register_approved] => 1
+                                            [banned] => 
+                                            [approve_product] => 
+                                            [subscription_plan_id] => 4
+                                            [phone] => 3216403592
+                                            [notes] => 
+                                            [url] => 
+                                            [store_name] => Bim You
+                                            [store_url] => app.bimyou.online
+                                            [dni] => 
+                                            [referred_by] => 
+                                            [parent_seller_id] => 
+                                            [created_by] => 
+                                            [deleted_at] => 
+                                            [last_login] => 2023-06-28 11:05:04
+                                            [store_phone] => 324 7595546
+                                            [can_create_products_and_edit_stock] => 
+                                            [where_do_you_come_from] => Otro
+                                            [smtp_server] => 
+                                            [smtp_port] => 
+                                            [smtp_security] => 
+                                            [smtp_from_name] => 
+                                            [smtp_from_email] => 
+                                            [smtp_requireauth] => 
+                                            [make_rotulo_dropi] => 1
+                                            [pts_st] => 0.00
+                                            [white_brand_id] => 1
+                                            [topic_ticket_id] => 
+                                            [verified_user] => 
+                                            [warranty_policies] => 
+                                            [debug_mode] => 
+                                            [merchant_registration] => 
+                                            [type_liability_id] => 
+                                            [type_regime_id] => 
+                                            [municipality_id] => 
+                                            [type_organization_id] => 
+                                            [tax_detail_id] => 
+                                            [type_document_identification_id] => 
+                                            [file_dni] => 
+                                            [file_rut] => 
+                                            [default_order_state] => PENDIENTE
+                                            [phone_otp] => 3216403592
+                                            [cobrar_orden_con_recaudo] => 
+                                            [comercial_id] => 
+                                            [send_email_notification_orders] => 1
+                                            [failed_login_count] => 0
+                                            [password_temp] => 
+                                            [email_to_guide] => 
+                                            [name_by_default_in_guide] => 
+                                            [email_to_invoice] => 
+                                            [name_to_invoice] => 
+                                            [cod_area_phone] => 
+                                            [cod_area_phone_otp] => 57
+                                            [external_id] => 
+                                            [urlS3_logo] => 
+                                            [urlS3_dni] => 
+                                            [urlS3_rut] => 
+                                            [billing_type] => 
+                                            [is_address_normalization_activated] => 0
+                                            [dni_type] => 
+                                            [category_id] => 
+                                            [checked_files] => 
+                                            [last_password_updated_at] => 2024-05-16 08:14:00
+                                            [password_expiration_days] => 30
+                                            [password_expired] => 
+                                        )
+
+                                    [city_id] => 312
+                                    [city] => stdClass Object
+                                        (
+                                            [id] => 312
+                                            [name] => PALMIRA
+                                            [department_id] => 12
+                                            [department] => stdClass Object
+                                                (
+                                                    [id] => 12
+                                                    [name] => VALLE
+                                                    [country_id] => 1
+                                                    [department_code] => 76
+                                                )
+
+                                            [rate_type] => Array
+                                                (
+                                                    [0] => CON RECAUDO
+                                                    [1] => SIN RECAUDO
+                                                )
+
+                                            [rate_type_json] => Array
+                                                (
+                                                    [0] => CON RECAUDO
+                                                    [1] => SIN RECAUDO
+                                                )
+
+                                            [trajectory_type] => URBANO
+                                            [cod_dane] => 76520000
+                                            [zip_code] => 
+                                            [distribution_companies] => stdClass Object
+                                                (
+                                                    [id] => 1551
+                                                    [city_id] => 312
+                                                    [distribution_company_id] => 3
+                                                    [rate_type] => Array
+                                                        (
+                                                            [0] => CON RECAUDO
+                                                            [1] => SIN RECAUDO
+                                                        )
+
+                                                    [created_at] => 
+                                                    [updated_at] => 
+                                                    [city_code] => 
+                                                    [delivery_type] => 
+                                                )
+
+                                        )
+
+                                    [address] => Carrera 20 # 71 B - 17 La cosecha Palmira
+                                    [phone] => 3216403592
+                                    [warehouse_white_brand] => 
+                                    [created_at] => 2022-07-25T20:36:19.000000Z
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 90535
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [variation] => 
+                                    [user_id] => 10641
+                                    [stock] => 394.00
+                                    [last_quantity_separed] => 400.00
+                                    [user] => stdClass Object
+                                        (
+                                            [id] => 10641
+                                            [name] => Jhonatan
+                                            [surname] => Calle
+                                            [email] => kalle.3411@gmail.com
+                                            [birthday] => 
+                                            [status] => Activo
+                                            [remember_token] => 
+                                            [created_at] => 2022-07-23 14:43:29
+                                            [updated_at] => 2024-05-20 13:34:27
+                                            [register_approved] => 1
+                                            [banned] => 
+                                            [approve_product] => 
+                                            [subscription_plan_id] => 2
+                                            [phone] => 3216403592
+                                            [notes] => Carrera 3 #3-06
+                                            [url] => 
+                                            [store_name] => 
+                                            [store_url] => 
+                                            [dni] => 1112880596
+                                            [referred_by] => 1760
+                                            [parent_seller_id] => 
+                                            [created_by] => 
+                                            [deleted_at] => 
+                                            [last_login] => 2023-03-18 16:56:09
+                                            [store_phone] => 3216403592
+                                            [can_create_products_and_edit_stock] => 
+                                            [where_do_you_come_from] => Otro
+                                            [smtp_server] => 
+                                            [smtp_port] => 
+                                            [smtp_security] => 
+                                            [smtp_from_name] => 
+                                            [smtp_from_email] => 
+                                            [smtp_requireauth] => 
+                                            [make_rotulo_dropi] => 1
+                                            [pts_st] => 0.00
+                                            [white_brand_id] => 1
+                                            [topic_ticket_id] => 
+                                            [verified_user] => 
+                                            [warranty_policies] => 
+                                            [debug_mode] => 
+                                            [merchant_registration] => 
+                                            [type_liability_id] => 
+                                            [type_regime_id] => 2
+                                            [municipality_id] => 599
+                                            [type_organization_id] => 
+                                            [tax_detail_id] => 5
+                                            [type_document_identification_id] => 3
+                                            [file_dni] => 
+                                            [file_rut] => 
+                                            [default_order_state] => PENDIENTE
+                                            [phone_otp] => 3216403592
+                                            [cobrar_orden_con_recaudo] => 
+                                            [comercial_id] => 
+                                            [send_email_notification_orders] => 1
+                                            [failed_login_count] => 0
+                                            [password_temp] => 
+                                            [email_to_guide] => 
+                                            [name_by_default_in_guide] => 
+                                            [email_to_invoice] => kalle.3411@gmail.com
+                                            [name_to_invoice] => JHONATAN CALLE ARBELAEZ
+                                            [cod_area_phone] => 57
+                                            [cod_area_phone_otp] => 57
+                                            [external_id] => 
+                                            [urlS3_logo] => 
+                                            [urlS3_dni] => colombia/user/10641/dni/1705577155Cédula Jhonatan Calle.pdf
+                                            [urlS3_rut] => 
+                                            [billing_type] => 
+                                            [is_address_normalization_activated] => 1
+                                            [dni_type] => 
+                                            [category_id] => 
+                                            [checked_files] => 1
+                                            [last_password_updated_at] => 2024-05-16 08:14:00
+                                            [password_expiration_days] => 30
+                                            [password_expired] => 
+                                        )
+
+                                    [created_at] => 2024-05-19T17:54:49.000000Z
+                                    [updated_at] => 2024-05-25T18:13:47.000000Z
+                                )
+
+                        )
+
+                    [user_profit_percentage_product] => Array
+                        (
+                        )
+
+                    [persistanceState] => Unchanged
+                    [shops] => Array
+                        (
+                        )
+
+                    [external_code] => 
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [name_in_guide] => Camiseta Dama
+                    [dropi_product_supplier_increment_fixed] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 2
+                            [store] => test
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE0MzAsImV4cCI6NDg3MjQzNTAzMCwibmJmIjoxNzE2NzYxNDMwLCJqdGkiOiJNb0NROU5pdHQ4RGNKQ0ltIiwic3ViIjoxMDYzOSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.E9UnJXmzEAGZLW51EApbuLMOFFKzCOReAzSMo0rhkuM
+                            [create_prod_empr] => 
+                            [sync] => MANUALMENTE
+                        )
+
+                )
+
+        )
+
+    [count] => 1
+)
+
+2024-05-26T22:11:08+00:00 INFO $per_page 10
+2024-05-26T22:11:08+00:00 INFO $current_page 1
+2024-05-26T22:11:08+00:00 INFO Array
+(
+    [isSuccess] => 1
+    [status] => 200
+    [objects] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [id] => 871224
+                    [id_lista] => 0
+                    [name] => Blusa Camiseta Dama
+                    [name_in_order] => Blusa Camiseta Dama - $11000.00 - Stock 0.00
+                    [description] => <p>Blusa piel de durazno</p>
+                    [type] => SIMPLE
+                    [stock] => 0.00
+                    [sale_price] => 10000.00
+                    [suggested_price] => 11000.00
+                    [user_id] => 10639
+                    [privated_product] => 1
+                    [active] => 1
+                    [sku] => 1010
+                    [weight] => 0.15
+                    [length] => 0.00
+                    [width] => 0.00
+                    [height] => 0.00
+                    [deleted_at] => 
+                    [created_at] => 2024-05-19T17:54:14.000000Z
+                    [updated_at] => 
+                    [is_warehouse_white_brand] => 
+                    [dropi_percent_product_supplier] => 
+                    [dropi_percent_product_drops] => 
+                    [user] => stdClass Object
+                        (
+                            [id] => 10639
+                            [subscription_plan_id] => 4
+                            [verified_user] => 
+                            [warranty_policies] => 
+                            [name] => Jhonatan
+                            [surname] => Calle
+                            [white_brand_id] => 1
+                            [category_id] => 
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                )
+
+                            [category_user] => 
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [attributes] => Array
+                        (
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 844094
+                                    [url] => 
+                                    [main] => 
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [product_hunter_id] => 
+                                    [urlS3] => colombia/products/871224/1716141255Blusa negra (7).webp
+                                    [external_id] => 
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [id] => 844093
+                                    [url] => 
+                                    [main] => 1
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [product_hunter_id] => 
+                                    [urlS3] => colombia/products/871224/1716141255Blusa rosa (10).webp
+                                    [external_id] => 
+                                )
+
+                            [2] => stdClass Object
+                                (
+                                    [id] => 844092
+                                    [url] => 
+                                    [main] => 
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [product_hunter_id] => 
+                                    [urlS3] => colombia/products/871224/1716141255Blusa terracota (8).webp
+                                    [external_id] => 
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 3
+                                    [name] => Moda
+                                    [parent_category] => 0
+                                )
+
+                        )
+
+                    [warehouses] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 1750
+                                    [name] => Palmira
+                                    [user_id] => 10639
+                                    [user] => stdClass Object
+                                        (
+                                            [id] => 10639
+                                            [name] => Jhonatan
+                                            [surname] => Calle
+                                            [email] => kalle-1413@hotmail.com
+                                            [birthday] => 
+                                            [status] => Activo
+                                            [remember_token] => 
+                                            [created_at] => 2022-07-23 14:32:06
+                                            [updated_at] => 2024-05-21 09:53:28
+                                            [register_approved] => 1
+                                            [banned] => 
+                                            [approve_product] => 
+                                            [subscription_plan_id] => 4
+                                            [phone] => 3216403592
+                                            [notes] => 
+                                            [url] => 
+                                            [store_name] => Bim You
+                                            [store_url] => app.bimyou.online
+                                            [dni] => 
+                                            [referred_by] => 
+                                            [parent_seller_id] => 
+                                            [created_by] => 
+                                            [deleted_at] => 
+                                            [last_login] => 2023-06-28 11:05:04
+                                            [store_phone] => 324 7595546
+                                            [can_create_products_and_edit_stock] => 
+                                            [where_do_you_come_from] => Otro
+                                            [smtp_server] => 
+                                            [smtp_port] => 
+                                            [smtp_security] => 
+                                            [smtp_from_name] => 
+                                            [smtp_from_email] => 
+                                            [smtp_requireauth] => 
+                                            [make_rotulo_dropi] => 1
+                                            [pts_st] => 0.00
+                                            [white_brand_id] => 1
+                                            [topic_ticket_id] => 
+                                            [verified_user] => 
+                                            [warranty_policies] => 
+                                            [debug_mode] => 
+                                            [merchant_registration] => 
+                                            [type_liability_id] => 
+                                            [type_regime_id] => 
+                                            [municipality_id] => 
+                                            [type_organization_id] => 
+                                            [tax_detail_id] => 
+                                            [type_document_identification_id] => 
+                                            [file_dni] => 
+                                            [file_rut] => 
+                                            [default_order_state] => PENDIENTE
+                                            [phone_otp] => 3216403592
+                                            [cobrar_orden_con_recaudo] => 
+                                            [comercial_id] => 
+                                            [send_email_notification_orders] => 1
+                                            [failed_login_count] => 0
+                                            [password_temp] => 
+                                            [email_to_guide] => 
+                                            [name_by_default_in_guide] => 
+                                            [email_to_invoice] => 
+                                            [name_to_invoice] => 
+                                            [cod_area_phone] => 
+                                            [cod_area_phone_otp] => 57
+                                            [external_id] => 
+                                            [urlS3_logo] => 
+                                            [urlS3_dni] => 
+                                            [urlS3_rut] => 
+                                            [billing_type] => 
+                                            [is_address_normalization_activated] => 0
+                                            [dni_type] => 
+                                            [category_id] => 
+                                            [checked_files] => 
+                                            [last_password_updated_at] => 2024-05-16 08:14:00
+                                            [password_expiration_days] => 30
+                                            [password_expired] => 
+                                        )
+
+                                    [city_id] => 312
+                                    [city] => stdClass Object
+                                        (
+                                            [id] => 312
+                                            [name] => PALMIRA
+                                            [department_id] => 12
+                                            [department] => stdClass Object
+                                                (
+                                                    [id] => 12
+                                                    [name] => VALLE
+                                                    [country_id] => 1
+                                                    [department_code] => 76
+                                                )
+
+                                            [rate_type] => Array
+                                                (
+                                                    [0] => CON RECAUDO
+                                                    [1] => SIN RECAUDO
+                                                )
+
+                                            [rate_type_json] => Array
+                                                (
+                                                    [0] => CON RECAUDO
+                                                    [1] => SIN RECAUDO
+                                                )
+
+                                            [trajectory_type] => URBANO
+                                            [cod_dane] => 76520000
+                                            [zip_code] => 
+                                            [distribution_companies] => stdClass Object
+                                                (
+                                                    [id] => 1551
+                                                    [city_id] => 312
+                                                    [distribution_company_id] => 3
+                                                    [rate_type] => Array
+                                                        (
+                                                            [0] => CON RECAUDO
+                                                            [1] => SIN RECAUDO
+                                                        )
+
+                                                    [created_at] => 
+                                                    [updated_at] => 
+                                                    [city_code] => 
+                                                    [delivery_type] => 
+                                                )
+
+                                        )
+
+                                    [address] => Carrera 20 # 71 B - 17 La cosecha Palmira
+                                    [phone] => 3216403592
+                                    [warehouse_white_brand] => 
+                                    [created_at] => 2022-07-25T20:36:19.000000Z
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 90535
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [variation] => 
+                                    [user_id] => 10641
+                                    [stock] => 394.00
+                                    [last_quantity_separed] => 400.00
+                                    [user] => stdClass Object
+                                        (
+                                            [id] => 10641
+                                            [name] => Jhonatan
+                                            [surname] => Calle
+                                            [email] => kalle.3411@gmail.com
+                                            [birthday] => 
+                                            [status] => Activo
+                                            [remember_token] => 
+                                            [created_at] => 2022-07-23 14:43:29
+                                            [updated_at] => 2024-05-20 13:34:27
+                                            [register_approved] => 1
+                                            [banned] => 
+                                            [approve_product] => 
+                                            [subscription_plan_id] => 2
+                                            [phone] => 3216403592
+                                            [notes] => Carrera 3 #3-06
+                                            [url] => 
+                                            [store_name] => 
+                                            [store_url] => 
+                                            [dni] => 1112880596
+                                            [referred_by] => 1760
+                                            [parent_seller_id] => 
+                                            [created_by] => 
+                                            [deleted_at] => 
+                                            [last_login] => 2023-03-18 16:56:09
+                                            [store_phone] => 3216403592
+                                            [can_create_products_and_edit_stock] => 
+                                            [where_do_you_come_from] => Otro
+                                            [smtp_server] => 
+                                            [smtp_port] => 
+                                            [smtp_security] => 
+                                            [smtp_from_name] => 
+                                            [smtp_from_email] => 
+                                            [smtp_requireauth] => 
+                                            [make_rotulo_dropi] => 1
+                                            [pts_st] => 0.00
+                                            [white_brand_id] => 1
+                                            [topic_ticket_id] => 
+                                            [verified_user] => 
+                                            [warranty_policies] => 
+                                            [debug_mode] => 
+                                            [merchant_registration] => 
+                                            [type_liability_id] => 
+                                            [type_regime_id] => 2
+                                            [municipality_id] => 599
+                                            [type_organization_id] => 
+                                            [tax_detail_id] => 5
+                                            [type_document_identification_id] => 3
+                                            [file_dni] => 
+                                            [file_rut] => 
+                                            [default_order_state] => PENDIENTE
+                                            [phone_otp] => 3216403592
+                                            [cobrar_orden_con_recaudo] => 
+                                            [comercial_id] => 
+                                            [send_email_notification_orders] => 1
+                                            [failed_login_count] => 0
+                                            [password_temp] => 
+                                            [email_to_guide] => 
+                                            [name_by_default_in_guide] => 
+                                            [email_to_invoice] => kalle.3411@gmail.com
+                                            [name_to_invoice] => JHONATAN CALLE ARBELAEZ
+                                            [cod_area_phone] => 57
+                                            [cod_area_phone_otp] => 57
+                                            [external_id] => 
+                                            [urlS3_logo] => 
+                                            [urlS3_dni] => colombia/user/10641/dni/1705577155Cédula Jhonatan Calle.pdf
+                                            [urlS3_rut] => 
+                                            [billing_type] => 
+                                            [is_address_normalization_activated] => 1
+                                            [dni_type] => 
+                                            [category_id] => 
+                                            [checked_files] => 1
+                                            [last_password_updated_at] => 2024-05-16 08:14:00
+                                            [password_expiration_days] => 30
+                                            [password_expired] => 
+                                        )
+
+                                    [created_at] => 2024-05-19T17:54:49.000000Z
+                                    [updated_at] => 2024-05-25T18:13:47.000000Z
+                                )
+
+                        )
+
+                    [user_profit_percentage_product] => Array
+                        (
+                        )
+
+                    [persistanceState] => Unchanged
+                    [shops] => Array
+                        (
+                        )
+
+                    [external_code] => 
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [name_in_guide] => Camiseta Dama
+                    [dropi_product_supplier_increment_fixed] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 2
+                            [store] => test
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE0MzAsImV4cCI6NDg3MjQzNTAzMCwibmJmIjoxNzE2NzYxNDMwLCJqdGkiOiJNb0NROU5pdHQ4RGNKQ0ltIiwic3ViIjoxMDYzOSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.E9UnJXmzEAGZLW51EApbuLMOFFKzCOReAzSMo0rhkuM
+                            [create_prod_empr] => 
+                            [sync] => MANUALMENTE
+                        )
+
+                )
+
+        )
+
+    [count] => 1
+)
+
+2024-05-26T22:11:08+00:00 INFO Array
+(
+    [isSuccess] => 1
+    [status] => 200
+    [objects] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [id] => 871224
+                    [id_lista] => 0
+                    [name] => Blusa Camiseta Dama
+                    [name_in_order] => Blusa Camiseta Dama - $11000.00 - Stock 0.00
+                    [description] => <p>Blusa piel de durazno</p>
+                    [type] => SIMPLE
+                    [stock] => 0.00
+                    [sale_price] => 10000.00
+                    [suggested_price] => 11000.00
+                    [user_id] => 10639
+                    [privated_product] => 1
+                    [active] => 1
+                    [sku] => 1010
+                    [weight] => 0.15
+                    [length] => 0.00
+                    [width] => 0.00
+                    [height] => 0.00
+                    [deleted_at] => 
+                    [created_at] => 2024-05-19T17:54:14.000000Z
+                    [updated_at] => 
+                    [is_warehouse_white_brand] => 
+                    [dropi_percent_product_supplier] => 
+                    [dropi_percent_product_drops] => 
+                    [user] => stdClass Object
+                        (
+                            [id] => 10639
+                            [subscription_plan_id] => 4
+                            [verified_user] => 
+                            [warranty_policies] => 
+                            [name] => Jhonatan
+                            [surname] => Calle
+                            [white_brand_id] => 1
+                            [category_id] => 
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                )
+
+                            [category_user] => 
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [attributes] => Array
+                        (
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 844094
+                                    [url] => 
+                                    [main] => 
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [product_hunter_id] => 
+                                    [urlS3] => colombia/products/871224/1716141255Blusa negra (7).webp
+                                    [external_id] => 
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [id] => 844093
+                                    [url] => 
+                                    [main] => 1
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [product_hunter_id] => 
+                                    [urlS3] => colombia/products/871224/1716141255Blusa rosa (10).webp
+                                    [external_id] => 
+                                )
+
+                            [2] => stdClass Object
+                                (
+                                    [id] => 844092
+                                    [url] => 
+                                    [main] => 
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [product_hunter_id] => 
+                                    [urlS3] => colombia/products/871224/1716141255Blusa terracota (8).webp
+                                    [external_id] => 
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 3
+                                    [name] => Moda
+                                    [parent_category] => 0
+                                )
+
+                        )
+
+                    [warehouses] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 1750
+                                    [name] => Palmira
+                                    [user_id] => 10639
+                                    [user] => stdClass Object
+                                        (
+                                            [id] => 10639
+                                            [name] => Jhonatan
+                                            [surname] => Calle
+                                            [email] => kalle-1413@hotmail.com
+                                            [birthday] => 
+                                            [status] => Activo
+                                            [remember_token] => 
+                                            [created_at] => 2022-07-23 14:32:06
+                                            [updated_at] => 2024-05-21 09:53:28
+                                            [register_approved] => 1
+                                            [banned] => 
+                                            [approve_product] => 
+                                            [subscription_plan_id] => 4
+                                            [phone] => 3216403592
+                                            [notes] => 
+                                            [url] => 
+                                            [store_name] => Bim You
+                                            [store_url] => app.bimyou.online
+                                            [dni] => 
+                                            [referred_by] => 
+                                            [parent_seller_id] => 
+                                            [created_by] => 
+                                            [deleted_at] => 
+                                            [last_login] => 2023-06-28 11:05:04
+                                            [store_phone] => 324 7595546
+                                            [can_create_products_and_edit_stock] => 
+                                            [where_do_you_come_from] => Otro
+                                            [smtp_server] => 
+                                            [smtp_port] => 
+                                            [smtp_security] => 
+                                            [smtp_from_name] => 
+                                            [smtp_from_email] => 
+                                            [smtp_requireauth] => 
+                                            [make_rotulo_dropi] => 1
+                                            [pts_st] => 0.00
+                                            [white_brand_id] => 1
+                                            [topic_ticket_id] => 
+                                            [verified_user] => 
+                                            [warranty_policies] => 
+                                            [debug_mode] => 
+                                            [merchant_registration] => 
+                                            [type_liability_id] => 
+                                            [type_regime_id] => 
+                                            [municipality_id] => 
+                                            [type_organization_id] => 
+                                            [tax_detail_id] => 
+                                            [type_document_identification_id] => 
+                                            [file_dni] => 
+                                            [file_rut] => 
+                                            [default_order_state] => PENDIENTE
+                                            [phone_otp] => 3216403592
+                                            [cobrar_orden_con_recaudo] => 
+                                            [comercial_id] => 
+                                            [send_email_notification_orders] => 1
+                                            [failed_login_count] => 0
+                                            [password_temp] => 
+                                            [email_to_guide] => 
+                                            [name_by_default_in_guide] => 
+                                            [email_to_invoice] => 
+                                            [name_to_invoice] => 
+                                            [cod_area_phone] => 
+                                            [cod_area_phone_otp] => 57
+                                            [external_id] => 
+                                            [urlS3_logo] => 
+                                            [urlS3_dni] => 
+                                            [urlS3_rut] => 
+                                            [billing_type] => 
+                                            [is_address_normalization_activated] => 0
+                                            [dni_type] => 
+                                            [category_id] => 
+                                            [checked_files] => 
+                                            [last_password_updated_at] => 2024-05-16 08:14:00
+                                            [password_expiration_days] => 30
+                                            [password_expired] => 
+                                        )
+
+                                    [city_id] => 312
+                                    [city] => stdClass Object
+                                        (
+                                            [id] => 312
+                                            [name] => PALMIRA
+                                            [department_id] => 12
+                                            [department] => stdClass Object
+                                                (
+                                                    [id] => 12
+                                                    [name] => VALLE
+                                                    [country_id] => 1
+                                                    [department_code] => 76
+                                                )
+
+                                            [rate_type] => Array
+                                                (
+                                                    [0] => CON RECAUDO
+                                                    [1] => SIN RECAUDO
+                                                )
+
+                                            [rate_type_json] => Array
+                                                (
+                                                    [0] => CON RECAUDO
+                                                    [1] => SIN RECAUDO
+                                                )
+
+                                            [trajectory_type] => URBANO
+                                            [cod_dane] => 76520000
+                                            [zip_code] => 
+                                            [distribution_companies] => stdClass Object
+                                                (
+                                                    [id] => 1551
+                                                    [city_id] => 312
+                                                    [distribution_company_id] => 3
+                                                    [rate_type] => Array
+                                                        (
+                                                            [0] => CON RECAUDO
+                                                            [1] => SIN RECAUDO
+                                                        )
+
+                                                    [created_at] => 
+                                                    [updated_at] => 
+                                                    [city_code] => 
+                                                    [delivery_type] => 
+                                                )
+
+                                        )
+
+                                    [address] => Carrera 20 # 71 B - 17 La cosecha Palmira
+                                    [phone] => 3216403592
+                                    [warehouse_white_brand] => 
+                                    [created_at] => 2022-07-25T20:36:19.000000Z
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 90535
+                                    [product_id] => 871224
+                                    [variation_id] => 
+                                    [variation] => 
+                                    [user_id] => 10641
+                                    [stock] => 394.00
+                                    [last_quantity_separed] => 400.00
+                                    [user] => stdClass Object
+                                        (
+                                            [id] => 10641
+                                            [name] => Jhonatan
+                                            [surname] => Calle
+                                            [email] => kalle.3411@gmail.com
+                                            [birthday] => 
+                                            [status] => Activo
+                                            [remember_token] => 
+                                            [created_at] => 2022-07-23 14:43:29
+                                            [updated_at] => 2024-05-20 13:34:27
+                                            [register_approved] => 1
+                                            [banned] => 
+                                            [approve_product] => 
+                                            [subscription_plan_id] => 2
+                                            [phone] => 3216403592
+                                            [notes] => Carrera 3 #3-06
+                                            [url] => 
+                                            [store_name] => 
+                                            [store_url] => 
+                                            [dni] => 1112880596
+                                            [referred_by] => 1760
+                                            [parent_seller_id] => 
+                                            [created_by] => 
+                                            [deleted_at] => 
+                                            [last_login] => 2023-03-18 16:56:09
+                                            [store_phone] => 3216403592
+                                            [can_create_products_and_edit_stock] => 
+                                            [where_do_you_come_from] => Otro
+                                            [smtp_server] => 
+                                            [smtp_port] => 
+                                            [smtp_security] => 
+                                            [smtp_from_name] => 
+                                            [smtp_from_email] => 
+                                            [smtp_requireauth] => 
+                                            [make_rotulo_dropi] => 1
+                                            [pts_st] => 0.00
+                                            [white_brand_id] => 1
+                                            [topic_ticket_id] => 
+                                            [verified_user] => 
+                                            [warranty_policies] => 
+                                            [debug_mode] => 
+                                            [merchant_registration] => 
+                                            [type_liability_id] => 
+                                            [type_regime_id] => 2
+                                            [municipality_id] => 599
+                                            [type_organization_id] => 
+                                            [tax_detail_id] => 5
+                                            [type_document_identification_id] => 3
+                                            [file_dni] => 
+                                            [file_rut] => 
+                                            [default_order_state] => PENDIENTE
+                                            [phone_otp] => 3216403592
+                                            [cobrar_orden_con_recaudo] => 
+                                            [comercial_id] => 
+                                            [send_email_notification_orders] => 1
+                                            [failed_login_count] => 0
+                                            [password_temp] => 
+                                            [email_to_guide] => 
+                                            [name_by_default_in_guide] => 
+                                            [email_to_invoice] => kalle.3411@gmail.com
+                                            [name_to_invoice] => JHONATAN CALLE ARBELAEZ
+                                            [cod_area_phone] => 57
+                                            [cod_area_phone_otp] => 57
+                                            [external_id] => 
+                                            [urlS3_logo] => 
+                                            [urlS3_dni] => colombia/user/10641/dni/1705577155Cédula Jhonatan Calle.pdf
+                                            [urlS3_rut] => 
+                                            [billing_type] => 
+                                            [is_address_normalization_activated] => 1
+                                            [dni_type] => 
+                                            [category_id] => 
+                                            [checked_files] => 1
+                                            [last_password_updated_at] => 2024-05-16 08:14:00
+                                            [password_expiration_days] => 30
+                                            [password_expired] => 
+                                        )
+
+                                    [created_at] => 2024-05-19T17:54:49.000000Z
+                                    [updated_at] => 2024-05-25T18:13:47.000000Z
+                                )
+
+                        )
+
+                    [user_profit_percentage_product] => Array
+                        (
+                        )
+
+                    [persistanceState] => Unchanged
+                    [shops] => Array
+                        (
+                        )
+
+                    [external_code] => 
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [name_in_guide] => Camiseta Dama
+                    [dropi_product_supplier_increment_fixed] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 2
+                            [store] => test
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE0MzAsImV4cCI6NDg3MjQzNTAzMCwibmJmIjoxNzE2NzYxNDMwLCJqdGkiOiJNb0NROU5pdHQ4RGNKQ0ltIiwic3ViIjoxMDYzOSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.E9UnJXmzEAGZLW51EApbuLMOFFKzCOReAzSMo0rhkuM
+                            [create_prod_empr] => 
+                            [sync] => MANUALMENTE
+                        )
+
+                )
+
+        )
+
+    [count] => 1
+)
+
+2024-05-26T22:13:33+00:00 INFO $per_page 10
+2024-05-26T22:13:33+00:00 INFO $current_page 1
+2024-05-26T22:15:09+00:00 INFO $per_page 10
+2024-05-26T22:15:09+00:00 INFO $current_page 1
+2024-05-26T22:15:10+00:00 INFO $per_page 10
+2024-05-26T22:15:10+00:00 INFO $current_page 1
+2024-05-26T22:15:13+00:00 INFO $per_page 10
+2024-05-26T22:15:13+00:00 INFO $current_page 1
+2024-05-26T22:15:14+00:00 INFO $per_page 10
+2024-05-26T22:15:14+00:00 INFO $current_page 1
+2024-05-26T22:16:35+00:00 INFO $per_page 10
+2024-05-26T22:16:35+00:00 INFO $current_page 1
+2024-05-26T22:21:04+00:00 INFO $per_page 10
+2024-05-26T22:21:04+00:00 INFO $current_page 1
