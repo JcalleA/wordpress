@@ -1,0 +1,22 @@
+2024-06-04T13:14:49+00:00 INFO $per_page 10
+2024-06-04T13:14:49+00:00 INFO $current_page 1
+2024-06-04T13:19:39+00:00 INFO $per_page 10
+2024-06-04T13:19:39+00:00 INFO $current_page 1
+2024-06-04T19:58:40+00:00 INFO $per_page 10
+2024-06-04T19:58:40+00:00 INFO $current_page 1
+2024-06-04T19:58:42+00:00 INFO cURL error 28: Operation timed out after 2000 milliseconds with 0 bytes received
+2024-06-04T19:58:57+00:00 INFO $per_page 10
+2024-06-04T19:58:57+00:00 INFO $current_page 1
+2024-06-04T19:58:59+00:00 INFO cURL error 28: Operation timed out after 2001 milliseconds with 0 bytes received
+2024-06-04T19:59:05+00:00 INFO $per_page 10
+2024-06-04T19:59:05+00:00 INFO $current_page 1
+2024-06-04T19:59:07+00:00 INFO cURL error 28: Operation timed out after 2000 milliseconds with 0 bytes received
+2024-06-04T19:59:48+00:00 INFO $per_page 10
+2024-06-04T19:59:48+00:00 INFO $current_page 1
+2024-06-04T19:59:50+00:00 INFO cURL error 28: Operation timed out after 2000 milliseconds with 0 bytes received
+2024-06-04T20:01:01+00:00 INFO $per_page 10
+2024-06-04T20:01:01+00:00 INFO $current_page 1
+2024-06-04T20:01:03+00:00 INFO cURL error 28: Operation timed out after 2001 milliseconds with 0 bytes received
+2024-06-04T20:02:33+00:00 INFO $per_page 10
+2024-06-04T20:02:33+00:00 INFO $current_page 1
+2024-06-04T20:02:35+00:00 INFO cURL error 28: Operation timed out after 2001 milliseconds with 0 bytes received

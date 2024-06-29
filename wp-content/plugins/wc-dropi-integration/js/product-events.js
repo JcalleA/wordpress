@@ -260,12 +260,13 @@ function JPIODFW_getProducts() {
 
         success: function (response) {
             shopifyPrpoducts = response;
+            
 
             let opciones = '';
 
             opciones += "<option value=''>Selecciona un producto</option>"
             response.forEach(element => {
-                opciones += "<option value='" + element.id + "'>" + element.name + " - " + element.id + " - " + element.sku + "</option>"
+                opciones += "<option value='" + url,ajax_var.action,ajax_var.nonce + "'>" + element.name + " - " + element.id + " - " + element.sku + "</option>"
             });
 
             jQuery("#products-select").append(opciones);

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-21 17:27:00+0000\n"
+"PO-Revision-Date: 2024-05-29 07:15:38+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -208,6 +208,11 @@ msgctxt "block description"
 msgid "The product custom fields toggle."
 msgstr "El conmutador de los campos personalizados del produto."
 
+#: includes/admin/settings/class-wc-settings-site-visibility.php:27
+#: assets/client/admin/app/index.js:2
+msgid "Site visibility"
+msgstr "Visibilidad del sitio"
+
 #. Translators: %s Domain name from the callback URL.
 #: templates/auth/form-grant-access.php:48
 msgid "Approving will share credentials with %s. Do not proceed if this looks suspicious in any way."
@@ -243,6 +248,12 @@ msgstr "Mostrar campos personalizados"
 #: src/Internal/Features/ProductBlockEditor/ProductTemplates/SimpleProductTemplate.php:504
 msgid "Use global attributes to allow shoppers to filter and search for this product. Use custom attributes to provide detailed product information."
 msgstr "Utiliza atributos globales para permitir a los compradores filtrar y buscar este producto. Utiliza atributos personalizados para proporcionar información detallada del producto."
+
+#. translators: %1$s: Custom fields guide link opening tag. %2$s: Custom fields
+#. guide link closing tag.
+#: src/Internal/Features/ProductBlockEditor/ProductTemplates/SimpleProductTemplate.php:542
+msgid "Custom fields can be used in a variety of ways, such as sharing more detailed product information, showing more input fields, or for internal inventory organization. %1$sRead more about custom fields%2$s"
+msgstr "Los campos personalizados pueden utilizarse de diversas formas, como para compartir información más detallada sobre los productos, mostrar más campos de entrada u organizar el inventario interno. %1$sMás información sobre los campos personalizados%2$s"
 
 #. translators: %1$s: store settings link opening tag. %2$s: store settings
 #. link closing tag.
@@ -1289,6 +1300,12 @@ msgstr "Volver a programar la limpieza de archivos temporales caducados"
 msgid "Medium"
 msgstr "Mediano"
 
+#. translators: %1$s: "Learn more about linked products" link opening tag.
+#. %2$s: "Learn more about linked products" link closing tag.
+#: src/Internal/Features/ProductBlockEditor/ProductTemplates/SimpleProductTemplate.php:1190
+msgid "By suggesting complementary products in the cart using cross-sells, you can significantly increase the average order value. %1$sLearn more about linked products%2$s"
+msgstr "Al recomendar productos complementarios en el carrito de compra mediante ventas cruzadas, puedes aumentar sustancialmente el valor medio de los pedidos. %1$sMás información sobre los productos vinculados%2$s"
+
 #: src/Internal/Features/ProductBlockEditor/ProductTemplates/SimpleProductTemplate.php:1172
 msgid "Tip: Upsells are products that are extra profitable or better quality or more expensive. Experiment with combinations to boost sales."
 msgstr "Consejo: Las ventas adicionales se dirigen a productos que aportan un beneficio extra, son de mejor calidad o más caros. Prueba a combinar distintos tipos de ventas para aumentar tus cifras finales."
@@ -1334,6 +1351,12 @@ msgstr "⚠️ Este directorio no parece ser de escritura."
 #: src/Internal/DataStores/Orders/CustomOrdersTableController.php:352
 msgid "Unable to start synchronization. The link you followed may have expired."
 msgstr "No se puede iniciar la sincronización. El enlace que has seguido puede haber caducado."
+
+#. translators: %1$s: "Learn more about linked products" link opening tag.
+#. %2$s: "Learn more about linked products" link closing tag.
+#: src/Internal/Features/ProductBlockEditor/ProductTemplates/SimpleProductTemplate.php:1157
+msgid "Upsells are typically products that are extra profitable or better quality or more expensive. Experiment with combinations to boost sales. %1$sLearn more about linked products%2$s"
+msgstr "Las ventas dirigidas suelen ser de productos que aportan un beneficio extra, son de mejor calidad o más caros. Prueba a combinar distintos tipos de ventas para aumentar tus cifras finales. %1$sMás información sobre los productos vinculados.%2$s"
 
 #: includes/admin/views/html-admin-page-status-report.php:800
 #: src/Internal/Admin/Logging/Settings.php:273
@@ -1733,7 +1756,7 @@ msgstr "Coincidir imágenes"
 msgid "Product image matching by SKU"
 msgstr "Coincidencia de la imagen del producto por SKU"
 
-#: src/Internal/Orders/OrderAttributionController.php:468
+#: src/Internal/Orders/OrderAttributionController.php:464
 #: templates/order/attribution-details.php:27
 msgid "Origin"
 msgstr "Origen"
@@ -1994,6 +2017,43 @@ msgstr "Detectado acceso a la REST API heredada de WooCommerce"
 #: includes/class-wc-payment-gateways.php:256
 msgid "[%1$s] Payment gateway \"%2$s\" enabled"
 msgstr "[%1$s] Pasarela de pago «%2$s» activada"
+
+#. translators: Payment gateway enabled notification email. 1: Username, 2:
+#. Gateway Title, 3: Site URL, 4: Gateway Settings URL, 5: Admin Email, 6: Site
+#. Name, 7: Site URL.
+#: includes/class-wc-payment-gateways.php:219
+msgid ""
+"Howdy %1$s,\n"
+"\n"
+"The payment gateway \"%2$s\" was just enabled on this site:\n"
+"%3$s\n"
+"\n"
+"If this was intentional you can safely ignore and delete this email.\n"
+"\n"
+"If you did not enable this payment gateway, please log in to your site and consider disabling it here:\n"
+"%4$s\n"
+"\n"
+"This email has been sent to %5$s\n"
+"\n"
+"Regards,\n"
+"All at %6$s\n"
+"%7$s"
+msgstr ""
+"Hola %1$s,\n"
+"\n"
+"La pasarela de pago «%2$s» acaba de activarse en este sitio:\n"
+"%3$s\n"
+"\n"
+"Si ha sido intencionado, puedes ignorar y borrar este correo electrónico. \n"
+"\n"
+"Si no activaste esta pasarela de pago, por favor, accede a tu sitio y plantéate desactivarla aquí:\n"
+"%4$s\n"
+"\n"
+"Este correo electrónico ha sido enviado a %5$s\n"
+"\n"
+"Saludos,\n"
+"El equipo de %6$s\n"
+"%7$s"
 
 #. translators: Placeholders are URLs.
 #: includes/admin/settings/class-wc-settings-advanced.php:399
@@ -4909,6 +4969,13 @@ msgstr "Se encontraron los siguientes problemas:"
 #: src/StoreApi/Schemas/V1/CartSchema.php:313
 msgid "List of available payment method IDs that can be used to process the order."
 msgstr "Lista de IDs de métodos de pago disponibles que se pueden usar para procesar el pedido."
+
+#. translators: %1$s: How to get started? link opening tag. %2$s: How to get
+#. started? link closing tag.
+#: src/Internal/Features/ProductBlockEditor/ProductTemplates/ProductVariationTemplate.php:474
+#: src/Internal/Features/ProductBlockEditor/ProductTemplates/SimpleProductTemplate.php:1063
+msgid "Set up shipping costs and enter dimensions used for accurate rate calculations. %1$sHow to get started?%2$s"
+msgstr "Establece los costes de envío e introduce las dimensiones para calcular las tarifas adecuadas. %1$sPrimeros pasos%2$s."
 
 #: includes/admin/meta-boxes/views/html-product-data-attributes.php:36
 msgid "Add existing"
@@ -8234,7 +8301,7 @@ msgstr "La tarea no es una subclase de «Tarea»."
 msgid "To start growing your business, head over to <a href=\"%s\">WooCommerce.com</a>, where you'll find the most popular WooCommerce extensions."
 msgstr "Para empezar a hacer crecer tu negocio, visita <a href=\"%s\">Woo.com</a>, donde encontrarás las extensiones más populares para WooCommerce."
 
-#: includes/class-woocommerce.php:1090
+#: includes/class-woocommerce.php:1105
 msgid "You have installed a development version of WooCommerce which requires files to be built and minified. From the plugin directory, run <code>pnpm install</code> and then <code>pnpm --filter='@woocommerce/plugin-woocommerce' build</code> to build and minify assets."
 msgstr "Has instalado una versión de desarrollo de WooCommerce que requiere que los archivos se creen y minimicen. Desde el directorio del plugin, ejecuta <code>pnpm install</code> y, luego, <code>pnpm -- run build --filter=woocommerce</code> para crear y minimizar recursos."
 
@@ -17286,7 +17353,7 @@ msgstr "Contenido adicional"
 
 #. translators: 1: URL of WordPress.org Repository 2: URL of the GitHub
 #. Repository release page
-#: includes/class-woocommerce.php:1093
+#: includes/class-woocommerce.php:1108
 msgid "Or you can download a pre-built version of the plugin from the <a href=\"%1$s\">WordPress.org repository</a> or by visiting <a href=\"%2$s\">the releases page in the GitHub repository</a>."
 msgstr "O puedes descargar una versión preconstruida del plugin desde el <a href=\"%1$s\">repositorio de WordPress.org</a> o visitando <a href=\"%2$s\">la página de versiones en el repositorio de GitHub</a>."
 
@@ -31471,11 +31538,6 @@ msgstr "Acceso"
 msgid "Cart totals"
 msgstr "Totales del carrito"
 
-#: templates/checkout/form-checkout.php:26
-#: assets/client/blocks/checkout-frontend.js:2
-msgid "You must be logged in to checkout."
-msgstr "Debes estar conectado para para poder finalizar la compra."
-
 #: includes/wc-template-functions.php:1502
 #: assets/client/blocks/all-products-frontend.js:4
 #: assets/client/blocks/all-products.js:24
@@ -31501,6 +31563,11 @@ msgstr "Desplegable"
 #: assets/client/blocks/featured-category.js:15
 msgid "Select a category"
 msgstr "Selecciona una categoría"
+
+#: templates/checkout/form-checkout.php:26
+#: assets/client/blocks/checkout-frontend.js:2
+msgid "You must be logged in to checkout."
+msgstr "Debes estar conectado para poder finalizar la compra."
 
 #. translators: %s: order number
 #. translators: %s: order ID

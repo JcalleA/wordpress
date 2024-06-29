@@ -64,6 +64,10 @@ class JPIODFW_Constants
                         $this->API_URL = 'https://api.dropi.com.es/integrations/';
                         $this->IMG_URL = 'https://api.dropi.com.es/';
                         break;
+                    case 'PY':
+                        $this->API_URL = 'https://api.dropi.com.py/integrations/';
+                        $this->IMG_URL = 'https://api.dropi.com.py/';
+                        break;
                     default:
                         echo '<div class="notice notice-error is-dismissible">
                         <p>Dropi Error, por favor configura un pais permitido por dropi</p>

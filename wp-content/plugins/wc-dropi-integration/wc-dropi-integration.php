@@ -1,12 +1,10 @@
 <?php
+
 /**
  * Plugin Name: Dropify
- * Donate link: https://paypal.me/jhaineymilevis
- * Plugin URI:  https://wa.link/4vjg2f
  * Description: This plugin allow users to show and import products from dropi on woocomerce
- * Version: 4.6.4
+ * Version: 4.6.7
  * Author: Jhainey Perez
- * Author URI: https://wa.link/4vjg2f
  * Text Domain: wc-dropi-integration
  */
 

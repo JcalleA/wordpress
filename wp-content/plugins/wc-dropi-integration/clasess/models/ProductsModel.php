@@ -72,7 +72,7 @@ class JPIODFW_ProductsModel
             $this->helper->showAdminNotice($error_message, 'error');
         } else {
             $response_body = (array)json_decode($response['body']);
-         
+
             if ($response_body['isSuccess'] == false) {
 
                 $this->helper->showAdminNotice($response_body['message'], 'error');
@@ -89,7 +89,6 @@ class JPIODFW_ProductsModel
 
 
         $products = [];
-
         $endpoint = $this->constants->API_URL . "products/index";
         $data = array(
             'startData' => $current_page,
@@ -98,11 +97,16 @@ class JPIODFW_ProductsModel
             'order_by' => $orderby,
             'keywords' => $search,
             'active' => true,
+            'no_count' => true,
+
             //'privated_product'=>false
-
         );
+        
 
-      
+        if ($endpoint == "https://api.dropi.co/integrations/products/index" || $endpoint == "https://api.dropi.com.py/integrations/products/index" || $endpoint == "https://api.dropi.pe/integrations/products/index" || $endpoint == "https://api.dropi.pa/integrations/products/index") {
+            $data['get_stock'] = false;
+        }
+
 
         if ($onlyVerifiedUsers != null) {
             $data['userVerified'] = true;
@@ -136,15 +140,17 @@ class JPIODFW_ProductsModel
             }
         }
 
-     
+
 
         $all_products = array();
 
         $final_response = array();
         $temp_response = array();
+        
 
-      
+
         $args = array(
+            
             'body' => json_encode($data),
             'timeout' => '100000',
             'redirection' => '5',
@@ -161,7 +167,7 @@ class JPIODFW_ProductsModel
 
         );
 
-     
+
         $response = wp_remote_post(
             $endpoint,
             $args
@@ -173,7 +179,7 @@ class JPIODFW_ProductsModel
             $this->logger->info(wc_print_r($response, true), array('source' => 'dropi-products'));
         }
         $temp_response = (array)json_decode($response['body']);
-    
+
         if ($temp_response['isSuccess'] == true) {
             $final_response = $temp_response;
             $all_products = array_merge($all_products, $this->TokenModel->assignStoreName($temp_response['objects'], $token));
@@ -181,7 +187,7 @@ class JPIODFW_ProductsModel
 
         $final_response = $temp_response;
 
- 
+
         $final_response['objects'] = $all_products;
 
         $this->logger->info(wc_print_r($final_response, true), array('source' => 'dropi-products'));
@@ -193,12 +199,12 @@ class JPIODFW_ProductsModel
         } else {
             //$response_body = (array)json_decode($final_response['body']);
             $response_body = $final_response;
-            $message ='';
+            $message = '';
             if ($response_body['isSuccess'] == false) {
-                if(isset( $response_body['message'])){
+                if (isset($response_body['message'])) {
                     $message = $response_body['message'];
                 }
-                if(isset( $response_body['error'])){
+                if (isset($response_body['error'])) {
                     $message = $response_body['error'];
                 }
                 if (empty($message)) {
@@ -218,7 +224,7 @@ class JPIODFW_ProductsModel
             }
         }
 
-    
+
         return $products;
     }
 
@@ -256,9 +262,15 @@ class JPIODFW_ProductsModel
         $sob_stock = null,
         $store = null
     ) {
+
+
+
         $success = false;
         $message = '';
         try {
+
+
+
             //busco la data del producto en dropi
             if ($store != null) {
                 $token =  $store[0]->token;
@@ -267,7 +279,6 @@ class JPIODFW_ProductsModel
             }
 
             $product = $this->getProduct($product, $token);
-            error_log(print_r($product, true));
 
             if ($product->description == null) {
                 $product->description = '';
@@ -332,8 +343,20 @@ class JPIODFW_ProductsModel
                                 'sku'           => $variation->sku,
                                 'regular_price' => $variation->suggested_price
                             );
+                            //sobreescribir stock
                             if ($sob_stock == "true") {
-                                $variation_data['stock_qty'] = $variation->stock;
+                                $finalStockByWarehouse = 0;
+
+                                if (isset($variation->stock)) {
+                                    $variation_data['stock_qty'] = $variation->stock;
+                                }
+
+                                if (isset($variation->warehouse_product_variation)) {
+                                    foreach ($variation->warehouse_product_variation as $ware) {
+                                        $finalStockByWarehouse = $finalStockByWarehouse + $ware->stock;
+                                    }
+                                    $variation_data['stock_qty'] = $finalStockByWarehouse;
+                                }
                             }
                             $attributes = [];
                             $attributes2 = [];
@@ -412,7 +435,21 @@ class JPIODFW_ProductsModel
                         //no hago nada si es variable para que no me ponga el stock en cero
                         //update_post_meta($post_id, '_manage_stock', false);
                     } else {
-                        update_post_meta($post_id, '_stock', $product->stock);
+
+                        $stockForSimple = 0;
+
+                        if (isset($product->stock)) {
+
+                            $stockForSimple = $product->stock;
+                        }
+
+                        if (isset($product->warehouse_product)) {
+                            foreach ($product->warehouse_product as $value) {
+                                $stockForSimple = $value->stock + $stockForSimple;
+                            }
+                        }
+
+                        update_post_meta($post_id, '_stock', $stockForSimple);
                         update_post_meta($post_id, '_manage_stock', true);
                     }
                 }
@@ -426,13 +463,12 @@ class JPIODFW_ProductsModel
                 // update_post_meta($post_id, '_stock_status', 'instock');
                 if ($sob_images == 'true' || $sob_images == null) {
 
-                    try{
+                    try {
                         //mp($product);
                         $this->setPostImages($post_id, $product->photos);
-                    }catch(Exception $e){
+                    } catch (Exception $e) {
                         $this->logger->error($e->getMessage(), array('source' => 'dropi-products-images'));
                     }
-                   
                 }
 
                 $this->setImportedOnImportLits($product, $post_id, $token);
@@ -777,7 +813,7 @@ class JPIODFW_ProductsModel
                     } else {
                         $image_url        = 'https://d39ru7awumhhs2.cloudfront.net/' .  $img->urlS3; // Define the image URL here
                     }
-                
+
 
                     $image_name       = $img->id . ".png";
                     $upload_dir       = wp_upload_dir(); // Set upload folder

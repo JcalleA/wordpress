@@ -97,7 +97,7 @@ class JPIODFW_Product_List extends WP_List_Table
             if (is_array($products) && sizeof($products) > 0) {
                 $total_items  = $products['count'];
                 $this->set_pagination_args([
-                    'total_items' => $total_items, //WE have to calculate the total number of items
+                    'total_items' => 9999, //WE have to calculate the total number of items
                     'per_page'    => $per_page //WE have to determine how many items to show on a page
                 ]);
                 //var_dump($products);
@@ -260,7 +260,7 @@ class JPIODFW_Product_List extends WP_List_Table
             $url =  'https://d39ru7awumhhs2.cloudfront.net/' . $img->urlS3;
 
             $img = '<img style="cursor:pointer" class="img-dropi-import" width="50px" src="' . $url . '" data-src="' . $url . '"/>';
-        }else if (isset($img->url)) {
+        } else if (isset($img->url)) {
             $url =  $this->constants->IMG_URL . $img->url;
 
             $img = '<img style="cursor:pointer" class="img-dropi-import" width="50px" src="' . $url . '" data-src="' . $url . '"/>';
@@ -270,7 +270,7 @@ class JPIODFW_Product_List extends WP_List_Table
         }
         return $img;
     }
-    
+
     public function list_column_categories($item)
     {
         $cat = '';
@@ -326,7 +326,7 @@ class JPIODFW_Product_List extends WP_List_Table
      */
     public function column_default($item, $column_name)
     {
-
+        // aqui se estructura la data que será renderizada en los td de la tabla productos
         switch ($column_name) {
 
             case 'img':
@@ -344,21 +344,56 @@ class JPIODFW_Product_List extends WP_List_Table
                 return number_format($price, 0, ',', '.');
             case 'stock':
                 $item = (array)$item;
+
                 if ($item['type'] == 'SIMPLE') {
-                    $price = intval($item[$column_name]);
-                } else {
-                    if (sizeof($item['variations'])) {
-                        $stock = 0;
-                        foreach ($item['variations'] as $variation) {
-                            $stock = $stock + $variation->stock;
+
+                    if (isset($item[$column_name])) {
+                        $finalstock = intval($item[$column_name]);
+                    }
+
+                    if (isset($item['warehouse_product'])) {
+                        $counter = 0;
+                        foreach ($item['warehouse_product'] as $warehouse) {
+                            $counter = $counter + intval($warehouse->stock);
                         }
-                        $price = $stock;
-                    } else {
-                        $price = 0;
+
+                        $finalstock = $counter;
+                        $item['stock']  = $finalstock;
+                    }
+                } else {
+                    $finalstock = 0;
+
+                    if (sizeof($item['variations'])) {
+
+                        $stock = 0;
+                        $CountStockWareh = 0;
+                        foreach ($item['variations'] as $variation) {
+                            $stockByMultiWare = 0;
+
+                            if ($variation->stock) {
+                                $stock = $stock + $variation->stock;
+                            } else {
+                                foreach ($variation->warehouse_product_variation as $key) {
+                                    if ($key->stock) {
+                                        $stockByMultiWare =  $stockByMultiWare + $key->stock;
+                                    }
+                                }
+                                $variation->stock = $stockByMultiWare;
+                                $CountStockWareh = $CountStockWareh + $stockByMultiWare;
+                            }
+                        }
+
+                        if ($stock == 0 && $stock == $CountStockWareh) {
+                            $finalstock = 0;
+                        } else if ($stock > $CountStockWareh) {
+                            $finalstock  = $stock;
+                        } else if ($stock < $CountStockWareh) {
+                            $finalstock  = $CountStockWareh;
+                        }
                     }
                 }
 
-                return number_format($price, 0, ',', '.');
+                return number_format($finalstock, 0, ',', '.');
             case 'warehouse':
                 return $this->column_warehouse($item);
             case 'icons':
@@ -517,7 +552,7 @@ class JPIODFW_Product_List extends WP_List_Table
                         $all_cats = $this->ProducstInstance->getCategories();
                         foreach ($all_cats as $key => $value) :
                             printf(
-                                "<option value='%s' data-rc='%s'>%s</option>\n", 
+                                "<option value='%s' data-rc='%s'>%s</option>\n",
                                 esc_attr($value->id),
                                 esc_attr($link),
                                 $value->name
