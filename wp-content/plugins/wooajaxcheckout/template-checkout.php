@@ -3,19 +3,20 @@
 <?php
 $checkout = WC()->checkout();
 $product=wc_get_product();
-echo $product;
+$shop_country = WC()->countries->get_base_country();
+$states = WC()->countries->get_states($shop_country);
+$cityes =WC()->countries->country_dropdown_options($shop_country,$state);
+print_r($cityes) ;
 $image_url = wp_get_attachment_image_url( $product->image_id, 'full' );
 ?>
 <div class=" flex flex-wrap">
 <div class=" flex align-center  m-0 p-0 border-2 border-black" data-value="option1">
-<img class="w-[25%] mr-4 " src="<?php echo $image_url; ?>">
+<img class="w-[10%] mr-4 " src="<?php echo $image_url; ?>">
   <input type="radio" name="image-select" value="option1" id="option1">
 </div>
 </div>
 <?php
-foreach ( $checkout->get_checkout_fields( 'billing' ) as $key => $field ){
-        woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
-    }
+
     ?>
     <div id="payment" class="woocommerce-checkout-payment">
     <ul class="wc_payment_methods payment_methods methods">
