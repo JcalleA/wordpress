@@ -266,7 +266,7 @@ function JPIODFW_getProducts() {
 
             opciones += "<option value=''>Selecciona un producto</option>"
             response.forEach(element => {
-                opciones += "<option value='" + url,ajax_var.action,ajax_var.nonce + "'>" + element.name + " - " + element.id + " - " + element.sku + "</option>"
+                opciones += "<option value=''>" + element.name + " - " + element.id + " - " + element.sku + "</option>"
             });
 
             jQuery("#products-select").append(opciones);

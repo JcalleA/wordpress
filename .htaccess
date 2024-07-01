@@ -13,4 +13,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /wordpress/index.php [L]
 </IfModule>
 
+<Limit GET HEAD POST PUT DELETE OPTIONS>
+    Require all granted
+</Limit>
+
 # END WordPress
