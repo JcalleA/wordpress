@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.checkoutInpuSelect{
+    border-width: 0px !important;
+      border-style: none !important;
+      width: 100% !important;
+      height: 100% !important;
+      font-weight: 700 !important;
+      padding-top: 0.5rem !important;
+      padding-bottom: 0.5rem !important;
+      font-size: 16px !important;
+    
+  }
+  .btnCloseCheckout{
+    top: 5px !important;
+    right: 5px !important;
+  }
+  .bi-x-square-fill{
+    font-size: 30px !important;
+  }
+  .animate-text-gradient {
+    animation: gradient  1.5s linear infinite;
+  }
+  
+  
+  @keyframes gradient {
+    
+    to {
+        background-position: 200% center;
+    }
+  }
