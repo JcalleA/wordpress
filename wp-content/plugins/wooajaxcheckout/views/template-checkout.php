@@ -29,10 +29,6 @@ foreach ($shop_countries as $key => $country) {
         <i class="bi bi-x-square-fill  p-2"></i>
     </div>
 
-
-
-
-
     <div class="form-row place-order">
         <noscript>
             <?php

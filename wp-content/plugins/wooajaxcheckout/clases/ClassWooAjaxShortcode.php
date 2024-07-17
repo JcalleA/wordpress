@@ -1,6 +1,8 @@
 <?php
 
-
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
+}
 
 
 class WooAjaxShortcode
@@ -50,7 +52,8 @@ class WooAjaxShortcode
                         $btnsubtitle
                     </span>
                     <span id='btnicon'>
-                        <i id='wooIcon$btnicon' class=' ml-2 text-lg $listaIcons[$btnicon]'></i>
+                        <i style=' color: $btntextcolor;' id='wooIcon$btnicon' class=' !w-8 !h-8 !ml-2 !text-lg $listaIcons[$btnicon]'></i>
+                        
                     </span>
                 </button>
                 </div>";

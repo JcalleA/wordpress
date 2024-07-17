@@ -21,8 +21,8 @@ class Wooajaxcheckout
 
     private function scripts()
     {
-        $product = wc_get_product();
-        if (is_single() && is_product() && $product->get_type() !== 'variable') {
+        
+        if (is_single() ) {
 
             wp_enqueue_script('wooajaxcheckoutMainScript', plugin_dir_url(__DIR__) . 'dist/js/mainScript.js', array('jquery'), '1.0', true);
 
@@ -119,10 +119,12 @@ class Wooajaxcheckout
 
     private function styles()
     {
-        $product = wc_get_product();
-        if (is_single() && is_product() && $product->get_type() !== 'variable') {
-            wp_enqueue_style('wooajaxcheckoutMainStyle', plugin_dir_url(__DIR__) . '/dist/css/mainStyle.css');
-            wp_enqueue_style('iconsBoostrap', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+        
+        if (is_single() ) {
+            wp_register_style('wooajaxcheckoutMainStyle', plugin_dir_url(__DIR__) . '/dist/css/mainStyle.css');
+            wp_enqueue_style('wooajaxcheckoutMainStyle');
+            wp_register_style('iconsBoostrap', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+            wp_enqueue_style('iconsBoostrap');
         }
     }
 
@@ -191,12 +193,13 @@ class Wooajaxcheckout
     function register_sub_menues()
     {
 
-        $svg = base64_encode(file_get_contents(dirname(__DIR__) . '/assets/ui-radios.svg'));
-        $method = WC()->payment_gateways->payment_gateways()['cod'];
+        
 
         if (
             class_exists('WooCommerce')
         ) {
+            $svg = base64_encode(file_get_contents(dirname(__DIR__) . '/assets/ui-radios.svg'));
+        $method = WC()->payment_gateways->payment_gateways()['cod'];
             if ($method->enabled === 'no') {
 
                 echo '<div class="notice notice-error ">
@@ -257,8 +260,8 @@ class Wooajaxcheckout
 
     function wooAjaxShortcode()
     {
-        $product = wc_get_product();
-        if (is_single() && is_product() && $product->get_type() !== 'variable') {
+        
+        if (is_single()) {
             require_once __DIR__ . '/ClassWooAjaxShortcode.php';
 
             $btn = new \WooAjaxShortcode;
@@ -283,6 +286,11 @@ class Wooajaxcheckout
         add_action('wp_ajax_PostOrder', [$this, 'PostOrder']);
         add_action('wp_ajax_nopriv_SaveBtnSetings', [$this, 'SaveBtnSetings']);
         add_action('wp_ajax_SaveBtnSetings', [$this, 'SaveBtnSetings']);
-        add_action( 'elementor/frontend/widget/after_render', 'add_div_after_all_the_widget' );
+        
+        add_action( 'elementor/frontend/after_register_scripts', [$this, 'wooajaxcheckoutScripts'] );
+        add_action( 'elementor/editor/after_enqueue_scripts', [$this, 'wooajaxcheckoutScripts']  );
+        add_action( 'elementor/editor/after_enqueue_styles', [$this, 'wooajaxcheckoutScripts'] );
+        add_action( 'elementor/preview/enqueue_styles', [$this, 'wooajaxcheckoutScripts']  );
+        add_action( 'elementor/frontend/after_enqueue_styles',  [$this, 'wooajaxcheckoutScripts'] );
     }
 }
