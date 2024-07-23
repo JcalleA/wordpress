@@ -19,10 +19,10 @@ class Wooajaxcheckout
         $this->styles();
     }
 
-    private function scripts()
+    public function scripts()
     {
         
-        if (is_single() ) {
+        if (is_single() ||is_page() ) {
 
             wp_enqueue_script('wooajaxcheckoutMainScript', plugin_dir_url(__DIR__) . 'dist/js/mainScript.js', array('jquery'), '1.0', true);
 
@@ -117,10 +117,10 @@ class Wooajaxcheckout
         
     }
 
-    private function styles()
+    public function styles()
     {
         
-        if (is_single() ) {
+        if (is_single() || is_page() ) {
             wp_register_style('wooajaxcheckoutMainStyle', plugin_dir_url(__DIR__) . '/dist/css/mainStyle.css');
             wp_enqueue_style('wooajaxcheckoutMainStyle');
             wp_register_style('iconsBoostrap', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
@@ -158,13 +158,25 @@ class Wooajaxcheckout
     {
 
         $nonce = sanitize_text_field($_REQUEST['nonce']);
+        if (!wp_verify_nonce($nonce, 'secure')) {
+            die(json_encode([
+                'Mensaje' => $nonce
+            ]));
+        }
         $Form = $_POST['form'];
         $productId = $Form[0]["value"];
         $quantity = $Form[1]["value"];
         $order = wc_create_order();
+        $product = wc_get_product($productId);
+        $regularPrice =  $product->get_regular_price();
+            if ($product->get_sale_price()) {
+                $salePrice =  $product->get_sale_price();
+            }else{
+                $salePrice=$regularPrice;
+            }
         $order->add_product(wc_get_product($productId), $quantity, [
-            'subtotal'     => 260000,
-            'total'        => 260000,
+            'subtotal'     => $salePrice*$quantity,
+            'total'        => $salePrice*$quantity,
         ]);
         $address = [
             'first_name' => $Form[2]["value"],
@@ -192,8 +204,6 @@ class Wooajaxcheckout
 
     function register_sub_menues()
     {
-
-        
 
         if (
             class_exists('WooCommerce')
@@ -242,31 +252,16 @@ class Wooajaxcheckout
         include  dirname(__DIR__) . '/views/template-boton-submenu.php';
     }
 
-    function insert_woocommerce_checkout()
+    
+    function wooAjaxShortcode($atts)
     {
         
-
-        if (is_single() ) {
-
-            include  dirname(__DIR__) . '/views/template-checkout.php';
-        }
-    }
-
-    function add_div_after_all_the_widget(  ) {
-        ?>
-        <div class="after-widget">Wooajaxcheckout</div>
-        <?php
-    }
-
-    function wooAjaxShortcode()
-    {
-        
-        if (is_single()) {
+        if (is_single()|| is_page() ) {
             require_once __DIR__ . '/ClassWooAjaxShortcode.php';
-
+            
             $btn = new \WooAjaxShortcode;
-            $html = $btn->getBtn();
-
+            $productId=$atts['id'];
+            $html = $btn->getBtn($productId);
             return $html;
         }
     }
@@ -280,17 +275,11 @@ class Wooajaxcheckout
         add_action('wp_enqueue_scripts', [$this, 'wooajaxcheckoutScripts']);
         add_action('wp_ajax_nopriv_getCitiesAC', [$this, 'getCities']);
         add_action('wp_ajax_getCitiesAC', [$this, 'getCities']);
-        add_action('wp_body_open', [$this, 'insert_woocommerce_checkout'], 200);
         add_shortcode('btnWooAjax', [$this, 'wooAjaxShortcode']);
         add_action('wp_ajax_nopriv_PostOrder', [$this, 'PostOrder']);
         add_action('wp_ajax_PostOrder', [$this, 'PostOrder']);
         add_action('wp_ajax_nopriv_SaveBtnSetings', [$this, 'SaveBtnSetings']);
         add_action('wp_ajax_SaveBtnSetings', [$this, 'SaveBtnSetings']);
         
-        add_action( 'elementor/frontend/after_register_scripts', [$this, 'wooajaxcheckoutScripts'] );
-        add_action( 'elementor/editor/after_enqueue_scripts', [$this, 'wooajaxcheckoutScripts']  );
-        add_action( 'elementor/editor/after_enqueue_styles', [$this, 'wooajaxcheckoutScripts'] );
-        add_action( 'elementor/preview/enqueue_styles', [$this, 'wooajaxcheckoutScripts']  );
-        add_action( 'elementor/frontend/after_enqueue_styles',  [$this, 'wooajaxcheckoutScripts'] );
     }
 }

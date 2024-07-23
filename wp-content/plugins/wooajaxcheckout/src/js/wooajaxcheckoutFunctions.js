@@ -23,6 +23,12 @@ jQuery(document).ready(function ($) {
     $("#wooajaxcheckout").toggleClass("hidden");
   });
 
+  $("#btnSample").click(function (e) {
+    e.preventDefault();
+
+    $("#wooajaxcheckout").toggleClass("hidden");
+  });
+
   function loadOptions2() {
     let department = $("#WooFormDepartment").val();
     let country = $("#countrySelect").val();

@@ -1,6 +1,6 @@
 <?php
 $checkout = WC()->checkout();
-$product = wc_get_product();
+$product = wc_get_product('105');
 $shop_countries = WC()->countries->get_allowed_countries();
 
 $image_url = $product->get_image();
@@ -242,8 +242,5 @@ foreach ($shop_countries as $key => $country) {
             })
         }
     </script>
-
 </div>
-
-
 </div>
