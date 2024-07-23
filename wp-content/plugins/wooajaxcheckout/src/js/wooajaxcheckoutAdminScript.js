@@ -1,92 +1,84 @@
 jQuery(document).ready(function ($) {
+  const listaIcons = [
+    "bi bi-house-check-fill",
+    "bi bi-house-door",
+    "bi bi-house-heart-fill",
+    "bi bi-house",
+  ];
+  var btnsubtitle = $("#btnsubtitle").val();
+  var btntextcolor = $("#btntextcolor").val();
+  var btnbordercolor = $("#btnbordercolor").val();
+  var btncolor = $("#btncolor").val();
+  var btnanimated = $("#btnanimated").val();
+  var btnborder = $("#btnborder").val();
+  var btnicon = $("#btnicon i").attr("id");
 
-  const listaIcons=[
-    'bi bi-house-check-fill',
-    'bi bi-house-door',
-    'bi bi-house-heart-fill',
-    'bi bi-house'
-  ]
-  var btnsubtitle=$('#btnsubtitle').val();
-  var btntextcolor=$('#btntextcolor').val();
-  var btnbordercolor=$('#btnbordercolor').val();
-  var btncolor=$('#btncolor').val();
-  var btnanimated=$('#btnanimated').val();
-  var btnborder=$('#btnborder').val();
-  var btnicon=$('#btnicon i').attr('id');
-
-  
   if (btnanimated) {
-    $('#btnSample').addClass('animate-btn_saltar');
+    $("#btnSample").addClass("animate-btn_saltar");
   }
 
-  $('#btnSample').css('background-color',btncolor );
-  $('#btnSample').css('color',btntextcolor );
-  $('#btnSample').css('border-color',btnbordercolor );
-  $('#btnSample').css('border-width', btnborder);
+  $("#btnSample").css("background-color", btncolor);
+  $("#btnSample").css("color", btntextcolor);
+  $("#btnSample").css("border-color", btnbordercolor);
+  $("#btnSample").css("border-width", btnborder);
 
-  $('#btntitle').on("input", function() {
-    
-    $('#btnSample').html($(this).val()+`<br> <span id='btnSampleSubtitle' class= '!text-xs'>  ${btnsubtitle} </span></span><span id="btnicon">${btnicon} </span>` );
- });
-  
- $('#btnsubtitle').on("input", function() {
-    
-  $('#btnSampleSubtitle').text($(this).val());
-});
-
-$('#btntextcolor').on("input", function() {
-    
-  $('#btnSample').css('color', $(this).val());
-  $('#btnSample').css('border-color',$(this).val());
-});
-
-$('#btnborder').on("input", function() {
-    
-  $('#btnSample').css('border-width', $(this).val());
-
-});
-
-$('#btnbordercolor').on("input", function() {
-    
-  $('#btnSample').css('border-color',$(this).val());
-});
-
-
-  
-
-$('#btncolor').on("input", function() {
-    
-  $('#btnSample').css('background-color',$(this).val() );
-});
-
-$('#btnanimated').on("input", function() {
-  if ($(this).val()==='true') {
-    $('#btnSample').addClass('animate-btn_saltar');
-  }else{
-    $('#btnSample').removeClass('animate-btn_saltar');
-  }
-});
-
-$(".peer").each(function () {
-  $(this).on("input", function() {
-    $('#btnicon').html(`<label>
+  $("#btntitle").on("input", function () {
+    $("#btnSample").html(
+      $(this).val() +
+        ` <br> <span id='btnSampleSubtitle' class= '!text-xs'>  ${btnsubtitle} </span></span><span id="btnicon"> </span>`
+    );
+    $("#btnicon").html(`<label>
       <input  name='btnicon' class='peer  !hidden' type='radio' value=$btnicon />
-      <i id=wooIcon$btnicon class= 'mt-1 peer peer-checked:border-2 peer-checked:border-green-600 peer-checked:rounded-lg ml-2 text-lg ${listaIcons[$(this).val()-1]}'></i>
+      <i id=wooIcon$btnicon class= 'mt-1 peer peer-checked:border-2 peer-checked:border-green-600 peer-checked:rounded-lg ml-2 text-lg ${
+        listaIcons[$("#" + btnicon).val() - 1]
+      }'></i>
   </label>`);
-    
   });
 
-});
+  $("#btnsubtitle").on("input", function () {
+    $("#btnSampleSubtitle").text($(this).val());
+  });
 
-$('#'+btnicon).attr('checked', true);
+  $("#btntextcolor").on("input", function () {
+    $("#btnSample").css("color", $(this).val());
+    $("#btnSample").css("border-color", $(this).val());
+  });
 
+  $("#btnborder").on("input", function () {
+    $("#btnSample").css("border-width", $(this).val());
+  });
 
+  $("#btnbordercolor").on("input", function () {
+    $("#btnSample").css("border-color", $(this).val());
+  });
 
+  $("#btncolor").on("input", function () {
+    $("#btnSample").css("background-color", $(this).val());
+  });
 
+  $("#btnanimated").on("input", function () {
+    if ($(this).val() === "true") {
+      $("#btnSample").addClass("animate-btn_saltar");
+    } else {
+      $("#btnSample").removeClass("animate-btn_saltar");
+    }
+  });
+
+  $(".peer").each(function () {
+    $(this).on("input", function () {
+      $("#btnicon").html(`<label>
+      <input  name='btnicon' class='peer  !hidden' type='radio' value=$btnicon />
+      <i id=wooIcon$btnicon class= 'mt-1 peer peer-checked:border-2 peer-checked:border-green-600 peer-checked:rounded-lg ml-2 text-lg ${
+        listaIcons[$(this).val() - 1]
+      }'></i>
+  </label>`);
+    });
+  });
+
+  $("#" + btnicon).attr("checked", true);
 
   $("#BtnSetingsForm").submit(function (e) {
     e.preventDefault();
-    
     
     $.ajax({
       type: "POST",
@@ -114,4 +106,5 @@ $('#'+btnicon).attr('checked', true);
       },
     });
   });
+  
 });

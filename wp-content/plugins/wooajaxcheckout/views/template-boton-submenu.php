@@ -28,7 +28,7 @@ if ($loadSetings) {
     $btntextcolor = '#ffffff';
     $btncolor = '#000000';
     $btnanimated = 'animate-btn_saltar';
-    $btnicon = '<i class=" ml-2 text-lg bi bi-house-heart-fill"></i>';
+    $btnicon = '<i id="1" class=" ml-2 text-lg bi bi-house-heart-fill"></i>';
     $btnBorder = '#ffffff';
 }
 
@@ -116,9 +116,9 @@ if ($loadSetings) {
                     <span id="btnSampleSubtitle" class='!text-xs'>
                         <?php echo $btnsubtitle ?>
                     </span>
-                    <span id="btnicon"><?php echo "<label>
-                        <i id=wooIcon$btnicon class= 'mt-1 peer peer-checked:border-2 peer-checked:border-green-600 peer-checked:rounded-lg ml-2 text-lg $listaIcons[$btnicon]'></i>
-                    </label>";  ?>
+                    <span id="btnicon"><?php echo "
+                        <i id='wooIcon$btnicon' class= 'mt-1  ml-2 text-lg $listaIcons[$btnicon]'></i>
+                    ";  ?>
                     </span>
                 </button>
 
