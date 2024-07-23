@@ -106,5 +106,41 @@ jQuery(document).ready(function ($) {
       },
     });
   });
+
+
+  $("#formOfSetings").submit(function (e) {
+    e.preventDefault();
+    
+    $.ajax({
+      type: "POST",
+      url: WooOfSetings_var.url,
+      dataType: "json",
+      data: {
+        action: WooOfSetings_var.action,
+        nonce: WooOfSetings_var.nonce,
+        form: $(this).serializeArray(),
+      },
+      beforeSend: function(){
+        $('#wooAjaxCheckLoading').toggleClass('hidden');
+        
+      },
+      complete: function (response) {
+        $('#wooAjaxCheckLoading').toggleClass('hidden');
+        location.href =location.href
+        
+        alert('Guardado correctamente')
+      },
+      error: function (status, error) {
+        console.log("====================================");
+        console.log(error);
+        console.log("====================================");
+        console.error(status + ": " + error);
+      },
+    });
+  });
+
+  $("#ofproductinit").on("input", function () {
+    location.href =location.href +'&ofproductid='+$(this).val();
+  });
   
 });

@@ -51,7 +51,7 @@ class Wooajaxcheckout
     function AdmincheckoutScripts()
     {
 
-        if ($_GET['page'] === 'boton-de-compra' || $_GET['page'] === 'WooAjaxCheckout_menu') {
+        if ($_GET['page'] === 'boton-de-compra' || $_GET['page'] === 'WooAjaxCheckout_menu'|| $_GET['page'] === 'crear-ofertas') {
             wp_enqueue_style('wooajaxcheckoutMainStyle', plugin_dir_url(__DIR__) . '/dist/css/mainStyle.css');
             wp_enqueue_style('iconsBoostrap', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
 
@@ -64,6 +64,15 @@ class Wooajaxcheckout
                     'url' => admin_url('admin-ajax.php'),
                     'nonce' => wp_create_nonce('secureAdmin'),
                     'action' => 'SaveBtnSetings'
+                ]
+            );
+            wp_localize_script(
+                'wooajaxcheckoutAdminScript',
+                'WooOfSetings_var',
+                [
+                    'url' => admin_url('admin-ajax.php'),
+                    'nonce' => wp_create_nonce('secureAdmin'),
+                    'action' => 'SaveOfSetings'
                 ]
             );
         }
@@ -114,6 +123,33 @@ class Wooajaxcheckout
 
         }
         
+        
+    }
+
+    function SaveOfSetings()
+    {
+        global $wpdb;
+        $nombre_tabla = $wpdb->prefix.'WooAjaxCheckoutOferSetings';
+        
+        $Form = $_POST['form'];
+        
+        $setings = [
+
+            'ofproductid'=> $Form[0]['value'],
+            'oftitle' => $Form[1]['value'],
+            'oftitlecolor' => $Form[2]['value'],
+            'ofprice' => $Form[3]['value'],
+            'ofpricecolor' => $Form[4]['value'],
+            'ofbgColor' => $Form[5]['value'],
+            'oftikectcolor' => $Form[6]['value'],
+            'ofbordercolor'=>$Form[7]['value'],
+            'ofborder'=>$Form[8]['value'],
+            
+        ];
+        
+            $resultado=$wpdb->insert($nombre_tabla,$setings);
+            echo 'insert'.$resultado;
+            die();
         
     }
 
@@ -233,6 +269,15 @@ class Wooajaxcheckout
                 'manage_options',
                 'boton-de-compra',
                 [$this, 'InitSubMenuBtnCompra'],
+            );
+
+            add_submenu_page(
+                'WooAjaxCheckout_menu',
+                'Crear Ofertas',
+                'Crear Ofertas',
+                'manage_options',
+                'crear-ofertas',
+                [$this, 'InitSubMenuOfertas'],
 
             );
         } else {
@@ -250,6 +295,11 @@ class Wooajaxcheckout
     function InitSubMenuBtnCompra()
     {
         include  dirname(__DIR__) . '/views/template-boton-submenu.php';
+    }
+
+    function InitSubMenuOfertas()
+    {
+        include  dirname(__DIR__) . '/views/template-ofertas-submenu.php';
     }
 
     
@@ -280,6 +330,8 @@ class Wooajaxcheckout
         add_action('wp_ajax_PostOrder', [$this, 'PostOrder']);
         add_action('wp_ajax_nopriv_SaveBtnSetings', [$this, 'SaveBtnSetings']);
         add_action('wp_ajax_SaveBtnSetings', [$this, 'SaveBtnSetings']);
+        add_action('wp_ajax_nopriv_SaveOfSetings', [$this, 'SaveOfSetings']);
+        add_action('wp_ajax_SaveOfSetings', [$this, 'SaveOfSetings']);
         
     }
 }

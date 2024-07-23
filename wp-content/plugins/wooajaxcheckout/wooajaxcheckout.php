@@ -19,6 +19,7 @@ function Activar()
 {
     global $wpdb;
     $nombre_tabla = $wpdb->prefix.'WooAjaxCheckoutSetings';
+    $nombre_tabla2 = $wpdb->prefix.'WooAjaxCheckoutOferSetings';
     try {
         $sql = "CREATE TABLE " .$nombre_tabla."(
             id INT NOT NULL AUTO_INCREMENT,
@@ -32,9 +33,24 @@ function Activar()
                 btnborder INT NULL,
                 
                 PRIMARY KEY  (id));";
+
+                $sql2 = "CREATE TABLE " .$nombre_tabla2."(
+                    id INT NOT NULL AUTO_INCREMENT,
+                        ofproductid INT NOT NULL,
+                        oftitle VARCHAR(50) NULL,
+                        oftitlecolor VARCHAR(20) NULL,
+                        ofprice INT NULL,
+                        ofpricecolor VARCHAR(20) NULL,
+                        ofbgColor VARCHAR(20) NULL,
+                        oftikectcolor VARCHAR(20) NULL,
+                        ofbordercolor VARCHAR(20) NULL,
+                        ofborder INT NULL,
+                        
+                        PRIMARY KEY  (id));";
     
         require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
         dbDelta($sql);
+        dbDelta($sql2);
     } catch (\Throwable $th) {
         echo '<div class="notice notice-error ">
                 <h2>Error WooAjaxCheckout: Para usar debes tener instalado y activo el plugin WooCommerce</h2>

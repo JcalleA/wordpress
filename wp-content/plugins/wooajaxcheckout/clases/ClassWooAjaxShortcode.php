@@ -18,6 +18,7 @@ class WooAjaxShortcode
             $regularPrice = number_format( $product->get_regular_price());
             if ($product->get_sale_price()) {
                 $salePrice = number_format( $product->get_sale_price());
+                $salePrice2 = number_format( $product->get_sale_price());
             }else{
                 $salePrice=$regularPrice;
             }
@@ -122,38 +123,7 @@ class WooAjaxShortcode
 
         <!-- Ofertas -->
         <div class=' '>
-            <label class='border border-black  mt-8 mb-2 ml-2 mr-2 rounded-md rarioContainer cursor-pointer flex flex-row items-center justify-around '>
-                <input class=' radioCheckout  hidden ' type='radio' name='image-select' value='1' />
-                <div class=' w-[20%]'>
-                    <picture class='  '>
-                         $image_url
-                    </picture>
-                </div>
-                <div class=' w-[40%]'>
-                    <h3>Compra 1 unidad</h3>
-                    <span class='break-keep py-1 px-2 bg-gray-400 text-white'>Ahorra 0%</span>
-                </div>
-                <div class='text-lg font-black '>
-                     $salePrice 
-                </div>
-
-            </label>
-
-            <label class=' border border-black m-2 rounded-md rarioContainer cursor-pointer  flex flex-row items-center justify-around'>
-                <input class=' radioCheckout  hidden ' type='radio' name='image-select' value='2' />
-                <div class=' w-[20%]'>
-                    <picture class=' '>
-                         $image_url
-                    </picture>
-                </div>
-                <div class=' w-[40%]'>
-                    <h3>Compra 2 unidades</h3>
-                    <span class='break-keep py-1 px-2 bg-gray-400 text-white'>Ahorra 0%</span>
-                </div>
-                <div class='text-lg font-black'>
-                     $salePrice 
-                </div>
-            </label>
+            
         </div>
 
         <!-- Resumen -->
