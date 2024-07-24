@@ -13,6 +13,9 @@ class WooAjaxShortcode
     {
         
         if (wc_get_product($productId)) {
+            global $wpdb;
+$nombre_tabla = $wpdb->prefix . 'WooAjaxCheckoutOferSetings';
+            $loadSetings = $wpdb->get_results("SELECT * FROM " . $nombre_tabla . " WHERE ofproductid = $productId" );
             $product = wc_get_product($productId);
             $image_url = $product->get_image();
             $regularPrice = number_format( $product->get_regular_price());
@@ -24,6 +27,30 @@ class WooAjaxShortcode
             }
             
         };
+
+        if ($loadSetings) {
+            $ofers='';
+            foreach ($loadSetings as $val) {
+                $ofDiscount = ceil(($salePrice / $val->ofprice) * 100);
+                $ofers.="<label class='border border-black ml-2 mr-2 rounded-md rarioContainer cursor-pointer flex flex-row items-center justify-around '>
+                <input class=' radioCheckout  !hidden ' type='radio' name='image-select' value='1' />
+                <div class=' w-[20%]'>
+                    <picture class='  '>
+                        <?php echo $image_url ?>
+                    </picture>
+                </div>
+                <div class=' w-[40%]'>
+                    <h3> <?php echo $val->oftitle ?> </h3>
+                    <span class='break-keep py-1 px-2 '>Ahorra <?php echo $ofDiscount ?>%</span>
+                </div>
+                <div class='text-lg font-black '>
+                    <?php echo $val->ofprice ?>
+
+                </div>
+
+            </label>" ;
+
+            }};
 
         $shop_countries = WC()->countries->get_allowed_countries();
         $wpSiteTitle = get_bloginfo('name');
@@ -123,7 +150,7 @@ class WooAjaxShortcode
 
         <!-- Ofertas -->
         <div class=' '>
-            
+            $ofers
         </div>
 
         <!-- Resumen -->
