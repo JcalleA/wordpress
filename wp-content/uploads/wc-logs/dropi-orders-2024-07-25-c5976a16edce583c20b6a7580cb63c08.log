@@ -1,0 +1,1466 @@
+2024-07-25T19:15:56+00:00 INFO _dropi_product 
+2024-07-25T19:15:56+00:00 INFO 
+2024-07-25T19:15:56+00:00 INFO _dropi_product 
+2024-07-25T19:15:56+00:00 INFO 
+2024-07-25T19:15:56+00:00 INFO contador de productos: 
+2024-07-25T19:15:56+00:00 INFO 0
+2024-07-25T19:15:56+00:00 INFO Array
+(
+    [id] => 32
+    [order_id] => 231
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T19:15:56+00:00 INFO Array
+(
+    [id] => 33
+    [order_id] => 231
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T19:17:44+00:00 INFO _dropi_product 
+2024-07-25T19:17:44+00:00 INFO 
+2024-07-25T19:17:44+00:00 INFO _dropi_product 
+2024-07-25T19:17:44+00:00 INFO 
+2024-07-25T19:17:44+00:00 INFO contador de productos: 
+2024-07-25T19:17:44+00:00 INFO 0
+2024-07-25T19:17:44+00:00 INFO Array
+(
+    [id] => 34
+    [order_id] => 232
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T19:17:44+00:00 INFO Array
+(
+    [id] => 35
+    [order_id] => 232
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T19:34:56+00:00 INFO _dropi_product 
+2024-07-25T19:34:56+00:00 INFO 
+2024-07-25T19:34:56+00:00 INFO contador de productos: 
+2024-07-25T19:34:56+00:00 INFO 0
+2024-07-25T19:34:56+00:00 INFO Array
+(
+    [id] => 37
+    [order_id] => 234
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T19:48:24+00:00 INFO _dropi_product 
+2024-07-25T19:48:24+00:00 INFO 
+2024-07-25T19:48:24+00:00 INFO contador de productos: 
+2024-07-25T19:48:24+00:00 INFO 0
+2024-07-25T19:48:24+00:00 INFO Array
+(
+    [id] => 39
+    [order_id] => 235
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T19:48:56+00:00 INFO _dropi_product 
+2024-07-25T19:48:56+00:00 INFO 
+2024-07-25T19:48:56+00:00 INFO contador de productos: 
+2024-07-25T19:48:56+00:00 INFO 0
+2024-07-25T19:48:56+00:00 INFO Array
+(
+    [id] => 41
+    [order_id] => 236
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T20:05:00+00:00 INFO _dropi_product 
+2024-07-25T20:05:00+00:00 INFO 
+2024-07-25T20:05:00+00:00 INFO contador de productos: 
+2024-07-25T20:05:00+00:00 INFO 0
+2024-07-25T20:05:00+00:00 INFO Array
+(
+    [id] => 45
+    [order_id] => 239
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T20:09:30+00:00 INFO _dropi_product 
+2024-07-25T20:09:30+00:00 INFO 
+2024-07-25T20:09:30+00:00 INFO contador de productos: 
+2024-07-25T20:09:30+00:00 INFO 0
+2024-07-25T20:09:30+00:00 INFO Array
+(
+    [id] => 49
+    [order_id] => 242
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T20:50:57+00:00 INFO _dropi_product 
+2024-07-25T20:50:57+00:00 INFO 
+2024-07-25T20:50:57+00:00 INFO contador de productos: 
+2024-07-25T20:50:57+00:00 INFO 0
+2024-07-25T20:50:57+00:00 INFO Array
+(
+    [id] => 52
+    [order_id] => 244
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T20:53:30+00:00 INFO _dropi_product 
+2024-07-25T20:53:30+00:00 INFO 
+2024-07-25T20:53:30+00:00 INFO contador de productos: 
+2024-07-25T20:53:30+00:00 INFO 0
+2024-07-25T20:53:30+00:00 INFO Array
+(
+    [id] => 54
+    [order_id] => 245
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T20:59:27+00:00 INFO _dropi_product 
+2024-07-25T20:59:27+00:00 INFO 
+2024-07-25T20:59:27+00:00 INFO contador de productos: 
+2024-07-25T20:59:27+00:00 INFO 0
+2024-07-25T20:59:27+00:00 INFO Array
+(
+    [id] => 56
+    [order_id] => 246
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:00:01+00:00 INFO _dropi_product 
+2024-07-25T21:00:01+00:00 INFO 
+2024-07-25T21:00:01+00:00 INFO contador de productos: 
+2024-07-25T21:00:01+00:00 INFO 0
+2024-07-25T21:00:01+00:00 INFO Array
+(
+    [id] => 58
+    [order_id] => 247
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:06:27+00:00 INFO _dropi_product 
+2024-07-25T21:06:27+00:00 INFO 
+2024-07-25T21:06:27+00:00 INFO contador de productos: 
+2024-07-25T21:06:27+00:00 INFO 0
+2024-07-25T21:06:27+00:00 INFO Array
+(
+    [id] => 65
+    [order_id] => 253
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:08:02+00:00 INFO _dropi_product 
+2024-07-25T21:08:02+00:00 INFO 
+2024-07-25T21:08:02+00:00 INFO contador de productos: 
+2024-07-25T21:08:02+00:00 INFO 0
+2024-07-25T21:08:02+00:00 INFO Array
+(
+    [id] => 67
+    [order_id] => 254
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:08:43+00:00 INFO _dropi_product 
+2024-07-25T21:08:43+00:00 INFO 
+2024-07-25T21:08:43+00:00 INFO contador de productos: 
+2024-07-25T21:08:43+00:00 INFO 0
+2024-07-25T21:08:43+00:00 INFO Array
+(
+    [id] => 69
+    [order_id] => 255
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:09:02+00:00 INFO _dropi_product 
+2024-07-25T21:09:02+00:00 INFO 
+2024-07-25T21:09:02+00:00 INFO contador de productos: 
+2024-07-25T21:09:02+00:00 INFO 0
+2024-07-25T21:09:02+00:00 INFO Array
+(
+    [id] => 71
+    [order_id] => 256
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:09:27+00:00 INFO _dropi_product 
+2024-07-25T21:09:27+00:00 INFO 
+2024-07-25T21:09:27+00:00 INFO contador de productos: 
+2024-07-25T21:09:27+00:00 INFO 0
+2024-07-25T21:09:27+00:00 INFO Array
+(
+    [id] => 73
+    [order_id] => 257
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:10:55+00:00 INFO _dropi_product 
+2024-07-25T21:10:55+00:00 INFO 
+2024-07-25T21:10:55+00:00 INFO contador de productos: 
+2024-07-25T21:10:55+00:00 INFO 0
+2024-07-25T21:10:55+00:00 INFO Array
+(
+    [id] => 75
+    [order_id] => 258
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:13:00+00:00 INFO _dropi_product 
+2024-07-25T21:13:00+00:00 INFO 
+2024-07-25T21:13:00+00:00 INFO contador de productos: 
+2024-07-25T21:13:00+00:00 INFO 0
+2024-07-25T21:13:00+00:00 INFO Array
+(
+    [id] => 77
+    [order_id] => 259
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:14:29+00:00 INFO _dropi_product 
+2024-07-25T21:14:29+00:00 INFO 
+2024-07-25T21:14:29+00:00 INFO contador de productos: 
+2024-07-25T21:14:29+00:00 INFO 0
+2024-07-25T21:14:29+00:00 INFO Array
+(
+    [id] => 79
+    [order_id] => 260
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:15:05+00:00 INFO _dropi_product 
+2024-07-25T21:15:05+00:00 INFO 
+2024-07-25T21:15:05+00:00 INFO contador de productos: 
+2024-07-25T21:15:05+00:00 INFO 0
+2024-07-25T21:15:05+00:00 INFO Array
+(
+    [id] => 81
+    [order_id] => 261
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:15:53+00:00 INFO _dropi_product 
+2024-07-25T21:15:53+00:00 INFO 
+2024-07-25T21:15:53+00:00 INFO contador de productos: 
+2024-07-25T21:15:53+00:00 INFO 0
+2024-07-25T21:15:53+00:00 INFO Array
+(
+    [id] => 83
+    [order_id] => 262
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:17:07+00:00 INFO _dropi_product 
+2024-07-25T21:17:07+00:00 INFO 
+2024-07-25T21:17:07+00:00 INFO contador de productos: 
+2024-07-25T21:17:07+00:00 INFO 0
+2024-07-25T21:17:07+00:00 INFO Array
+(
+    [id] => 85
+    [order_id] => 263
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:18:17+00:00 INFO _dropi_product 
+2024-07-25T21:18:17+00:00 INFO 
+2024-07-25T21:18:17+00:00 INFO contador de productos: 
+2024-07-25T21:18:17+00:00 INFO 0
+2024-07-25T21:18:17+00:00 INFO Array
+(
+    [id] => 87
+    [order_id] => 264
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:19:00+00:00 INFO _dropi_product 
+2024-07-25T21:19:00+00:00 INFO 
+2024-07-25T21:19:00+00:00 INFO contador de productos: 
+2024-07-25T21:19:00+00:00 INFO 0
+2024-07-25T21:19:00+00:00 INFO Array
+(
+    [id] => 89
+    [order_id] => 265
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:19:33+00:00 INFO _dropi_product 
+2024-07-25T21:19:33+00:00 INFO 
+2024-07-25T21:19:33+00:00 INFO contador de productos: 
+2024-07-25T21:19:33+00:00 INFO 0
+2024-07-25T21:19:33+00:00 INFO Array
+(
+    [id] => 91
+    [order_id] => 266
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:21:19+00:00 INFO _dropi_product 
+2024-07-25T21:21:19+00:00 INFO 
+2024-07-25T21:21:19+00:00 INFO contador de productos: 
+2024-07-25T21:21:19+00:00 INFO 0
+2024-07-25T21:21:19+00:00 INFO Array
+(
+    [id] => 93
+    [order_id] => 267
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:21:53+00:00 INFO _dropi_product 
+2024-07-25T21:21:53+00:00 INFO 
+2024-07-25T21:21:53+00:00 INFO contador de productos: 
+2024-07-25T21:21:53+00:00 INFO 0
+2024-07-25T21:21:53+00:00 INFO Array
+(
+    [id] => 95
+    [order_id] => 268
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:23:57+00:00 INFO _dropi_product 
+2024-07-25T21:23:57+00:00 INFO 
+2024-07-25T21:23:57+00:00 INFO contador de productos: 
+2024-07-25T21:23:57+00:00 INFO 0
+2024-07-25T21:23:57+00:00 INFO Array
+(
+    [id] => 97
+    [order_id] => 269
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:25:35+00:00 INFO _dropi_product 
+2024-07-25T21:25:35+00:00 INFO 
+2024-07-25T21:25:35+00:00 INFO contador de productos: 
+2024-07-25T21:25:35+00:00 INFO 0
+2024-07-25T21:25:35+00:00 INFO Array
+(
+    [id] => 99
+    [order_id] => 270
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:29:21+00:00 INFO _dropi_product 
+2024-07-25T21:29:21+00:00 INFO 
+2024-07-25T21:29:21+00:00 INFO contador de productos: 
+2024-07-25T21:29:21+00:00 INFO 0
+2024-07-25T21:29:21+00:00 INFO Array
+(
+    [id] => 101
+    [order_id] => 271
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:32:52+00:00 INFO _dropi_product 
+2024-07-25T21:32:52+00:00 INFO 
+2024-07-25T21:32:52+00:00 INFO contador de productos: 
+2024-07-25T21:32:52+00:00 INFO 0
+2024-07-25T21:32:52+00:00 INFO Array
+(
+    [id] => 103
+    [order_id] => 272
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T21:36:59+00:00 INFO _dropi_product 
+2024-07-25T21:36:59+00:00 INFO 
+2024-07-25T21:36:59+00:00 INFO contador de productos: 
+2024-07-25T21:36:59+00:00 INFO 0
+2024-07-25T21:36:59+00:00 INFO Array
+(
+    [id] => 106
+    [order_id] => 274
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T22:13:41+00:00 INFO _dropi_product 
+2024-07-25T22:13:41+00:00 INFO 
+2024-07-25T22:13:41+00:00 INFO contador de productos: 
+2024-07-25T22:13:41+00:00 INFO 0
+2024-07-25T22:13:41+00:00 INFO Array
+(
+    [id] => 108
+    [order_id] => 275
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T22:14:43+00:00 INFO _dropi_product 
+2024-07-25T22:14:43+00:00 INFO 
+2024-07-25T22:14:43+00:00 INFO contador de productos: 
+2024-07-25T22:14:43+00:00 INFO 0
+2024-07-25T22:14:43+00:00 INFO Array
+(
+    [id] => 110
+    [order_id] => 276
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T22:18:06+00:00 INFO _dropi_product 
+2024-07-25T22:18:06+00:00 INFO 
+2024-07-25T22:18:06+00:00 INFO contador de productos: 
+2024-07-25T22:18:06+00:00 INFO 0
+2024-07-25T22:18:06+00:00 INFO Array
+(
+    [id] => 112
+    [order_id] => 277
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T22:19:54+00:00 INFO _dropi_product 
+2024-07-25T22:19:54+00:00 INFO 
+2024-07-25T22:19:54+00:00 INFO contador de productos: 
+2024-07-25T22:19:54+00:00 INFO 0
+2024-07-25T22:19:54+00:00 INFO Array
+(
+    [id] => 114
+    [order_id] => 278
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T22:20:32+00:00 INFO _dropi_product 
+2024-07-25T22:20:32+00:00 INFO 
+2024-07-25T22:20:32+00:00 INFO contador de productos: 
+2024-07-25T22:20:32+00:00 INFO 0
+2024-07-25T22:20:32+00:00 INFO Array
+(
+    [id] => 116
+    [order_id] => 279
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T22:23:04+00:00 INFO _dropi_product 
+2024-07-25T22:23:04+00:00 INFO 
+2024-07-25T22:23:04+00:00 INFO contador de productos: 
+2024-07-25T22:23:04+00:00 INFO 0
+2024-07-25T22:23:04+00:00 INFO Array
+(
+    [id] => 118
+    [order_id] => 280
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T22:25:03+00:00 INFO _dropi_product 
+2024-07-25T22:25:03+00:00 INFO 
+2024-07-25T22:25:03+00:00 INFO contador de productos: 
+2024-07-25T22:25:03+00:00 INFO 0
+2024-07-25T22:25:03+00:00 INFO Array
+(
+    [id] => 120
+    [order_id] => 281
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+
+2024-07-25T22:25:19+00:00 INFO _dropi_product 
+2024-07-25T22:25:19+00:00 INFO 
+2024-07-25T22:25:19+00:00 INFO contador de productos: 
+2024-07-25T22:25:19+00:00 INFO 0
+2024-07-25T22:25:19+00:00 INFO Array
+(
+    [id] => 122
+    [order_id] => 282
+    [name] => Test
+    [product_id] => 105
+    [variation_id] => 0
+    [quantity] => 1
+    [tax_class] => 
+    [subtotal] => 250000
+    [subtotal_tax] => 0
+    [total] => 250000
+    [total_tax] => 0
+    [taxes] => Array
+        (
+            [total] => Array
+                (
+                )
+
+            [subtotal] => Array
+                (
+                )
+
+        )
+
+    [meta_data] => Array
+        (
+        )
+
+)
+

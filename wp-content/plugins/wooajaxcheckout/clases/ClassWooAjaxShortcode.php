@@ -14,7 +14,8 @@ class WooAjaxShortcode
         
         if (wc_get_product($productId)) {
             global $wpdb;
-$nombre_tabla = $wpdb->prefix . 'WooAjaxCheckoutOferSetings';
+            
+            $nombre_tabla = $wpdb->prefix . 'WooAjaxCheckoutOferSetings';
             $loadSetings = $wpdb->get_results("SELECT * FROM " . $nombre_tabla . " WHERE ofproductid = $productId" );
             $product = wc_get_product($productId);
             $image_url = $product->get_image();

@@ -4,9 +4,7 @@ jQuery(document).ready(function ($) {
   $('#WooAjaxForm').submit(function (e) { 
     e.preventDefault();
     var nombre=$('#first_name').val();
-    console.log('====================================');
-    console.log($(this).serializeArray());
-    console.log('====================================');
+    
     $.ajax({
       type: "POST",
       url: OrderScriptVar.url,
@@ -17,10 +15,12 @@ jQuery(document).ready(function ($) {
         form:$(this).serializeArray(),
       },
       complete: function (response) {
-        
-        console.log('===============response=====================');
-        console.log(response);
-        console.log('====================================');
+        alert(response.responseJSON.$isloged)
+
+        var orderId=response.responseJSON.orderId
+        var orderKey=response.responseJSON.orderKey
+        var url=response.responseJSON.url
+        window.location.href=url+`/order-received/${orderId}/?key=${orderKey}`
         
       },
       error: function (status, error) {
