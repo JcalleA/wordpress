@@ -36,15 +36,15 @@ $nombre_tabla = $wpdb->prefix . 'WooAjaxCheckoutOferSetings';
                 <input class=' radioCheckout  !hidden ' type='radio' name='image-select' value='1' />
                 <div class=' w-[20%]'>
                     <picture class='  '>
-                        <?php echo $image_url ?>
+                         $image_url 
                     </picture>
                 </div>
                 <div class=' w-[40%]'>
                     <h3> <?php echo $val->oftitle ?> </h3>
-                    <span class='break-keep py-1 px-2 '>Ahorra <?php echo $ofDiscount ?>%</span>
+                    <span class='break-keep py-1 px-2 '>Ahorra  $ofDiscount %</span>
                 </div>
                 <div class='text-lg font-black '>
-                    <?php echo $val->ofprice ?>
+                     $val->ofprice 
 
                 </div>
 

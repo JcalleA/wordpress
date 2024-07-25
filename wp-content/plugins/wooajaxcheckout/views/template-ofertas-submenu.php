@@ -132,7 +132,7 @@ if ($ofproductid) {
 
                         </label>
                         <div class=" flex flex-col w-[20%] items-center">
-                            <button class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">Editar</button>
+                            <button id='<?php echo $val->id ?>' class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">Editar</button>
                             <button class=" mt-3 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-red-700 rounded">Eliminar</button>
 
                         </div>

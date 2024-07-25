@@ -316,11 +316,20 @@ class Wooajaxcheckout
         }
     }
 
+    function registerCheckout(){
+
+        if (is_single()) {
+            
+            echo plugins_url('woocommerce').'/templates/checkout/form-checkout.php' ;
+        }
+    }
+
 
     public function init()
     {
 
         add_action('admin_menu', [$this, 'register_sub_menues']);
+        add_action('woocommerce_after_single_product_summary',[$this, 'registerCheckout']);
         add_action('admin_enqueue_scripts', [$this, 'AdmincheckoutScripts']);
         add_action('wp_enqueue_scripts', [$this, 'wooajaxcheckoutScripts']);
         add_action('wp_ajax_nopriv_getCitiesAC', [$this, 'getCities']);
