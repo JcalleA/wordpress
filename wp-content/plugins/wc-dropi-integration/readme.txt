@@ -4,7 +4,7 @@ Tags: woocommerce, dropi, dropshipping
 Requires at least: 5.2.3
 Tested up to: 6.4.2
 Requires PHP: 7.0
-Stable tag: 4.6.8
+Stable tag: 4.6.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

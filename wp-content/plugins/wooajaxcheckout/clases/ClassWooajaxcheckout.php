@@ -320,7 +320,8 @@ class Wooajaxcheckout
 
         if (is_single()) {
             
-            echo plugins_url('woocommerce').'/templates/checkout/form-checkout.php' ;
+            include  dirname(__DIR__) . '/views/checkout.php';
+            
         }
     }
 

@@ -98,9 +98,14 @@ class JPIODFW_ProductsModel
             'keywords' => $search,
             'active' => true,
             'no_count' => true,
-
-            //'privated_product'=>false
+            'integration' => true
         );
+
+
+        if ($endpoint == "https://api.dropi.com.es/integrations/products/index") {
+            // eliminar integration del array $data.
+            unset($data['integration']);
+        }
 
         if ($endpoint == "https://api.dropi.co/integrations/products/index" || $endpoint == "https://api.dropi.com.py/integrations/products/index" || $endpoint == "https://api.dropi.pe/integrations/products/index" || $endpoint == "https://api.dropi.pa/integrations/products/index") {
             $data['get_stock'] = false;
