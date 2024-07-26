@@ -270,15 +270,15 @@ class Wooajaxcheckout
         $order->set_payment_method($payment_gateways['cod']);
         $order->calculate_totals();
         $order->update_status('processing');
-        
+        $currensy=$order->get_currency();
+        $valor=$order->get_total();
 
         die( json_encode(
 
             [
-                '$isloged'=>$isloged,
-                'orderId' => $order->id,
-                'orderKey' => $order->order_key,
-                'url'=>wc_get_checkout_url()
+                'currensy'=>$currensy,
+                'valor' => $valor
+                
             ]
         ));
         ;

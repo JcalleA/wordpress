@@ -15,11 +15,16 @@ jQuery(document).ready(function ($) {
         form:$(this).serializeArray(),
       },
       complete: function (response) {
-        alert(response.responseJSON.$isloged)
+        
 
-        var orderId=response.responseJSON.orderId
-        var orderKey=response.responseJSON.orderKey
+        var currensy=response.responseJSON.currensy
+        var valor=response.responseJSON.valor
         var url=response.responseJSON.url
+        fbq('track', 'Purchase', {
+          content_type: 'product',
+          value: valor,
+          currency: currensy
+        });
         window.location.href=url+`/order-received/${orderId}/?key=${orderKey}`
         
       },

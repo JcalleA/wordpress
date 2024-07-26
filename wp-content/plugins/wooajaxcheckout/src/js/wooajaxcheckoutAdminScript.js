@@ -77,35 +77,7 @@ jQuery(document).ready(function ($) {
 
   $("#" + btnicon).attr("checked", true);
 
-  $("#BtnSetingsForm").submit(function (e) {
-    e.preventDefault();
-    
-    $.ajax({
-      type: "POST",
-      url: WooAdmin_var.url,
-      dataType: "json",
-      data: {
-        action: WooAdmin_var.action,
-        nonce: WooAdmin_var.nonce,
-        form: $(this).serializeArray(),
-      },
-      beforeSend: function(){
-        $('#wooAjaxCheckLoading').toggleClass('hidden');
-        
-      },
-      complete: function (response) {
-        $('#wooAjaxCheckLoading').toggleClass('hidden');
-        
-        alert('Guardado correctamente')
-      },
-      error: function (status, error) {
-        console.log("====================================");
-        console.log(error);
-        console.log("====================================");
-        console.error(status + ": " + error);
-      },
-    });
-  });
+  
 
 
   $("#formOfSetings").submit(function (e) {
@@ -141,6 +113,36 @@ jQuery(document).ready(function ($) {
 
   $("#ofproductinit").on("input", function () {
     location.href =location.href +'&ofproductid='+$(this).val();
+  });
+
+  $("#BtnSetingsForm").submit(function (e) {
+    e.preventDefault();
+    
+    $.ajax({
+      type: "POST",
+      url: WooAdmin_var.url,
+      dataType: "json",
+      data: {
+        action: WooAdmin_var.action,
+        nonce: WooAdmin_var.nonce,
+        form: $(this).serializeArray(),
+      },
+      beforeSend: function(){
+        $('#wooAjaxCheckLoading').toggleClass('hidden');
+        
+      },
+      complete: function (response) {
+        $('#wooAjaxCheckLoading').toggleClass('hidden');
+        
+        alert('Guardado correctamente')
+      },
+      error: function (status, error) {
+        console.log("====================================");
+        console.log(error);
+        console.log("====================================");
+        console.error(status + ": " + error);
+      },
+    });
   });
   
 });
