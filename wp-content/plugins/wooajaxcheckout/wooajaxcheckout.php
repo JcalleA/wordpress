@@ -41,9 +41,9 @@ function Activar()
                         oftitlecolor VARCHAR(20) NULL,
                         ofprice INT NULL,
                         ofpricecolor VARCHAR(20) NULL,
-                        ofbgColor VARCHAR(20) NULL,
+                        ofbgcolor VARCHAR(20) NULL,
                         oftikectcolor VARCHAR(20) NULL,
-                        ofbordercolor VARCHAR(20) NULL,
+                        oftiketextcolor VARCHAR(20) NULL,
                         ofborder INT NULL,
                         
                         PRIMARY KEY  (id));";

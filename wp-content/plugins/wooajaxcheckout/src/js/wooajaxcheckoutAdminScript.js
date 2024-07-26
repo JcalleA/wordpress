@@ -115,6 +115,43 @@ jQuery(document).ready(function ($) {
     location.href =location.href +'&ofproductid='+$(this).val();
   });
 
+  
+
+  $(".deleteOfer").each(function () {
+    $(this).click(function (e) { 
+      e.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: editSetings_var.url,
+        dataType: "json",
+        data: {
+          action: editSetings_var.action,
+          nonce: editSetings_var.nonce,
+          id:$(this).attr('id')
+        },
+        beforeSend: function(){
+          $('#wooAjaxCheckLoading').toggleClass('hidden');
+          
+        },
+        complete: function (response) {
+          $('#wooAjaxCheckLoading').toggleClass('hidden');
+          
+          window.location.href=window.location.href
+        },
+        error: function (status, error) {
+          console.log("====================================");
+          console.log(error);
+          console.log("====================================");
+          console.error(status + ": " + error);
+        },
+      });
+      
+    });
+
+  });
+
+
+
   $("#BtnSetingsForm").submit(function (e) {
     e.preventDefault();
     

@@ -20,6 +20,7 @@ class WooAjaxShortcode
             $product = wc_get_product($productId);
             $image_url = $product->get_image();
             $regularPrice = number_format( $product->get_regular_price());
+            $ofers='';
             if ($product->get_sale_price()) {
                 $salePrice = number_format( $product->get_sale_price());
                 $salePrice2 = number_format( $product->get_sale_price());
@@ -30,7 +31,6 @@ class WooAjaxShortcode
         };
 
         if ($loadSetings) {
-            $ofers='';
             foreach ($loadSetings as $val) {
                 $ofDiscount = ceil(($salePrice / $val->ofprice) * 100);
                 $ofers.="<label class='border border-black ml-2 mr-2 rounded-md rarioContainer cursor-pointer flex flex-row items-center justify-around '>
@@ -51,7 +51,28 @@ class WooAjaxShortcode
 
             </label>" ;
 
-            }};
+            }}else{
+                $ofDiscount=ceil(100-($salePrice/$regularPrice)*100);
+                
+                $ofers="<label class=' border border-black m-2 rounded-md rarioContainer cursor-pointer  flex flex-row items-center justify-around'>
+                    <input class=' radioCheckout  !hidden ' type='radio' name='image-select' value='1' />
+                    <div class=' w-[20%]'>
+                        <picture class=' '>
+                             $image_url
+
+                        </picture>
+                    </div>
+                    <div class=' w-[40%]'>
+                        <h3>Compra 1 unidad</h3>
+                        <span class='break-keep py-1 px-2 bg-gray-400 text-white'>Ahorra $ofDiscount%</span>
+                    </div>
+                    <div class='text-lg font-black'>
+                        $salePrice
+
+                    </div>
+                </label>";
+                
+            };
 
         $shop_countries = WC()->countries->get_allowed_countries();
         $wpSiteTitle = get_bloginfo('name');

@@ -28,8 +28,27 @@ if (!empty($products)) {
 
 if ($ofproductid) {
 
-    $loadSetings = $wpdb->get_results("SELECT * FROM " . $nombre_tabla . " WHERE ofproductid = $ofproductid" );
-    
+    $loadSetings = $wpdb->get_results("SELECT * FROM " . $nombre_tabla . " WHERE ofproductid = $ofproductid");
+    var_dump($loadSetings);
+    if ($loadSetings) {
+        $ofTitle = $loadSetings[0]->oftitle;
+        $ofTitleColor = $loadSetings[0]->oftitlecolor;
+        $ofPrice = $loadSetings[0]->ofprice;
+        $ofPriceColor = $loadSetings[0]->ofpricecolor;
+        $ofBgColor = $loadSetings[0]->ofbgcolor;
+        $ofTikectColor = $loadSetings[0]->oftikectcolor;
+        $oftiketextcolor = $loadSetings[0]->oftiketextcolor;
+        $ofBorder = $loadSetings[0]->ofborder;
+    }else{
+        $ofTitle = 'Compra 1 Unidad';
+        $ofTitleColor = '#000000';
+        $ofPrice = $salePrice;
+        $ofPriceColor = '#E21212';
+        $ofBgColor = 'A4DAE5';
+        $ofTikectColor = '#E21212';
+        $oftiketextcolor = '#07CA0B';
+        $ofBorder = '2px';
+    }
 
 
 ?>
@@ -74,7 +93,7 @@ if ($ofproductid) {
                     <input id="ofPrice" type="number" name="ofPrice" value='<?php echo $ofPrice ?>' placeholder="<?php echo $ofPrice ?>">
                 </div>
                 <div class="flex flex-col justify-between m-2 ">
-                    <label>Color De La Oferta</label>
+                    <label>Color Texto De La Oferta</label>
                     <input id="ofPriceColor" type="color" name="ofPriceColor" value="<?php echo $ofPriceColor ?>">
                 </div>
                 <div class="flex flex-col justify-between m-2 ">
@@ -86,8 +105,8 @@ if ($ofproductid) {
                     <input id="ofTikectColor" type="color" name="ofTikectColor" value="<?php echo $ofTikectColor ?>">
                 </div>
                 <div class="flex flex-col justify-between m-2 ">
-                    <label>Color del borde al seleccionar</label>
-                    <input id="ofBorderColor" type="color" name="ofBorderColor" value="<?php echo $ofBorderColor ?>">
+                    <label>Color texto de la etiqueta</label>
+                    <input id="oftiketextcolor" type="color" name="oftiketextcolor" value="<?php echo $oftiketextcolor ?>">
                 </div>
 
                 <div class="flex flex-col justify-between m-2 ">
@@ -103,38 +122,36 @@ if ($ofproductid) {
             </form>
         </div>
 
-
-
-
         <div class='flex flex-col justify-center w-[60%] items-center'>
             <?php
             if ($loadSetings) {
                 foreach ($loadSetings as $val) {
-                    $ofDiscount = ceil(($salePrice / $val->ofprice) * 100);
+                    
+                    $ofDiscount = ceil(100 - (number_format($val->ofprice)/$salePrice)* 100) ;
 
             ?>
                     <div class=" flex flex-row items-center">
-                        <label class='border border-black ml-2 mr-2 rounded-md rarioContainer cursor-pointer flex flex-row items-center justify-around '>
+                        
+                        <label style='border-width:<?php echo $val->ofborder ?> ;border-radius: 20px ;border-color:<?php echo $val->ofbordercolor ?> ;background-color:<?php echo $val->ofbgcolor ?>;' class='border border-black ml-2 mr-2 rounded-md rarioContainer cursor-pointer flex flex-row items-center justify-around '>
                             <input class=' radioCheckout  !hidden ' type='radio' name='image-select' value='1' />
                             <div class=' w-[20%]'>
                                 <picture class='  '>
                                     <?php echo $image_url ?>
                                 </picture>
                             </div>
-                            <div class=' w-[40%]'>
-                                <h3> <?php echo $val->oftitle ?> </h3>
-                                <span class='break-keep py-1 px-2 '>Ahorra <?php echo $ofDiscount ?>%</span>
+                            <div class=' text-lg w-[40%]'>
+                                <h3 style=' color: <?php echo $val->oftitlecolor ?>;'> <?php echo $val->oftitle ?> </h3>
+                                <span style='color: <?php echo $val->oftiketextcolor ?>;background-color:<?php echo $val->oftikectcolor  ?>' class='break-keep py-1 px-2 '>Ahorra <?php echo $ofDiscount ?>%</span>
                             </div>
-                            <div class='text-lg font-black '>
-                                <?php echo $val->ofprice ?>
+                            <div style='color: <?php echo $val->ofpricecolor ?>' class='text-lg font-black '>
+                                <?php echo number_format($val->ofprice) ?>
 
                             </div>
 
                         </label>
                         <div class=" flex flex-col w-[20%] items-center">
-                            <button id='<?php echo $val->id ?>' class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">Editar</button>
-                            <button class=" mt-3 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-red-700 rounded">Eliminar</button>
-
+                            <button id='<?php echo $val->id ?>' class=" editOfer bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">Editar</button>
+                            <button id='<?php echo $val->id ?>' class=" deleteOfer mt-3 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-red-700 rounded">Eliminar</button>
                         </div>
                     </div>
 
@@ -143,7 +160,8 @@ if ($ofproductid) {
                 }
             } else {
                 ?>
-                <label class=' border border-black m-2 rounded-md rarioContainer cursor-pointer  flex flex-row items-center justify-around'>
+                <h3>Crea O Edita Tu Oferta</h3>
+                <label style='border-width:<?php echo $ofBorder ?> ;border-radius: 20px ;border-color:<?php echo $ofBorderColor ?> ;background-color:<?php echo $ofBgColor ?>;' class='  m-2 rounded-md rarioContainer cursor-pointer  flex flex-row items-center justify-around'>
                     <input class=' radioCheckout  !hidden ' type='radio' name='image-select' value='1' />
                     <div class=' w-[20%]'>
                         <picture class=' '>
@@ -151,11 +169,11 @@ if ($ofproductid) {
 
                         </picture>
                     </div>
-                    <div class=' w-[40%]'>
-                        <h3>Compra 1 unidad</h3>
-                        <span class='break-keep py-1 px-2 bg-gray-400 text-white'>Ahorra 0%</span>
+                    <div class=' text-lg w-[40%]'>
+                        <h3 style=' color: <?php echo $ofTitleColor ?>;'>Compra 1 unidad</h3>
+                        <span style='background-color:<?php echo $ofTikectColor ?>' class='break-keep py-1 px-2 bg-gray-400 text-white'>Ahorra 0%</span>
                     </div>
-                    <div class='text-lg font-black'>
+                    <div style='color: <?php echo $ofPriceColor ?>' class='text-lg font-black'>
                         <?php echo $salePrice ?>
 
                     </div>
@@ -168,26 +186,26 @@ if ($ofproductid) {
         } else {
     ?>
     <div class=" text-3xl font-bold flex flex-col justify-center items-center w-full h-[100dvh]">
-    <label>Selecciona un producto</label>
-    <select class=" text-2xl font-bold"  id="ofproductinit">
-        <option disabled selected  >Selecciona un producto</option>
-        <?php
+        <label>Selecciona un producto</label>
+        <select class=" text-2xl font-bold" id="ofproductinit">
+            <option disabled selected>Selecciona un producto</option>
+            <?php
             if (!empty($products)) {
                 foreach ($products as $product) {
                     if ($product->id === $ofproductid) {
-        ?>
-                    <option id='<?php echo $product->id ?>' value='<?php echo $product->id ?>'><?php echo $product->name ?></option>
-                <?php
+            ?>
+                        <option id='<?php echo $product->id ?>' value='<?php echo $product->id ?>'><?php echo $product->name ?></option>
+                    <?php
                     } else {
-                ?>
-                    <option id='<?php echo $product->id ?>' value='<?php echo $product->id ?>'><?php echo $product->name ?></option>
-        <?php
+                    ?>
+                        <option id='<?php echo $product->id ?>' value='<?php echo $product->id ?>'><?php echo $product->name ?></option>
+            <?php
                     }
                 }
             }
-        ?>
-    </select>
+            ?>
+        </select>
     </div>
-    
+
 <?php
         }

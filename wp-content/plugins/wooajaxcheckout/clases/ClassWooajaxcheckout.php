@@ -75,6 +75,16 @@ class Wooajaxcheckout
                     'action' => 'SaveOfSetings'
                 ]
             );
+
+            wp_localize_script(
+                'wooajaxcheckoutAdminScript',
+                'editSetings_var',
+                [
+                    'url' => admin_url('admin-ajax.php'),
+                    'nonce' => wp_create_nonce('secureAdmin'),
+                    'action' => 'DeleteOfSetings'
+                ]
+            );
         }
     }
 
@@ -137,13 +147,26 @@ class Wooajaxcheckout
             'ofpricecolor' => $Form[4]['value'],
             'ofbgColor' => $Form[5]['value'],
             'oftikectcolor' => $Form[6]['value'],
-            'ofbordercolor' => $Form[7]['value'],
+            'oftiketextcolor' => $Form[7]['value'],
             'ofborder' => $Form[8]['value'],
 
         ];
 
         $resultado = $wpdb->insert($nombre_tabla, $setings);
         echo 'insert' . $resultado;
+        die();
+    }
+    function DeleteOfSetings()
+    {
+        global $wpdb;
+        $nombre_tabla = $wpdb->prefix . 'WooAjaxCheckoutOferSetings';
+
+        $id = sanitize_text_field($_REQUEST['id']);
+
+        $setings = ['id'=>$id];
+
+        $resultado = $wpdb->delete($nombre_tabla,$setings);
+        echo 'delete' . $resultado;
         die();
     }
 
@@ -388,5 +411,7 @@ class Wooajaxcheckout
         add_action('wp_ajax_SaveBtnSetings', [$this, 'SaveBtnSetings']);
         add_action('wp_ajax_nopriv_SaveOfSetings', [$this, 'SaveOfSetings']);
         add_action('wp_ajax_SaveOfSetings', [$this, 'SaveOfSetings']);
+        add_action('wp_ajax_nopriv_DeleteOfSetings', [$this, 'DeleteOfSetings']);
+        add_action('wp_ajax_DeleteOfSetings', [$this, 'DeleteOfSetings']);
     }
 }
