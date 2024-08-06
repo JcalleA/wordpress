@@ -18,10 +18,11 @@ if (!defined('ABSPATH')) {
 function Activar()
 {
     global $wpdb;
-    $nombre_tabla = $wpdb->prefix.'WooAjaxCheckoutSetings';
-    $nombre_tabla2 = $wpdb->prefix.'WooAjaxCheckoutOferSetings';
+    $nombre_tabla = $wpdb->prefix . 'WooAjaxCheckoutSetings';
+    $nombre_tabla2 = $wpdb->prefix . 'WooAjaxCheckoutOferSetings';
+    $nombre_tabla3 = $wpdb->prefix . 'WooAjaxCheckoutTkYouPage';
     try {
-        $sql = "CREATE TABLE " .$nombre_tabla."(
+        $sql = "CREATE TABLE " . $nombre_tabla . "(
             id INT NOT NULL AUTO_INCREMENT,
                 btntitle VARCHAR(50) NULL,
                 btnsubtitle VARCHAR(50) NULL,
@@ -34,31 +35,37 @@ function Activar()
                 
                 PRIMARY KEY  (id));";
 
-                $sql2 = "CREATE TABLE " .$nombre_tabla2."(
+        $sql2 = "CREATE TABLE " . $nombre_tabla2 . "(
                     id INT NOT NULL AUTO_INCREMENT,
                         ofproductid INT NOT NULL,
                         oftitle VARCHAR(50) NULL,
                         oftitlecolor VARCHAR(20) NULL,
+                        ofcantidad INT NULL,
                         ofprice INT NULL,
                         ofpricecolor VARCHAR(20) NULL,
-                        ofbgcolor VARCHAR(20) NULL,
                         oftikectcolor VARCHAR(20) NULL,
                         oftiketextcolor VARCHAR(20) NULL,
-                        ofborder INT NULL,
+                        ofobsequioid INT NULL,
                         
                         PRIMARY KEY  (id));";
-    
+
+        $sql3 = "CREATE TABLE " . $nombre_tabla3 . "(
+                            id INT NOT NULL AUTO_INCREMENT,
+                                productid INT NOT NULL,
+                                url VARCHAR(250) NULL,
+                                
+                                PRIMARY KEY  (id));";
+
         require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
         dbDelta($sql);
         dbDelta($sql2);
+        dbDelta($sql3);
     } catch (\Throwable $th) {
         echo '<div class="notice notice-error ">
                 <h2>Error WooAjaxCheckout: Para usar debes tener instalado y activo el plugin WooCommerce</h2>
                 <a href=' . Site_URL() . '/wp-admin/plugin-install.php?s=woocommerce&tab=search&type=term' . '><button>Activar Woocomerce</button></a>
             </div>';
     }
-
-    
 }
 
 register_activation_hook(__FILE__, "Activar");

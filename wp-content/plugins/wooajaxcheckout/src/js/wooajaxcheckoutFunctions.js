@@ -129,12 +129,18 @@ jQuery(document).ready(function ($) {
   });
 
   $(".radioCheckout").each(function (index) {
+    
+    
     if (index === 0) {
-      $("#SubTotal").text($('#radio1').text());
+      $("#SubTotal").text($('#regPrice'+index).text());
+      $("#CheckoutTotal").text($('#ofprice'+index).text());
+      
       $(this).attr("checked", true);
       $(this).parent().addClass("border-4 border-green-600 bg-slate-300");
       $(this).change(function (e) {
         e.preventDefault();
+        $("#SubTotal").text($('#regPrice'+index).text());
+        
         $(".rarioContainer").each(function () {
           $(this).removeClass("border-4 border-green-600 bg-slate-300");
           
@@ -144,9 +150,12 @@ jQuery(document).ready(function ($) {
     }
     $(this).change(function (e) {
       e.preventDefault();
+      
+      $("#SubTotal").text($('#regPrice'+index).text());
+      $("#CheckoutTotal").text($('#ofprice'+index).text());
       $(".rarioContainer").each(function () {
         $(this).removeClass("border-4 border-green-600 bg-slate-300");
-        $("#SubTotal").text($('#radio2').text());
+        
       });
       $(this).parent().addClass("border-4 border-green-600 bg-slate-300");
     });

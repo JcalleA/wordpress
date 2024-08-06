@@ -56,6 +56,8 @@ jQuery(document).ready(function ($) {
     $("#btnSample").css("background-color", $(this).val());
   });
 
+  
+
   $("#btnanimated").on("input", function () {
     if ($(this).val() === "true") {
       $("#btnSample").addClass("animate-btn_saltar");
@@ -77,12 +79,43 @@ jQuery(document).ready(function ($) {
 
   $("#" + btnicon).attr("checked", true);
 
-  
+  $("#formBtnsetings").submit(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+    alert('ok')
 
+    $.ajax({
+      type: "POST",
+      url: WooAdmin_var.url,
+      dataType: "json",
+      data: {
+        action: WooAdmin_var.action,
+        nonce: WooAdmin_var.nonce,
+        form: $(this).serializeArray(),
+      },
+      beforeSend: function () {
+        $("#wooAjaxCheckLoading").toggleClass("hidden");
+      },
+      complete: function (response) {
+        $("#wooAjaxCheckLoading").toggleClass("hidden");
 
+        alert("Guardado correctamente");
+      },
+      error: function (status, error) {
+        console.log("====================================");
+        console.log(error);
+        console.log("====================================");
+        console.error(status + ": " + error);
+      },
+    });
+  });
   $("#formOfSetings").submit(function (e) {
     e.preventDefault();
-    
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+
+
     $.ajax({
       type: "POST",
       url: WooOfSetings_var.url,
@@ -92,15 +125,47 @@ jQuery(document).ready(function ($) {
         nonce: WooOfSetings_var.nonce,
         form: $(this).serializeArray(),
       },
-      beforeSend: function(){
-        $('#wooAjaxCheckLoading').toggleClass('hidden');
-        
+      beforeSend: function () {
+        $("#wooAjaxCheckLoading").toggleClass("hidden");
       },
       complete: function (response) {
-        $('#wooAjaxCheckLoading').toggleClass('hidden');
-        location.href =location.href
-        
-        alert('Guardado correctamente')
+        $("#wooAjaxCheckLoading").toggleClass("hidden");
+        location.href = location.href;
+
+        alert("Guardado correctamente");
+      },
+      error: function (status, error) {
+        console.log("====================================");
+        console.log(error);
+        console.log("====================================");
+        console.error(status + ": " + error);
+      },
+    });
+  });
+
+  $("#formTkSetings").submit(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+
+
+    $.ajax({
+      type: "POST",
+      url: saveTk_var.url,
+      dataType: "json",
+      data: {
+        action: saveTk_var.action,
+        nonce: saveTk_var.nonce,
+        form: $(this).serializeArray(),
+      },
+      beforeSend: function () {
+        $("#wooAjaxCheckLoading").toggleClass("hidden");
+      },
+      complete: function (response) {
+        $("#wooAjaxCheckLoading").toggleClass("hidden");
+        location.href = location.href;
+
+        alert("Guardado correctamente");
       },
       error: function (status, error) {
         console.log("====================================");
@@ -112,13 +177,13 @@ jQuery(document).ready(function ($) {
   });
 
   $("#ofproductinit").on("input", function () {
-    location.href =location.href +'&ofproductid='+$(this).val();
+    location.href = location.href + "&ofproductid=" + $(this).val();
   });
 
   
 
   $(".deleteOfer").each(function () {
-    $(this).click(function (e) { 
+    $(this).click(function (e) {
       e.preventDefault();
       $.ajax({
         type: "POST",
@@ -127,16 +192,15 @@ jQuery(document).ready(function ($) {
         data: {
           action: editSetings_var.action,
           nonce: editSetings_var.nonce,
-          id:$(this).attr('id')
+          id: $(this).attr("id"),
         },
-        beforeSend: function(){
-          $('#wooAjaxCheckLoading').toggleClass('hidden');
-          
+        beforeSend: function () {
+          $("#wooAjaxCheckLoading").toggleClass("hidden");
         },
         complete: function (response) {
-          $('#wooAjaxCheckLoading').toggleClass('hidden');
-          
-          window.location.href=window.location.href
+          $("#wooAjaxCheckLoading").toggleClass("hidden");
+
+          window.location.href = window.location.href;
         },
         error: function (status, error) {
           console.log("====================================");
@@ -145,41 +209,6 @@ jQuery(document).ready(function ($) {
           console.error(status + ": " + error);
         },
       });
-      
-    });
-
-  });
-
-
-
-  $("#BtnSetingsForm").submit(function (e) {
-    e.preventDefault();
-    
-    $.ajax({
-      type: "POST",
-      url: WooAdmin_var.url,
-      dataType: "json",
-      data: {
-        action: WooAdmin_var.action,
-        nonce: WooAdmin_var.nonce,
-        form: $(this).serializeArray(),
-      },
-      beforeSend: function(){
-        $('#wooAjaxCheckLoading').toggleClass('hidden');
-        
-      },
-      complete: function (response) {
-        $('#wooAjaxCheckLoading').toggleClass('hidden');
-        
-        alert('Guardado correctamente')
-      },
-      error: function (status, error) {
-        console.log("====================================");
-        console.log(error);
-        console.log("====================================");
-        console.error(status + ": " + error);
-      },
     });
   });
-  
 });

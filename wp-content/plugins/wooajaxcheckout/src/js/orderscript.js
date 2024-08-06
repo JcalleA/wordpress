@@ -14,18 +14,29 @@ jQuery(document).ready(function ($) {
         nonce:OrderScriptVar.nonce,
         form:$(this).serializeArray(),
       },
+      beforeSend: function () {
+        $("#wooajaxcheckout").toggleClass("hidden");
+        $("#wooAjaxCheckLoading").toggleClass("hidden");
+      },
       complete: function (response) {
-        
-
+        $("#wooAjaxCheckLoading").toggleClass("hidden");
         var currensy=response.responseJSON.currensy
         var valor=response.responseJSON.valor
         var url=response.responseJSON.url
-        fbq('track', 'Purchase', {
-          content_type: 'product',
-          value: valor,
-          currency: currensy
-        });
-        window.location.href=url+`/order-received/${orderId}/?key=${orderKey}`
+        var orderid=response.responseJSON.orderid
+        var orderkey=response.responseJSON.orderkey
+        var productid=response.responseJSON.productid
+        try {
+          fbq('track', 'Purchase', {
+            content_type: 'product',
+            value: valor,
+            currency: currensy
+          });
+        } catch (error) {
+          window.location.href=`${url}/order-received/${orderid}/?key=${orderkey}`;
+        }
+        
+        window.location.href=`${url}/order-received/${orderid}/?key=${orderkey}`;
         
       },
       error: function (status, error) {

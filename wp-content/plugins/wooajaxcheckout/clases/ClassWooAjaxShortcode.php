@@ -11,51 +11,66 @@ class WooAjaxShortcode
 
     function getBtn($productId,)
     {
-        
+
         if (wc_get_product($productId)) {
             global $wpdb;
-            
+
             $nombre_tabla = $wpdb->prefix . 'WooAjaxCheckoutOferSetings';
-            $loadSetings = $wpdb->get_results("SELECT * FROM " . $nombre_tabla . " WHERE ofproductid = $productId" );
+            $loadSetings = $wpdb->get_results("SELECT * FROM " . $nombre_tabla . " WHERE ofproductid = $productId");
             $product = wc_get_product($productId);
             $image_url = $product->get_image();
-            $regularPrice = number_format( $product->get_regular_price());
-            $ofers='';
+            $regPrice =  $product->get_regular_price();
+            $regularPrice = number_format($product->get_regular_price());
+            $ofers = '';
             if ($product->get_sale_price()) {
-                $salePrice = number_format( $product->get_sale_price());
-                $salePrice2 = number_format( $product->get_sale_price());
-            }else{
-                $salePrice=$regularPrice;
+                $salePrice = number_format($product->get_sale_price());
+            } else {
+                $salePrice = $regularPrice;
             }
-            
         };
 
         if ($loadSetings) {
+            $i=0;
             foreach ($loadSetings as $val) {
-                $ofDiscount = ceil(($salePrice / $val->ofprice) * 100);
-                $ofers.="<label class='border border-black ml-2 mr-2 rounded-md rarioContainer cursor-pointer flex flex-row items-center justify-around '>
-                <input class=' radioCheckout  !hidden ' type='radio' name='image-select' value='1' />
+                
+                $regPrice2 = number_format($regPrice * $val->ofcantidad);
+                $price = number_format($val->ofprice);
+                $ofDiscount = ceil(100 - (number_format($val->ofprice) / ($salePrice * $val->ofcantidad)) * 100);
+                $ofers .= "
+                <label class=' mt-2 border border-black ml-2 mr-2 rounded-md rarioContainer cursor-pointer flex flex-row items-center justify-around '>
+                <input class=' radioCheckout  !hidden ' type='radio' name='image-select' value='$val->id' />
+                
                 <div class=' w-[20%]'>
                     <picture class='  '>
                          $image_url 
                     </picture>
                 </div>
                 <div class=' w-[40%]'>
-                    <h3> <?php echo $val->oftitle ?> </h3>
-                    <span class='break-keep py-1 px-2 '>Ahorra  $ofDiscount %</span>
+                    <h3 style=' color: $val->oftitlecolor;' >  $val->oftitle </h3>
+                    <span style='color: $val->oftiketextcolor;background-color: $val->oftikectcolor' class='break-keep py-1 px-2 '>Ahorra  $ofDiscount %</span>
                 </div>
-                <div class='text-lg font-black '>
-                     $val->ofprice 
-
-                </div>
-
-            </label>" ;
-
-            }}else{
-                $ofDiscount=ceil(100-($salePrice/$regularPrice)*100);
                 
-                $ofers="<label class=' border border-black m-2 rounded-md rarioContainer cursor-pointer  flex flex-row items-center justify-around'>
-                    <input class=' radioCheckout  !hidden ' type='radio' name='image-select' value='1' />
+                <div class=' flex flex-col'>
+
+                <span id='regPrice$i' class='text-lg font-black line-through text-red-600 '>
+                      $ $regPrice2
+
+                </span>
+                <span id='ofprice$i' style='color: $val->ofpricecolor' class='text-xl font-black '>
+                      $ $price
+
+                </span>
+                </div>
+
+            </label>";
+            $i++;
+            }
+        } else {
+            $ofDiscount = ceil(100 - ($salePrice / $regularPrice) * 100);
+
+            $ofers = "
+            <label class=' mt-3 border border-black m-2 rounded-md rarioContainer cursor-pointer  flex flex-row items-center justify-around '>
+                    <input class=' radioCheckout  !hidden ' type='radio' name='image-select' value='0' />
                     <div class=' w-[20%]'>
                         <picture class=' '>
                              $image_url
@@ -67,12 +82,21 @@ class WooAjaxShortcode
                         <span class='break-keep py-1 px-2 bg-gray-400 text-white'>Ahorra $ofDiscount%</span>
                     </div>
                     <div class='text-lg font-black'>
-                        $salePrice
+                    
+                    <span id='regPrice0' class='text-lg font-black line-through text-red-600 '>
+                      $ $regularPrice
+
+                </span>
+                </br>
+                <span id='ofprice0'  class='text-xl font-black '>
+                      $ $salePrice
+
+                </span>
+                        
 
                     </div>
                 </label>";
-                
-            };
+        };
 
         $shop_countries = WC()->countries->get_allowed_countries();
         $wpSiteTitle = get_bloginfo('name');
@@ -92,9 +116,8 @@ class WooAjaxShortcode
             4 => 'bi bi-house'
         ];
         foreach ($shop_countries as $key => $country) {
-            $ListCountries.= "<option key=$key value=$key>$country</option>";
-        }
-        ;
+            $ListCountries .= "<option key=$key value=$key>$country</option>";
+        };
         global $wpdb;
         $nombre_tabla = $wpdb->prefix . 'WooAjaxCheckoutSetings';
         $loadSetings = $wpdb->get_row("SELECT * FROM " . $nombre_tabla . " WHERE id = 1");
@@ -136,9 +159,9 @@ class WooAjaxShortcode
                             <span  >Envío</span>
                             <span class=' text-green-600' >Gratis</span>
                         </div>
-                        <div class=' flex flex-row justify-between'>
+                        <div class=' text-black flex flex-row justify-between'>
                             <span>Total</span>
-                            <span class=' border-2 animate-text-gradient bg-gradient-to-r from-[#44a054] via-[#70db75] to-[#44a054] bg-[200%_auto] border-black rounded-lg py-1 px-3'>$ $salePrice</span>
+                            <span id='CheckoutTotal' class=' border-2 animate-text-gradient bg-gradient-to-r from-[#44a054] via-[#70db75] to-[#44a054] bg-[200%_auto] border-black rounded-lg py-1 px-3'>$ $salePrice</span>
                         </div>
                     </div>";
         } else {
@@ -146,6 +169,13 @@ class WooAjaxShortcode
         }
 
         $btn = "<div class= 'flex justify-center'> 
+        <div id='wooAjaxCheckLoading' class= 'hidden opacity-90  bg-slate-200 absolute top-0 left-0 w-[100vw] h-[100vh]' z-[9999]>
+        <div class= 'flex w-full h-full items-center justify-center' >
+            <span class= 'animate-wooAjaxCheckLoading text-xl font-bold w-auto h-auto'>Enviando...</span>
+
+        </div>
+
+    </div>
         <button id='btnSample' class='  $btnanimated  px-3 py-1 rounded-md border-2  text-xl font-bold' style='background-color:  $btncolor; color: $btntextcolor; border-color: $btnbordercolor; border-width:  $btnBorder px;'>
                     $btntitle  <br>
                     <span id='btnSampleSubtitle' class='!text-xs'>
@@ -172,6 +202,7 @@ class WooAjaxShortcode
 
         <!-- Ofertas -->
         <div class=' '>
+        
             $ofers
         </div>
 

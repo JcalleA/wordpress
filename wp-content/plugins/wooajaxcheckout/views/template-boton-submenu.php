@@ -45,7 +45,7 @@ if ($loadSetings) {
     <h1 class=" text-xl font-bold">Ajustes del Boton</h1>
     <div class=" flex flex-row mt-5">
         <div class=" flex flex-col w-[50%] justify-center">
-            <form id="BtnSetingsForm" class="  w-[90%] mx-auto ">
+            <form id="formBtnsetings" class="  w-[90%] mx-auto ">
                 <div class=" flex flex-col justify-between m-2 sm:flex-col">
                     <label>Texto Principal del boton</label>
                     <input id="btntitle" type="text" name="btntitle" value='<?php echo $btntitle ?>' placeholder='<?php echo $btntitle ?>'>
@@ -97,7 +97,7 @@ if ($loadSetings) {
 
 
 
-                <button tipe="submit" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                <button  tipe="submit" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                     Guardar
                 </button>
 
@@ -111,7 +111,7 @@ if ($loadSetings) {
             <div>
                 <button id="btnSample" class=' <?php if ($btnanimated === '1') {
                                                     echo 'animate-btn_saltar';
-                                                }  ?>  px-3 py-1 rounded-md border-2  text-xl font-bold' style="background-color: <?php echo $btncolor;?>; color: <?php echo $btntextcolor;?>; border-color: <?php echo $btnbordercolor;?>; border-width: <?php echo $btnBorder;?>px;">
+                                                }  ?>  px-3 py-1 rounded-md border-2  text-xl font-bold' style="background-color: <?php echo $btncolor; ?>; color: <?php echo $btntextcolor; ?>; border-color: <?php echo $btnbordercolor; ?>; border-width: <?php echo $btnBorder; ?>px;">
                     <?php echo $btntitle ?> <br>
                     <span id="btnSampleSubtitle" class='!text-xs'>
                         <?php echo $btnsubtitle ?>

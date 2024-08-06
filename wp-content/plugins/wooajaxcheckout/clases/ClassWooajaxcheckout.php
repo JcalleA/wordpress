@@ -50,41 +50,52 @@ class Wooajaxcheckout
     }
     function AdmincheckoutScripts()
     {
+        if ($_GET['page']) {
+            if ($_GET['page'] === 'pagina-gracias' || $_GET['page'] === 'boton-de-compra' || $_GET['page'] === 'WooAjaxCheckout_menu' || $_GET['page'] === 'crear-ofertas') {
+                wp_enqueue_style('wooajaxcheckoutMainStyle', plugin_dir_url(__DIR__) . '/dist/css/mainStyle.css');
+                wp_enqueue_style('iconsBoostrap', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
 
-        if ($_GET['page'] === 'boton-de-compra' || $_GET['page'] === 'WooAjaxCheckout_menu' || $_GET['page'] === 'crear-ofertas') {
-            wp_enqueue_style('wooajaxcheckoutMainStyle', plugin_dir_url(__DIR__) . '/dist/css/mainStyle.css');
-            wp_enqueue_style('iconsBoostrap', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+                wp_enqueue_script('wooajaxcheckoutAdminScript', plugin_dir_url(__DIR__) . 'dist/js/wooajaxcheckoutAdminScript.js', array('jquery'), '1.0', true);
 
-            wp_enqueue_script('wooajaxcheckoutAdminScript', plugin_dir_url(__DIR__) . 'dist/js/wooajaxcheckoutAdminScript.js', array('jquery'), '1.0', true);
+                wp_localize_script(
+                    'wooajaxcheckoutAdminScript',
+                    'WooAdmin_var',
+                    [
+                        'url' => admin_url('admin-ajax.php'),
+                        'nonce' => wp_create_nonce('secureAdmin'),
+                        'action' => 'SaveBtnSetings'
+                    ]
+                );
+                wp_localize_script(
+                    'wooajaxcheckoutAdminScript',
+                    'WooOfSetings_var',
+                    [
+                        'url' => admin_url('admin-ajax.php'),
+                        'nonce' => wp_create_nonce('secureAdmin'),
+                        'action' => 'SaveOfSetings'
+                    ]
+                );
 
-            wp_localize_script(
-                'wooajaxcheckoutAdminScript',
-                'WooAdmin_var',
-                [
-                    'url' => admin_url('admin-ajax.php'),
-                    'nonce' => wp_create_nonce('secureAdmin'),
-                    'action' => 'SaveBtnSetings'
-                ]
-            );
-            wp_localize_script(
-                'wooajaxcheckoutAdminScript',
-                'WooOfSetings_var',
-                [
-                    'url' => admin_url('admin-ajax.php'),
-                    'nonce' => wp_create_nonce('secureAdmin'),
-                    'action' => 'SaveOfSetings'
-                ]
-            );
+                wp_localize_script(
+                    'wooajaxcheckoutAdminScript',
+                    'editSetings_var',
+                    [
+                        'url' => admin_url('admin-ajax.php'),
+                        'nonce' => wp_create_nonce('secureAdmin'),
+                        'action' => 'DeleteOfSetings'
+                    ]
+                );
 
-            wp_localize_script(
-                'wooajaxcheckoutAdminScript',
-                'editSetings_var',
-                [
-                    'url' => admin_url('admin-ajax.php'),
-                    'nonce' => wp_create_nonce('secureAdmin'),
-                    'action' => 'DeleteOfSetings'
-                ]
-            );
+                wp_localize_script(
+                    'wooajaxcheckoutAdminScript',
+                    'saveTk_var',
+                    [
+                        'url' => admin_url('admin-ajax.php'),
+                        'nonce' => wp_create_nonce('secureAdmin'),
+                        'action' => 'saveTkSetings'
+                    ]
+                );
+            }
         }
     }
 
@@ -143,18 +154,47 @@ class Wooajaxcheckout
             'ofproductid' => $Form[0]['value'],
             'oftitle' => $Form[1]['value'],
             'oftitlecolor' => $Form[2]['value'],
-            'ofprice' => $Form[3]['value'],
-            'ofpricecolor' => $Form[4]['value'],
-            'ofbgColor' => $Form[5]['value'],
+            'ofcantidad' => $Form[3]['value'],
+            'ofprice' => $Form[4]['value'],
+            'ofpricecolor' => $Form[5]['value'],
             'oftikectcolor' => $Form[6]['value'],
             'oftiketextcolor' => $Form[7]['value'],
-            'ofborder' => $Form[8]['value'],
+            'ofobsequioid' => $Form[8]['value'],
+
 
         ];
 
         $resultado = $wpdb->insert($nombre_tabla, $setings);
         echo 'insert' . $resultado;
         die();
+    }
+    function saveTkSetings()
+    {
+        global $wpdb;
+        $nombre_tabla = $wpdb->prefix . 'WooAjaxCheckoutTkYouPage';
+
+
+        $Form = $_POST['form'];
+        $loadSetings = $wpdb->get_row("SELECT * FROM " . $nombre_tabla . " WHERE productid =" . $Form[0]['value']);
+
+        $setings = [
+
+            'productid' => $Form[0]['value'],
+            'url' => $Form[1]['value'],
+        ];
+        $where = [
+            'productid' => $Form[0]['value']
+        ];
+        if ($loadSetings) {
+            $resultado = $wpdb->update($nombre_tabla, $setings, $where);
+            echo 'update' . $resultado;
+            die();
+        } else {
+            $resultado = $wpdb->insert($nombre_tabla, $setings);
+            echo 'insert' . $resultado;
+
+            die();
+        }
     }
     function DeleteOfSetings()
     {
@@ -163,9 +203,9 @@ class Wooajaxcheckout
 
         $id = sanitize_text_field($_REQUEST['id']);
 
-        $setings = ['id'=>$id];
+        $setings = ['id' => $id];
 
-        $resultado = $wpdb->delete($nombre_tabla,$setings);
+        $resultado = $wpdb->delete($nombre_tabla, $setings);
         echo 'delete' . $resultado;
         die();
     }
@@ -210,23 +250,23 @@ class Wooajaxcheckout
     function PostOrder()
     {
 
-
-
         $nonce = sanitize_text_field($_REQUEST['nonce']);
         if (!wp_verify_nonce($nonce, 'secure')) {
             die(json_encode([
                 'Mensaje' => $nonce
             ]));
         }
+        global $wpdb;
+
+        $nombre_tabla = $wpdb->prefix . 'WooAjaxCheckoutOferSetings';
+
         $Form = $_POST['form'];
         $productId = $Form[0]["value"];
-        $quantity = $Form[1]["value"];
-        WC()->cart->add_to_cart($productId, $quantity);
-        WC()->cart->empty_cart();
+        $offId = $Form[1]["value"];
 
+        WC()->cart->empty_cart();
         $order_id = WC()->checkout()->create_order(array());
         $order = wc_get_order($order_id);
-
 
         $product = wc_get_product($productId);
         $regularPrice =  $product->get_regular_price();
@@ -235,8 +275,15 @@ class Wooajaxcheckout
         } else {
             $salePrice = $regularPrice;
         }
-        WC()->cart->empty_cart();
-
+        if ($offId == 0) {
+            $quantity = 1;
+            $Total = $salePrice;
+        } else {
+            $loadSetings = $wpdb->get_row("SELECT * FROM " . $nombre_tabla . " WHERE id = $offId");
+            $quantity = $loadSetings->ofcantidad;
+            $Total = $loadSetings->ofprice;
+            $ofobsequioid = $loadSetings->ofobsequioid;
+        }
 
         if (email_exists($Form[10]["value"]) == false) {
             // Random password with 12 chars
@@ -257,20 +304,16 @@ class Wooajaxcheckout
             $user = get_user_by('email', $Form[10]["value"]);
             $user_id = $user->ID;
         }
-        
-        
+
         $order->set_customer_id($user_id);
-        $sesion=WC()->session;
+        $sesion = WC()->session;
         $sesion->init();
         $sesion->init_session_cookie();
-        $isloged=$sesion->has_session();
-        
-        
-
+        $order->add_product(wc_get_product($ofobsequioid));
 
         $order->add_product(wc_get_product($productId), $quantity, [
             'subtotal'     => $salePrice * $quantity,
-            'total'        => $salePrice * $quantity,
+            'total'        => $Total,
         ]);
         $address = [
             'first_name' => $Form[2]["value"],
@@ -293,18 +336,21 @@ class Wooajaxcheckout
         $order->set_payment_method($payment_gateways['cod']);
         $order->calculate_totals();
         $order->update_status('processing');
-        $currensy=$order->get_currency();
-        $valor=$order->get_total();
+        $currensy = $order->get_currency();
+        $valor = $order->get_total();
 
-        die( json_encode(
+        die(json_encode(
 
             [
-                'currensy'=>$currensy,
+                'url' => wc_get_checkout_url(),
+                'productid' => $productId,
+                'orderid' => $order->get_id(),
+                'orderkey' => $order->get_order_key(),
+                'currensy' => $currensy,
                 'valor' => $valor
-                
+
             ]
-        ));
-        ;
+        ));;
     }
 
     function register_sub_menues()
@@ -349,6 +395,15 @@ class Wooajaxcheckout
                 [$this, 'InitSubMenuOfertas'],
 
             );
+            add_submenu_page(
+                'WooAjaxCheckout_menu',
+                'Pagina Gracias',
+                'Pagina Gracias',
+                'manage_options',
+                'pagina-gracias',
+                [$this, 'InitSubMenuGracias'],
+
+            );
         } else {
             echo '<div class="notice notice-error ">
                 <h2>Error WooAjaxCheckout: Para usar debes tener instalado y activo el plugin WooCommerce</h2>
@@ -369,6 +424,10 @@ class Wooajaxcheckout
     function InitSubMenuOfertas()
     {
         include  dirname(__DIR__) . '/views/template-ofertas-submenu.php';
+    }
+    function InitSubMenuGracias()
+    {
+        include  dirname(__DIR__) . '/views/template-gracias-submenu.php';
     }
 
 
@@ -391,7 +450,29 @@ class Wooajaxcheckout
         if (is_single()) {
 
             echo plugins_url('woocommerce') . '/templates/checkout/form-checkout.php';
+            
         }
+    }
+
+    function event_single_page($order_id)
+    {
+        
+        global $wpdb;
+        $order = wc_get_order($order_id);
+        $items=$order->get_items();
+        $order = wc_get_order(329);
+            $items=$order->get_items();
+            foreach ($items as $item) {
+                $product_id = $item->get_data()["product_id"];
+                $product_ids[] = $product_id;
+            }
+            $productid=$product_ids[1];
+        $nombre_tabla = $wpdb->prefix . 'WooAjaxCheckoutTkYouPage';
+        $loadSetings = $wpdb->get_row("SELECT * FROM " . $nombre_tabla . " WHERE productid =".$productid);
+        if ($loadSetings) {
+            wp_safe_redirect($loadSetings->url);
+        }
+        
     }
 
 
@@ -413,5 +494,9 @@ class Wooajaxcheckout
         add_action('wp_ajax_SaveOfSetings', [$this, 'SaveOfSetings']);
         add_action('wp_ajax_nopriv_DeleteOfSetings', [$this, 'DeleteOfSetings']);
         add_action('wp_ajax_DeleteOfSetings', [$this, 'DeleteOfSetings']);
+        add_action('wp_ajax_nopriv_saveTkSetings', [$this, 'saveTkSetings']);
+        add_action('wp_ajax_saveTkSetings', [$this, 'saveTkSetings']);
+        add_filter('woocommerce_order_received_verify_known_shoppers', '__return_false');
+        add_action('woocommerce_thankyou', [$this, 'event_single_page']);
     }
 }

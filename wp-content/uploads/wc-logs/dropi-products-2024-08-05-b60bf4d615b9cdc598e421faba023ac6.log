@@ -1,0 +1,3170 @@
+2024-08-05T11:42:14+00:00 INFO $per_page 10
+2024-08-05T11:42:14+00:00 INFO $current_page 1
+2024-08-05T11:42:15+00:00 INFO Array
+(
+    [isSuccess] => 1
+    [status] => 200
+    [objects] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [id] => 96
+                    [name] => Afilador de Cuchillos
+                    [type] => SIMPLE
+                    [description] => <p>El Afilador De Cuchillos Pro Multifuncional con Mango Ergonómico en color Negro es una herramienta de nueva generación para mantener tus cuchillos en perfecto estado. Cuenta con un sistema de 3 ranuras: la primera varilla de afilado de diamante repara y endereza las cuchillas dañadas, la segunda ranura se afile para restaurar su forma de V y la tercera ranura se afina para un pulido limpio.<br>&nbsp;</p><p>GARANTÍAS QUE APLICAN&nbsp;</p><ol><li>PEDIDO INCOMPLETO</li><li>PRODUCTO ROTO</li><li>PRODUCTO DIFERENTE A LO QUE PIDIÓ</li><li>UNA VEZ&nbsp; LLEGUE EL PRODUCTO POR &nbsp;REVISAR QUE&nbsp;ESTÉ EN BUEN ESTADO, QUE FUNCIONE Y QUE SI SEA EL PRODUCTO QUE SE PIDIÓ, NUESTROS PRODUCTOS SOLO CUENTAN CON 10 DIAS DE GARANTIA.</li></ol><p>GARANTÍAS QUE NO APLICAN&nbsp;</p><ol><li>MAL FUNCIONAMIENTO DEL PRODUCTO</li><li>ORDEN DIFERENTE</li><li>DESPUÉS 10 DÍAS NO CUBRIMOS CON GARANTÍAS</li></ol><p>&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 11000.00
+                    [suggested_price] => 31000.00
+                    [privated_product] => 
+                    [sku] => afiladorcuchillos2
+                    [user] => stdClass Object
+                        (
+                            [id] => 75
+                            [subscription_plan_id] => 4
+                            [name] => TIENDAS TOP
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => TIENDAS TOP
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/96/afiladorcuchillos2.jpg
+                                    [main] => 1
+                                    [urlS3] => colombia/products/96/17031033221703103322afiladorcuchillos2.jpg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Cocina
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 96
+                                            [category_id] => 6
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 336531
+                                    [warehouse_id] => 4772
+                                    [product_id] => 96
+                                    [created_at] => 2023-04-08 12:23:52
+                                    [updated_at] => 2024-08-04 10:55:59
+                                    [stock] => 141
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [id] => 99
+                    [name] => Licuadora  portátil mini
+                    [type] => SIMPLE
+                    [description] => <p>Material de alta calidad y grado alimenticio: utiliza una taza de borosilicato en lugar de plástico. Sin olor peculiar, no tóxico y ecológico. Más saludable y mucho más fácil de limpiar. Perfecto para hacer batidos, batidos de proteínas y más zumo de frutas o verduras.</p><p>Motor de alta potencia.<br>Cuchillas de acero inoxidable.<br>Verdaderamente portátil con batería recargable con cable USB.<br>Potencia: 200W.<br>Velocidad del motor: 15000-22000 rpm<br>Tipo de motor: DC 3.6V<br>Dimensiones del producto: 75 mm * 75 mm * 230 mm<br>El interruptor ON / OFF de alimentación tiene&lt; bloqueo de seguridad: Contacto momentáneo.</p><p>GARANTIAS QUE APLICAN&nbsp;</p><ol><li>PEDIDO IMCOMPLETO</li><li>PRODUCTO ROTO</li><li>PRODUCTO DIFERENTE A LO QUE PIDIO</li><li>UNA VEZ&nbsp; LLEGUE EL PRODCTO POR &nbsp;REVISAR QUE&nbsp;ESTE EN BUEN ESTADO, QUE FUNCIONE Y QUE SI SEA EL PRODUCTO QUE SE PIDIO, NUESTROS PRODUCTOS SOLO CUENTAN CON 10 DIAS DE GARANTIA.</li></ol><p>GARANTIAS QUE NO APLICAN&nbsp;</p><ol><li>MAL FUNCIONAMIENTO DEL PRODUCTO</li><li>ORDEN DIFERENTE</li><li>DESPUES 10 DIAS NO CUBRIMOS CON GARANTÍAS</li></ol><p>&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 28000.00
+                    [suggested_price] => 50000.00
+                    [privated_product] => 
+                    [sku] => Licuadora Mini HM-03
+                    [user] => stdClass Object
+                        (
+                            [id] => 75
+                            [subscription_plan_id] => 4
+                            [name] => TIENDAS TOP
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => TIENDAS TOP
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/99/Licuadora HM-03.jpg
+                                    [main] => 1
+                                    [urlS3] => colombia/products/99/17031033221703103322Licuadora HM-03.jpg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Otro
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 99
+                                            [category_id] => 25
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 336530
+                                    [warehouse_id] => 4772
+                                    [product_id] => 99
+                                    [created_at] => 2023-04-08 12:23:52
+                                    [updated_at] => 2024-05-30 23:26:10
+                                    [stock] => 29
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [id] => 101
+                    [name] => Dispensador crema touch me
+                    [type] => SIMPLE
+                    [description] => <p>TOUCH ME manos libres dispensador de pasta dental exprimidor de pasta dental automático y escobilla de baño/cepillo de dientes titular Set (5 Cepillo Soporte) Bomba automática para pasta dental exprimidor, no hay pérdida de pasta dental: Economy-pump cada gota tubo de pasta dental es. @Ecológico: No requiere batería olor materiales-abs + aprobado por la FDA de silicona, no tóxico, fácil de limpiar duradero. Para uso a largo plazo, ideal para niños y adultos de plástico resistente. @Fácil de instalar- es fácil de instalar. retire el tornillo palo espejo con soporte de papel y colóquelo en la pared o bastante la cubierta frontal, y el tubo de pasta dental en la bomba gruesa</p><p>&nbsp;</p><p>GARANTÍAS QUE APLICAN&nbsp;</p><ol><li>PEDIDO INCOMPLETO</li><li>PRODUCTO ROTO</li><li>PRODUCTO DIFERENTE A LO QUE PIDIÓ</li><li>UNA VEZ&nbsp; LLEGUE EL PRODUCTO POR &nbsp;REVISAR QUE&nbsp;ESTÉ EN BUEN ESTADO, QUE FUNCIONE Y QUE SI SEA EL PRODUCTO QUE SE PIDIÓ, NUESTROS PRODUCTOS SOLO CUENTAN CON 10 DIAS DE GARANTIA.</li></ol><p>GARANTÍAS QUE NO APLICAN&nbsp;</p><ol><li>MAL FUNCIONAMIENTO DEL PRODUCTO</li><li>ORDEN DIFERENTE</li><li>DESPUÉS 10 DÍAS NO CUBRIMOS CON GARANTÍAS</li></ol><p>&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 10000.00
+                    [suggested_price] => 30000.00
+                    [privated_product] => 
+                    [sku] => Dispensador touch me
+                    [user] => stdClass Object
+                        (
+                            [id] => 75
+                            [subscription_plan_id] => 4
+                            [name] => TIENDAS TOP
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => TIENDAS TOP
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/101/dispensador Touch me.jpg
+                                    [main] => 1
+                                    [urlS3] => colombia/products/101/17031033221703103322dispensador Touch me.jpg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Hogar
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 101
+                                            [category_id] => 1
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 336539
+                                    [warehouse_id] => 4772
+                                    [product_id] => 101
+                                    [created_at] => 2023-04-08 12:23:52
+                                    [updated_at] => 2024-05-30 23:26:10
+                                    [stock] => 100
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [3] => stdClass Object
+                (
+                    [id] => 119
+                    [name] => Extractor Quita espinillas Digital Blanc
+                    [type] => SIMPLE
+                    [description] => <p>La Limpiador Succión vacío utiliza una Succión Limpiador suave y profunda para eliminar las impurezas de la piel, al mismo tiempo liberando la presión del aire y protege su piel de heridas. Ella un limpiador y herramienta de extracción para la eliminación de la succión con aspiradora de vacío y exfoliante, que eliminación espinilla, el acné, la grasa, los ácaros, exfolia y masajes en la cara. Características: Contiene 4 tipos de sondas de belleza para múltiples opciones 5 fuerzas de succión ajustables, efectivas en eliminación de espinilla, el acné, las espinillas e imperfecciones Utiliza extracción a vacío para limpiar la piel Diseño inalámbrico con pantalla LED, fácil de operar y conocer el estado de trabajo</p><p>GARANTÍAS QUE APLICAN&nbsp;</p><ol><li>PEDIDO INCOMPLETO</li><li>PRODUCTO ROTO</li><li>PRODUCTO DIFERENTE A LO QUE PIDIÓ</li><li>UNA VEZ&nbsp; LLEGUE EL PRODUCTO POR &nbsp;REVISAR QUE&nbsp;ESTÉ EN BUEN ESTADO, QUE FUNCIONE Y QUE SI SEA EL PRODUCTO QUE SE PIDIÓ, NUESTROS PRODUCTOS SOLO CUENTAN CON 10 DIAS DE GARANTIA.</li></ol><p>GARANTÍAS QUE NO APLICAN&nbsp;</p><ol><li>MAL FUNCIONAMIENTO DEL PRODUCTO</li><li>ORDEN DIFERENTE</li><li>DESPUÉS 10 DÍAS NO CUBRIMOS CON GARANTÍAS</li></ol><p>&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 35000.00
+                    [suggested_price] => 60000.00
+                    [privated_product] => 
+                    [sku] => Digital blanco
+                    [user] => stdClass Object
+                        (
+                            [id] => 75
+                            [subscription_plan_id] => 4
+                            [name] => TIENDAS TOP
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => TIENDAS TOP
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/119/digital blanco.jpg
+                                    [main] => 1
+                                    [urlS3] => colombia/products/119/17031033201703103320digital blanco.jpg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Belleza
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 119
+                                            [category_id] => 7
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 336541
+                                    [warehouse_id] => 4772
+                                    [product_id] => 119
+                                    [created_at] => 2023-04-08 12:23:52
+                                    [updated_at] => 2024-05-30 23:26:10
+                                    [stock] => 100
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [4] => stdClass Object
+                (
+                    [id] => 123
+                    [name] => Forro protector sofa 2 puestos
+                    [type] => SIMPLE
+                    [description] => <p>Protector Sofá Basic Microfibra Café Líneas Beige Liso 2 Puestos 1,20 X 1,80 X 0,55 Mt 100% Poliéster Doble Faz, marca Happy Bear TM. Contiene: 1 Protector Sofá 2 Puestos 1.20 x 1.80 x 0.55 mt 100% Pol. Total Piezas: 1 No Incluye: Decoración Fotos de referencia, las telas, colores y orientación de estampados o líneas pueden variar. Color: Doble Faz Café Beige Ancho - Largo - Alto (Caídas a los lados) Medidas: 1.20 x 1.80 x 0.55 mt&nbsp;<br><br>Ficha Técnica: Microfibra 100% Poliéster</p><p>&nbsp;</p><p>GARANTÍAS QUE APLICAN&nbsp;</p><ol><li>PEDIDO INCOMPLETO</li><li>PRODUCTO ROTO</li><li>PRODUCTO DIFERENTE A LO QUE PIDIÓ</li><li>UNA VEZ&nbsp; LLEGUE EL PRODUCTO POR &nbsp;REVISAR QUE&nbsp;ESTÉ EN BUEN ESTADO, QUE FUNCIONE Y QUE SI SEA EL PRODUCTO QUE SE PIDIÓ, NUESTROS PRODUCTOS SOLO CUENTAN CON 10 DIAS DE GARANTIA.</li></ol><p>GARANTÍAS QUE NO APLICAN&nbsp;</p><ol><li>MAL FUNCIONAMIENTO DEL PRODUCTO</li><li>ORDEN DIFERENTE</li><li>DESPUÉS 10 DÍAS NO CUBRIMOS CON GARANTÍAS</li></ol><p><br>&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 400000.00
+                    [suggested_price] => 600000.00
+                    [privated_product] => 
+                    [sku] => Forro sofa 2 plazas
+                    [user] => stdClass Object
+                        (
+                            [id] => 75
+                            [subscription_plan_id] => 4
+                            [name] => TIENDAS TOP
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => TIENDAS TOP
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/123/cubre sofa 2.jpg
+                                    [main] => 1
+                                    [urlS3] => colombia/products/123/17031033191703103319cubre sofa 2.jpg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Hogar
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 123
+                                            [category_id] => 1
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 336527
+                                    [warehouse_id] => 4772
+                                    [product_id] => 123
+                                    [created_at] => 2023-04-08 12:23:52
+                                    [updated_at] => 2024-07-17 21:25:04
+                                    [stock] => 100
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [5] => stdClass Object
+                (
+                    [id] => 159
+                    [name] => Dazzling  White
+                    [type] => SIMPLE
+                    [description] => <p>PLUMA PROFESIONAL PARA BLANQUEAR CON PINCEL UTILIZA UNA GEL QUE CONTIENE BURBUJAS ACTIVA DE OXIGENO QUE DE MANERA SEGURA E INSTANTÁNEA COMIENZA A ELIMINAR LAS MANCHAS APARENTES &nbsp;</p><p>Instrucciones de uso</p><p>1. Agite bien el lápiz por 5 segundos.</p><p>2. Aplique vaselina en la parte interna de los labios y encías antes de iniciar el tratamiento (opcional).</p><p>3. Extraiga la tapa del extremo del cepillo.</p><p>4. Gire varias veces en el sentido de las manecillas del reloj (la primera vez requiere varios giros) hasta que el gel cubra la punta del cepillo.</p><p>5. Aplique cuidadosamente una fina capa de gel en el diente, evitando que toque las encías o labios.</p><p>6. Siga girando el lápiz para aplicar más gel.</p><p>7. Asegúrese de cubrir todas las superficies del diente.</p><p>8. Evite pintar sobre las encías o labios. Para evitar la irritación, se puede aplicar vaselina a la parte interna de los labios antes de iniciar el tratamiento.</p><p>9. Antes de permitir el contacto con labios y lengua, espere 20 segundos para que el líquido blanqueador se seque sobre el diente.</p><p>10. Deje el gel sobre el diente por 10 minutos y luego quítelo.</p><p>11. Enjuague su boca con agua.</p><p>12. No coma o beba durante 30 minutos después de</p><p>&nbsp;</p><p><span style="background-color:rgb(255,255,255);color:rgb(32,33,36);">Ingredientes:</span></p><p><span style="background-color:rgb(255,255,255);color:rgb(32,33,36);">Purified water, Hydrogen peroxide, Denatured alcohol, Polyvinyl pyrrolidone, Polyethylene glycol</span></p><p><span style="background-color:rgb(255,255,255);color:rgb(32,33,36);">Sabor:&nbsp;</span></p><p><span style="background-color:rgb(255,255,255);color:rgb(32,33,36);">Unflavored</span></p><p>&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 10000.00
+                    [suggested_price] => 29900.00
+                    [privated_product] => 
+                    [sku] => DENTAPEN01
+                    [user] => stdClass Object
+                        (
+                            [id] => 98
+                            [subscription_plan_id] => 3
+                            [name] => PUNTO BARATO
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => Marbellashop
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 3
+                                    [name] => SUPPLIER AUTO FILL
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/159/qoXaFbrzjpna9r2nBZJbpgmtiEO3vvX6VrN6pU7k.png
+                                    [main] => 
+                                    [urlS3] => colombia/products/159/17031021091703102109qoXaFbrzjpna9r2nBZJbpgmtiEO3vvX6VrN6pU7k.png
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Belleza
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 159
+                                            [category_id] => 7
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 182637
+                                    [warehouse_id] => 30
+                                    [product_id] => 159
+                                    [created_at] => 
+                                    [updated_at] => 2024-06-10 05:09:57
+                                    [stock] => 35
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [6] => stdClass Object
+                (
+                    [id] => 160
+                    [name] => BUNEE Fibra Capilar (Negro)
+                    [type] => SIMPLE
+                    [description] => <p><span class="text-tiny">BUNEE FIBRAS CAPILARES A BASE DE KERATINA 100% NATURAL</span></p><p>BUNEE FIBRAS CAPILARES BUNNE es una forma segura, natural e in-detectable para mejorar la apariencia de adelgazamiento del cabello sin drogas nocivas, productos químicos o cirugía. BUNNE (fibras capilares) están hechas de proteína de queratina orgánica pura - la misma proteína que se encuentra en el cabello humano. Estos diminutos "pelos" de micro fibra están cargados electroestáticamente para formar una atracción magnética con su cabello existente -aunque sea delgado- y se mezclan perfectamente para ocultar la apariencia de adelgazamiento y calvicie en segundos. Algunos batidos de BUNNE sobre sus áreas de adelgazamiento dispersarán miles De pequeñas fibras parecidas a los cabellos que coinciden con el color de su cabello ya existente y se unen con su propio cabello para ocultar el adelgazamiento y crear una cabellera más natural, más gruesa y más completa. El enlace seguro se mantiene todo el día (y la noche) incluso en la lluvia, el viento, lo que sea, no saldrá hasta que lo lave. Cómo aplicarlas fibras capilares Aplicarlas es increíblemente fácil y es que solo tendrás que agitar el bote y aplicarlas ligeramente sobre el cabello, poco a poco. Además, resisten al sudor, deporte y la lluvia. Eso sí, el pelo debe estar completamente limpio y seco para que las fibras queden adheridas correctamente. Puedes utilizarlas todos los días sin problema ninguno Si te parece fácil su aplicación, aún te resultará más fácil su eliminación: lavándote el pelo con tu champú habitual. Sí, así de sencillo y eliminarás cualquier residuo. Modo de uso: Usar BUNNE (fibras capilares) es muy fácil: 1. Lavar, secar y peinar tu cabello como de costumbre. 2. Aplicar BUNNE en las zonas que quieres conseguir más volumen. 3. Fijar las fibras de queratina BUNNE añade grosor instantáneo a tu cabello. Está compuesto por fibras de queratina natural que se adhieren al cabello mediante impulsos electroestáticos. Resultado inmediato, producto Unisexo. DisponibleColor Negro, Castaño claro y castaño oscuro</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 25000.00
+                    [suggested_price] => 55000.00
+                    [privated_product] => 
+                    [sku] => BUNEENEGRO
+                    [user] => stdClass Object
+                        (
+                            [id] => 98
+                            [subscription_plan_id] => 3
+                            [name] => PUNTO BARATO
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => Marbellashop
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 3
+                                    [name] => SUPPLIER AUTO FILL
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/160/jysNvfAcOYhuOdCN5RkWjszhHtsdxEByukUUJYns.jpeg
+                                    [main] => 
+                                    [urlS3] => colombia/products/160/17030250201703025020jysNvfAcOYhuOdCN5RkWjszhHtsdxEByukUUJYns.jpeg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Belleza
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 160
+                                            [category_id] => 7
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 143936
+                                    [warehouse_id] => 30
+                                    [product_id] => 160
+                                    [created_at] => 
+                                    [updated_at] => 2024-07-23 10:10:33
+                                    [stock] => 385
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [7] => stdClass Object
+                (
+                    [id] => 163
+                    [name] => PESTAÑINA 4D Original
+                    [type] => SIMPLE
+                    [description] => <p>PESTAÑINA 4D PESTAÑAS 500% MAS LARGAS&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 18000.00
+                    [suggested_price] => 33300.00
+                    [privated_product] => 
+                    [sku] => PESTAÑINAS
+                    [user] => stdClass Object
+                        (
+                            [id] => 98
+                            [subscription_plan_id] => 3
+                            [name] => PUNTO BARATO
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => Marbellashop
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 3
+                                    [name] => SUPPLIER AUTO FILL
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/163/mGtm5qYckC4KVpdFhYFaaJBs33e5wBIMgAYF44wd.jpeg
+                                    [main] => 1
+                                    [urlS3] => colombia/products/163/17031033141703103314mGtm5qYckC4KVpdFhYFaaJBs33e5wBIMgAYF44wd.jpeg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Belleza
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 163
+                                            [category_id] => 7
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 193173
+                                    [warehouse_id] => 30
+                                    [product_id] => 163
+                                    [created_at] => 
+                                    [updated_at] => 2024-07-29 09:37:54
+                                    [stock] => 378
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [8] => stdClass Object
+                (
+                    [id] => 169
+                    [name] => BUNEE fibra capilar (castaño oscuro)
+                    [type] => SIMPLE
+                    [description] => <p>bunee fibra capilar a base de keratina</p><p>contenido 27,5g</p><p>color castaño oscuro</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 25000.00
+                    [suggested_price] => 45000.00
+                    [privated_product] => 
+                    [sku] => bunee006
+                    [user] => stdClass Object
+                        (
+                            [id] => 98
+                            [subscription_plan_id] => 3
+                            [name] => PUNTO BARATO
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => Marbellashop
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 3
+                                    [name] => SUPPLIER AUTO FILL
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/169/3hUOWnFZmt7ESY0l93N8GGYjx5AbuaTNi8FE2ava.jpeg
+                                    [main] => 1
+                                    [urlS3] => colombia/products/169/170310211017031021103hUOWnFZmt7ESY0l93N8GGYjx5AbuaTNi8FE2ava.jpeg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Belleza
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 169
+                                            [category_id] => 7
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [9] => stdClass Object
+                (
+                    [id] => 219
+                    [name] => KIT 3UL30XIL CONTROL CAÍDA
+                    [type] => SIMPLE
+                    [description] => <p style="text-align:justify;"><strong>KIT 3UL30XIL</strong></p><p>Línea especializada anticaída, con extractos de plantas y nanotecnología, combate la perdida de cabello, estimula su crecimiento, nutre el folículo capilar &nbsp;y lo fortalece, incrementa el grosor del cabello, ayudan a estimular el rápido crecimiento del cabello, combate la caspa y fortalecer el folículo piloso. Diseñado para todo tipo de cabello.</p><p style="text-align:justify;">&nbsp;</p><p style="text-align:justify;"><strong>SHAMPOO 3UL30XIL</strong></p><p>Nutre el folículo capilar &amp; estimula el crecimiento del cabello. Su fórmula con nano nutrientes de centella asiática y biotina. Energizantes como cafeína, guaraná y extractos naturales, fortalecen el folículo piloso ayudando a prevenir la caída del cabello.<br>• Limpia y aporta nutrientes al cabello desde la raíz<br>• Ayuda a engrosar la fibra capilar<br>• Estimula el crecimiento del cabello, por su tecnología liposomática<br>• Ayuda a prevenir la caída.<br>• Brinda al cabello brillo, suavidad y un aspecto saludable.<br>• Control Caída<br>• LIBRE DE SAL</p><p style="text-align:justify;">PRESENTACIÓN: SHAMPOO 180 mL</p><p style="text-align:justify;">Modo de uso:</p><p style="text-align:justify;">Humedezca el cabello, aplique una cantidad suficiente del shampoo control caída 3ul3oxil, realice un suave masaje en la piel capilar, deje actuar 5 minutos.</p><p style="text-align:justify;">Enjuague con abundante agua. Para mayores resultados utilice el Tónico Anticaída o la Ampolleta Anticaída 3UL30XIL.</p><p style="text-align:justify;">&nbsp;</p><p style="text-align:justify;"><strong>TÓNICO 3UL30XIL</strong></p><p>Ayuda a fortalecer el bulbo capilar y previene la caspa Su fórmula a base de extractos naturales de aguacate, germen de trigo y zanahoria, ayudan a fortalecer el folículo piloso minimizando la caída del cabello. Ayuda a prevenir la aparición de la caspa gracias a la acción del Octopirox (Antimicótico). Ideal para todo tipo de cabello.<br>• Ayuda a prevenir la caspa.<br>• Nutre el folículo piloso.<br>• Ayuda a fortalecer el bulbo capilar.<br>• Cabello Fresco y con movimiento natural<br>• Ayuda a prevenir la caída<br>Prevención Caída<br>PRESENTACIÓN: TÓNICO 120 Ml</p><p style="text-align:justify;">Modo de uso:</p><p style="text-align:justify;">Después de lavarse el cabello con el shampoo 3ul3oxil, aplique el TÓNICO ANTICAIDA Y ANTICASPA 3UL30XIL en el cuero cabelludo, dar un ligero masaje con los dedos para ayudar la activación. Agítalo antes de usarlo. Utilizar 3 veces por semana en el día o en la noche, en todo el cuero cabelludo. No necesita enjuague.</p><p style="text-align:justify;">&nbsp;</p><p style="text-align:justify;"><strong>TRATAMIENTO CONTROL CAÍDA 3UL3OXIL</strong></p><p>Ayuda a prevenir la caída del cabello y estimula su crecimiento con nanotecnología que transporta extractos nutritivos como Centella Asiática, Biotina y energizantes como Cafeína y Guaraná que ayudan a estimular el rápido crecimiento del cabello y fortalecer el folículo piloso. Ideal para todo tipo de cabello, en especial los frágiles y propensos a la caída.<br>• Ayuda a estimular el rápido crecimiento del cabello<br>• Ayuda a controlar la caída del cabello a temprana edad en los hombres<br>• Fortalece el folículo piloso gracias a sus nano-activos liposomados<br>• Ayuda a prevenir la pérdida del cabello y su adelgazamiento.<br>• Tratamiento no enjuagable Fortalece el bulbo capilar</p><p style="text-align:justify;">PRESENTACIÓN: 12 AMPOLLETAS 10mL</p><p style="text-align:justify;">Modo de uso:</p><p>Lavar el cabello con el shampoo 3UL30XIL.<br>Aplicar la ampolleta sobre el cuero cabelludo, desde la zona fronto-temporal hasta la coronilla y masajear suavemente con los dedos durante 5 minutos. No enjuagar. Repetir el procedimiento día de por medio durante 4 meses, suspender 15 días como tiempo de reposo y volver a comenzar su tiempo de uso.</p><p style="text-align:justify;">Para mayores resultados, se puede aplicar durante el día o la noche 4 veces por semana.</p><p style="text-align:justify;">Lavar las manos después de la aplicación.</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 59477.00
+                    [suggested_price] => 104000.00
+                    [privated_product] => 
+                    [sku] => 510255
+                    [user] => stdClass Object
+                        (
+                            [id] => 110
+                            [subscription_plan_id] => 3
+                            [name] => NAPROLAB
+                            [white_brand_id] => 1
+                            [category_id] => 
+                            [store_name] => 
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 3
+                                    [name] => SUPPLIER AUTO FILL
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => 
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/219/7GA7tkIKpiYlvXze4hESWSD9QfWltjGJhYhGXP10.png
+                                    [main] => 1
+                                    [urlS3] => colombia/products/219/170310330517031033057GA7tkIKpiYlvXze4hESWSD9QfWltjGJhYhGXP10.png
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 24
+                                    [warehouse_id] => 1
+                                    [product_id] => 219
+                                    [created_at] => 2021-01-22 10:13:34
+                                    [updated_at] => 2024-05-30 23:26:11
+                                    [stock] => 99
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+        )
+
+    [count] => 0
+)
+
+2024-08-05T11:42:15+00:00 INFO Array
+(
+    [isSuccess] => 1
+    [status] => 200
+    [objects] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [id] => 96
+                    [name] => Afilador de Cuchillos
+                    [type] => SIMPLE
+                    [description] => <p>El Afilador De Cuchillos Pro Multifuncional con Mango Ergonómico en color Negro es una herramienta de nueva generación para mantener tus cuchillos en perfecto estado. Cuenta con un sistema de 3 ranuras: la primera varilla de afilado de diamante repara y endereza las cuchillas dañadas, la segunda ranura se afile para restaurar su forma de V y la tercera ranura se afina para un pulido limpio.<br>&nbsp;</p><p>GARANTÍAS QUE APLICAN&nbsp;</p><ol><li>PEDIDO INCOMPLETO</li><li>PRODUCTO ROTO</li><li>PRODUCTO DIFERENTE A LO QUE PIDIÓ</li><li>UNA VEZ&nbsp; LLEGUE EL PRODUCTO POR &nbsp;REVISAR QUE&nbsp;ESTÉ EN BUEN ESTADO, QUE FUNCIONE Y QUE SI SEA EL PRODUCTO QUE SE PIDIÓ, NUESTROS PRODUCTOS SOLO CUENTAN CON 10 DIAS DE GARANTIA.</li></ol><p>GARANTÍAS QUE NO APLICAN&nbsp;</p><ol><li>MAL FUNCIONAMIENTO DEL PRODUCTO</li><li>ORDEN DIFERENTE</li><li>DESPUÉS 10 DÍAS NO CUBRIMOS CON GARANTÍAS</li></ol><p>&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 11000.00
+                    [suggested_price] => 31000.00
+                    [privated_product] => 
+                    [sku] => afiladorcuchillos2
+                    [user] => stdClass Object
+                        (
+                            [id] => 75
+                            [subscription_plan_id] => 4
+                            [name] => TIENDAS TOP
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => TIENDAS TOP
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/96/afiladorcuchillos2.jpg
+                                    [main] => 1
+                                    [urlS3] => colombia/products/96/17031033221703103322afiladorcuchillos2.jpg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Cocina
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 96
+                                            [category_id] => 6
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 336531
+                                    [warehouse_id] => 4772
+                                    [product_id] => 96
+                                    [created_at] => 2023-04-08 12:23:52
+                                    [updated_at] => 2024-08-04 10:55:59
+                                    [stock] => 141
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [id] => 99
+                    [name] => Licuadora  portátil mini
+                    [type] => SIMPLE
+                    [description] => <p>Material de alta calidad y grado alimenticio: utiliza una taza de borosilicato en lugar de plástico. Sin olor peculiar, no tóxico y ecológico. Más saludable y mucho más fácil de limpiar. Perfecto para hacer batidos, batidos de proteínas y más zumo de frutas o verduras.</p><p>Motor de alta potencia.<br>Cuchillas de acero inoxidable.<br>Verdaderamente portátil con batería recargable con cable USB.<br>Potencia: 200W.<br>Velocidad del motor: 15000-22000 rpm<br>Tipo de motor: DC 3.6V<br>Dimensiones del producto: 75 mm * 75 mm * 230 mm<br>El interruptor ON / OFF de alimentación tiene&lt; bloqueo de seguridad: Contacto momentáneo.</p><p>GARANTIAS QUE APLICAN&nbsp;</p><ol><li>PEDIDO IMCOMPLETO</li><li>PRODUCTO ROTO</li><li>PRODUCTO DIFERENTE A LO QUE PIDIO</li><li>UNA VEZ&nbsp; LLEGUE EL PRODCTO POR &nbsp;REVISAR QUE&nbsp;ESTE EN BUEN ESTADO, QUE FUNCIONE Y QUE SI SEA EL PRODUCTO QUE SE PIDIO, NUESTROS PRODUCTOS SOLO CUENTAN CON 10 DIAS DE GARANTIA.</li></ol><p>GARANTIAS QUE NO APLICAN&nbsp;</p><ol><li>MAL FUNCIONAMIENTO DEL PRODUCTO</li><li>ORDEN DIFERENTE</li><li>DESPUES 10 DIAS NO CUBRIMOS CON GARANTÍAS</li></ol><p>&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 28000.00
+                    [suggested_price] => 50000.00
+                    [privated_product] => 
+                    [sku] => Licuadora Mini HM-03
+                    [user] => stdClass Object
+                        (
+                            [id] => 75
+                            [subscription_plan_id] => 4
+                            [name] => TIENDAS TOP
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => TIENDAS TOP
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/99/Licuadora HM-03.jpg
+                                    [main] => 1
+                                    [urlS3] => colombia/products/99/17031033221703103322Licuadora HM-03.jpg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Otro
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 99
+                                            [category_id] => 25
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 336530
+                                    [warehouse_id] => 4772
+                                    [product_id] => 99
+                                    [created_at] => 2023-04-08 12:23:52
+                                    [updated_at] => 2024-05-30 23:26:10
+                                    [stock] => 29
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [id] => 101
+                    [name] => Dispensador crema touch me
+                    [type] => SIMPLE
+                    [description] => <p>TOUCH ME manos libres dispensador de pasta dental exprimidor de pasta dental automático y escobilla de baño/cepillo de dientes titular Set (5 Cepillo Soporte) Bomba automática para pasta dental exprimidor, no hay pérdida de pasta dental: Economy-pump cada gota tubo de pasta dental es. @Ecológico: No requiere batería olor materiales-abs + aprobado por la FDA de silicona, no tóxico, fácil de limpiar duradero. Para uso a largo plazo, ideal para niños y adultos de plástico resistente. @Fácil de instalar- es fácil de instalar. retire el tornillo palo espejo con soporte de papel y colóquelo en la pared o bastante la cubierta frontal, y el tubo de pasta dental en la bomba gruesa</p><p>&nbsp;</p><p>GARANTÍAS QUE APLICAN&nbsp;</p><ol><li>PEDIDO INCOMPLETO</li><li>PRODUCTO ROTO</li><li>PRODUCTO DIFERENTE A LO QUE PIDIÓ</li><li>UNA VEZ&nbsp; LLEGUE EL PRODUCTO POR &nbsp;REVISAR QUE&nbsp;ESTÉ EN BUEN ESTADO, QUE FUNCIONE Y QUE SI SEA EL PRODUCTO QUE SE PIDIÓ, NUESTROS PRODUCTOS SOLO CUENTAN CON 10 DIAS DE GARANTIA.</li></ol><p>GARANTÍAS QUE NO APLICAN&nbsp;</p><ol><li>MAL FUNCIONAMIENTO DEL PRODUCTO</li><li>ORDEN DIFERENTE</li><li>DESPUÉS 10 DÍAS NO CUBRIMOS CON GARANTÍAS</li></ol><p>&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 10000.00
+                    [suggested_price] => 30000.00
+                    [privated_product] => 
+                    [sku] => Dispensador touch me
+                    [user] => stdClass Object
+                        (
+                            [id] => 75
+                            [subscription_plan_id] => 4
+                            [name] => TIENDAS TOP
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => TIENDAS TOP
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/101/dispensador Touch me.jpg
+                                    [main] => 1
+                                    [urlS3] => colombia/products/101/17031033221703103322dispensador Touch me.jpg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Hogar
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 101
+                                            [category_id] => 1
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 336539
+                                    [warehouse_id] => 4772
+                                    [product_id] => 101
+                                    [created_at] => 2023-04-08 12:23:52
+                                    [updated_at] => 2024-05-30 23:26:10
+                                    [stock] => 100
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [3] => stdClass Object
+                (
+                    [id] => 119
+                    [name] => Extractor Quita espinillas Digital Blanc
+                    [type] => SIMPLE
+                    [description] => <p>La Limpiador Succión vacío utiliza una Succión Limpiador suave y profunda para eliminar las impurezas de la piel, al mismo tiempo liberando la presión del aire y protege su piel de heridas. Ella un limpiador y herramienta de extracción para la eliminación de la succión con aspiradora de vacío y exfoliante, que eliminación espinilla, el acné, la grasa, los ácaros, exfolia y masajes en la cara. Características: Contiene 4 tipos de sondas de belleza para múltiples opciones 5 fuerzas de succión ajustables, efectivas en eliminación de espinilla, el acné, las espinillas e imperfecciones Utiliza extracción a vacío para limpiar la piel Diseño inalámbrico con pantalla LED, fácil de operar y conocer el estado de trabajo</p><p>GARANTÍAS QUE APLICAN&nbsp;</p><ol><li>PEDIDO INCOMPLETO</li><li>PRODUCTO ROTO</li><li>PRODUCTO DIFERENTE A LO QUE PIDIÓ</li><li>UNA VEZ&nbsp; LLEGUE EL PRODUCTO POR &nbsp;REVISAR QUE&nbsp;ESTÉ EN BUEN ESTADO, QUE FUNCIONE Y QUE SI SEA EL PRODUCTO QUE SE PIDIÓ, NUESTROS PRODUCTOS SOLO CUENTAN CON 10 DIAS DE GARANTIA.</li></ol><p>GARANTÍAS QUE NO APLICAN&nbsp;</p><ol><li>MAL FUNCIONAMIENTO DEL PRODUCTO</li><li>ORDEN DIFERENTE</li><li>DESPUÉS 10 DÍAS NO CUBRIMOS CON GARANTÍAS</li></ol><p>&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 35000.00
+                    [suggested_price] => 60000.00
+                    [privated_product] => 
+                    [sku] => Digital blanco
+                    [user] => stdClass Object
+                        (
+                            [id] => 75
+                            [subscription_plan_id] => 4
+                            [name] => TIENDAS TOP
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => TIENDAS TOP
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/119/digital blanco.jpg
+                                    [main] => 1
+                                    [urlS3] => colombia/products/119/17031033201703103320digital blanco.jpg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Belleza
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 119
+                                            [category_id] => 7
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 336541
+                                    [warehouse_id] => 4772
+                                    [product_id] => 119
+                                    [created_at] => 2023-04-08 12:23:52
+                                    [updated_at] => 2024-05-30 23:26:10
+                                    [stock] => 100
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [4] => stdClass Object
+                (
+                    [id] => 123
+                    [name] => Forro protector sofa 2 puestos
+                    [type] => SIMPLE
+                    [description] => <p>Protector Sofá Basic Microfibra Café Líneas Beige Liso 2 Puestos 1,20 X 1,80 X 0,55 Mt 100% Poliéster Doble Faz, marca Happy Bear TM. Contiene: 1 Protector Sofá 2 Puestos 1.20 x 1.80 x 0.55 mt 100% Pol. Total Piezas: 1 No Incluye: Decoración Fotos de referencia, las telas, colores y orientación de estampados o líneas pueden variar. Color: Doble Faz Café Beige Ancho - Largo - Alto (Caídas a los lados) Medidas: 1.20 x 1.80 x 0.55 mt&nbsp;<br><br>Ficha Técnica: Microfibra 100% Poliéster</p><p>&nbsp;</p><p>GARANTÍAS QUE APLICAN&nbsp;</p><ol><li>PEDIDO INCOMPLETO</li><li>PRODUCTO ROTO</li><li>PRODUCTO DIFERENTE A LO QUE PIDIÓ</li><li>UNA VEZ&nbsp; LLEGUE EL PRODUCTO POR &nbsp;REVISAR QUE&nbsp;ESTÉ EN BUEN ESTADO, QUE FUNCIONE Y QUE SI SEA EL PRODUCTO QUE SE PIDIÓ, NUESTROS PRODUCTOS SOLO CUENTAN CON 10 DIAS DE GARANTIA.</li></ol><p>GARANTÍAS QUE NO APLICAN&nbsp;</p><ol><li>MAL FUNCIONAMIENTO DEL PRODUCTO</li><li>ORDEN DIFERENTE</li><li>DESPUÉS 10 DÍAS NO CUBRIMOS CON GARANTÍAS</li></ol><p><br>&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 400000.00
+                    [suggested_price] => 600000.00
+                    [privated_product] => 
+                    [sku] => Forro sofa 2 plazas
+                    [user] => stdClass Object
+                        (
+                            [id] => 75
+                            [subscription_plan_id] => 4
+                            [name] => TIENDAS TOP
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => TIENDAS TOP
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/123/cubre sofa 2.jpg
+                                    [main] => 1
+                                    [urlS3] => colombia/products/123/17031033191703103319cubre sofa 2.jpg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Hogar
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 123
+                                            [category_id] => 1
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 336527
+                                    [warehouse_id] => 4772
+                                    [product_id] => 123
+                                    [created_at] => 2023-04-08 12:23:52
+                                    [updated_at] => 2024-07-17 21:25:04
+                                    [stock] => 100
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [5] => stdClass Object
+                (
+                    [id] => 159
+                    [name] => Dazzling  White
+                    [type] => SIMPLE
+                    [description] => <p>PLUMA PROFESIONAL PARA BLANQUEAR CON PINCEL UTILIZA UNA GEL QUE CONTIENE BURBUJAS ACTIVA DE OXIGENO QUE DE MANERA SEGURA E INSTANTÁNEA COMIENZA A ELIMINAR LAS MANCHAS APARENTES &nbsp;</p><p>Instrucciones de uso</p><p>1. Agite bien el lápiz por 5 segundos.</p><p>2. Aplique vaselina en la parte interna de los labios y encías antes de iniciar el tratamiento (opcional).</p><p>3. Extraiga la tapa del extremo del cepillo.</p><p>4. Gire varias veces en el sentido de las manecillas del reloj (la primera vez requiere varios giros) hasta que el gel cubra la punta del cepillo.</p><p>5. Aplique cuidadosamente una fina capa de gel en el diente, evitando que toque las encías o labios.</p><p>6. Siga girando el lápiz para aplicar más gel.</p><p>7. Asegúrese de cubrir todas las superficies del diente.</p><p>8. Evite pintar sobre las encías o labios. Para evitar la irritación, se puede aplicar vaselina a la parte interna de los labios antes de iniciar el tratamiento.</p><p>9. Antes de permitir el contacto con labios y lengua, espere 20 segundos para que el líquido blanqueador se seque sobre el diente.</p><p>10. Deje el gel sobre el diente por 10 minutos y luego quítelo.</p><p>11. Enjuague su boca con agua.</p><p>12. No coma o beba durante 30 minutos después de</p><p>&nbsp;</p><p><span style="background-color:rgb(255,255,255);color:rgb(32,33,36);">Ingredientes:</span></p><p><span style="background-color:rgb(255,255,255);color:rgb(32,33,36);">Purified water, Hydrogen peroxide, Denatured alcohol, Polyvinyl pyrrolidone, Polyethylene glycol</span></p><p><span style="background-color:rgb(255,255,255);color:rgb(32,33,36);">Sabor:&nbsp;</span></p><p><span style="background-color:rgb(255,255,255);color:rgb(32,33,36);">Unflavored</span></p><p>&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 10000.00
+                    [suggested_price] => 29900.00
+                    [privated_product] => 
+                    [sku] => DENTAPEN01
+                    [user] => stdClass Object
+                        (
+                            [id] => 98
+                            [subscription_plan_id] => 3
+                            [name] => PUNTO BARATO
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => Marbellashop
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 3
+                                    [name] => SUPPLIER AUTO FILL
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/159/qoXaFbrzjpna9r2nBZJbpgmtiEO3vvX6VrN6pU7k.png
+                                    [main] => 
+                                    [urlS3] => colombia/products/159/17031021091703102109qoXaFbrzjpna9r2nBZJbpgmtiEO3vvX6VrN6pU7k.png
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Belleza
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 159
+                                            [category_id] => 7
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 182637
+                                    [warehouse_id] => 30
+                                    [product_id] => 159
+                                    [created_at] => 
+                                    [updated_at] => 2024-06-10 05:09:57
+                                    [stock] => 35
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [6] => stdClass Object
+                (
+                    [id] => 160
+                    [name] => BUNEE Fibra Capilar (Negro)
+                    [type] => SIMPLE
+                    [description] => <p><span class="text-tiny">BUNEE FIBRAS CAPILARES A BASE DE KERATINA 100% NATURAL</span></p><p>BUNEE FIBRAS CAPILARES BUNNE es una forma segura, natural e in-detectable para mejorar la apariencia de adelgazamiento del cabello sin drogas nocivas, productos químicos o cirugía. BUNNE (fibras capilares) están hechas de proteína de queratina orgánica pura - la misma proteína que se encuentra en el cabello humano. Estos diminutos "pelos" de micro fibra están cargados electroestáticamente para formar una atracción magnética con su cabello existente -aunque sea delgado- y se mezclan perfectamente para ocultar la apariencia de adelgazamiento y calvicie en segundos. Algunos batidos de BUNNE sobre sus áreas de adelgazamiento dispersarán miles De pequeñas fibras parecidas a los cabellos que coinciden con el color de su cabello ya existente y se unen con su propio cabello para ocultar el adelgazamiento y crear una cabellera más natural, más gruesa y más completa. El enlace seguro se mantiene todo el día (y la noche) incluso en la lluvia, el viento, lo que sea, no saldrá hasta que lo lave. Cómo aplicarlas fibras capilares Aplicarlas es increíblemente fácil y es que solo tendrás que agitar el bote y aplicarlas ligeramente sobre el cabello, poco a poco. Además, resisten al sudor, deporte y la lluvia. Eso sí, el pelo debe estar completamente limpio y seco para que las fibras queden adheridas correctamente. Puedes utilizarlas todos los días sin problema ninguno Si te parece fácil su aplicación, aún te resultará más fácil su eliminación: lavándote el pelo con tu champú habitual. Sí, así de sencillo y eliminarás cualquier residuo. Modo de uso: Usar BUNNE (fibras capilares) es muy fácil: 1. Lavar, secar y peinar tu cabello como de costumbre. 2. Aplicar BUNNE en las zonas que quieres conseguir más volumen. 3. Fijar las fibras de queratina BUNNE añade grosor instantáneo a tu cabello. Está compuesto por fibras de queratina natural que se adhieren al cabello mediante impulsos electroestáticos. Resultado inmediato, producto Unisexo. DisponibleColor Negro, Castaño claro y castaño oscuro</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 25000.00
+                    [suggested_price] => 55000.00
+                    [privated_product] => 
+                    [sku] => BUNEENEGRO
+                    [user] => stdClass Object
+                        (
+                            [id] => 98
+                            [subscription_plan_id] => 3
+                            [name] => PUNTO BARATO
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => Marbellashop
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 3
+                                    [name] => SUPPLIER AUTO FILL
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/160/jysNvfAcOYhuOdCN5RkWjszhHtsdxEByukUUJYns.jpeg
+                                    [main] => 
+                                    [urlS3] => colombia/products/160/17030250201703025020jysNvfAcOYhuOdCN5RkWjszhHtsdxEByukUUJYns.jpeg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Belleza
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 160
+                                            [category_id] => 7
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 143936
+                                    [warehouse_id] => 30
+                                    [product_id] => 160
+                                    [created_at] => 
+                                    [updated_at] => 2024-07-23 10:10:33
+                                    [stock] => 385
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [7] => stdClass Object
+                (
+                    [id] => 163
+                    [name] => PESTAÑINA 4D Original
+                    [type] => SIMPLE
+                    [description] => <p>PESTAÑINA 4D PESTAÑAS 500% MAS LARGAS&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 18000.00
+                    [suggested_price] => 33300.00
+                    [privated_product] => 
+                    [sku] => PESTAÑINAS
+                    [user] => stdClass Object
+                        (
+                            [id] => 98
+                            [subscription_plan_id] => 3
+                            [name] => PUNTO BARATO
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => Marbellashop
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 3
+                                    [name] => SUPPLIER AUTO FILL
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/163/mGtm5qYckC4KVpdFhYFaaJBs33e5wBIMgAYF44wd.jpeg
+                                    [main] => 1
+                                    [urlS3] => colombia/products/163/17031033141703103314mGtm5qYckC4KVpdFhYFaaJBs33e5wBIMgAYF44wd.jpeg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Belleza
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 163
+                                            [category_id] => 7
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 193173
+                                    [warehouse_id] => 30
+                                    [product_id] => 163
+                                    [created_at] => 
+                                    [updated_at] => 2024-07-29 09:37:54
+                                    [stock] => 378
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [8] => stdClass Object
+                (
+                    [id] => 169
+                    [name] => BUNEE fibra capilar (castaño oscuro)
+                    [type] => SIMPLE
+                    [description] => <p>bunee fibra capilar a base de keratina</p><p>contenido 27,5g</p><p>color castaño oscuro</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 25000.00
+                    [suggested_price] => 45000.00
+                    [privated_product] => 
+                    [sku] => bunee006
+                    [user] => stdClass Object
+                        (
+                            [id] => 98
+                            [subscription_plan_id] => 3
+                            [name] => PUNTO BARATO
+                            [white_brand_id] => 1
+                            [category_id] => 2
+                            [store_name] => Marbellashop
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 3
+                                    [name] => SUPPLIER AUTO FILL
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/169/3hUOWnFZmt7ESY0l93N8GGYjx5AbuaTNi8FE2ava.jpeg
+                                    [main] => 1
+                                    [urlS3] => colombia/products/169/170310211017031021103hUOWnFZmt7ESY0l93N8GGYjx5AbuaTNi8FE2ava.jpeg
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Belleza
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 169
+                                            [category_id] => 7
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+            [9] => stdClass Object
+                (
+                    [id] => 219
+                    [name] => KIT 3UL30XIL CONTROL CAÍDA
+                    [type] => SIMPLE
+                    [description] => <p style="text-align:justify;"><strong>KIT 3UL30XIL</strong></p><p>Línea especializada anticaída, con extractos de plantas y nanotecnología, combate la perdida de cabello, estimula su crecimiento, nutre el folículo capilar &nbsp;y lo fortalece, incrementa el grosor del cabello, ayudan a estimular el rápido crecimiento del cabello, combate la caspa y fortalecer el folículo piloso. Diseñado para todo tipo de cabello.</p><p style="text-align:justify;">&nbsp;</p><p style="text-align:justify;"><strong>SHAMPOO 3UL30XIL</strong></p><p>Nutre el folículo capilar &amp; estimula el crecimiento del cabello. Su fórmula con nano nutrientes de centella asiática y biotina. Energizantes como cafeína, guaraná y extractos naturales, fortalecen el folículo piloso ayudando a prevenir la caída del cabello.<br>• Limpia y aporta nutrientes al cabello desde la raíz<br>• Ayuda a engrosar la fibra capilar<br>• Estimula el crecimiento del cabello, por su tecnología liposomática<br>• Ayuda a prevenir la caída.<br>• Brinda al cabello brillo, suavidad y un aspecto saludable.<br>• Control Caída<br>• LIBRE DE SAL</p><p style="text-align:justify;">PRESENTACIÓN: SHAMPOO 180 mL</p><p style="text-align:justify;">Modo de uso:</p><p style="text-align:justify;">Humedezca el cabello, aplique una cantidad suficiente del shampoo control caída 3ul3oxil, realice un suave masaje en la piel capilar, deje actuar 5 minutos.</p><p style="text-align:justify;">Enjuague con abundante agua. Para mayores resultados utilice el Tónico Anticaída o la Ampolleta Anticaída 3UL30XIL.</p><p style="text-align:justify;">&nbsp;</p><p style="text-align:justify;"><strong>TÓNICO 3UL30XIL</strong></p><p>Ayuda a fortalecer el bulbo capilar y previene la caspa Su fórmula a base de extractos naturales de aguacate, germen de trigo y zanahoria, ayudan a fortalecer el folículo piloso minimizando la caída del cabello. Ayuda a prevenir la aparición de la caspa gracias a la acción del Octopirox (Antimicótico). Ideal para todo tipo de cabello.<br>• Ayuda a prevenir la caspa.<br>• Nutre el folículo piloso.<br>• Ayuda a fortalecer el bulbo capilar.<br>• Cabello Fresco y con movimiento natural<br>• Ayuda a prevenir la caída<br>Prevención Caída<br>PRESENTACIÓN: TÓNICO 120 Ml</p><p style="text-align:justify;">Modo de uso:</p><p style="text-align:justify;">Después de lavarse el cabello con el shampoo 3ul3oxil, aplique el TÓNICO ANTICAIDA Y ANTICASPA 3UL30XIL en el cuero cabelludo, dar un ligero masaje con los dedos para ayudar la activación. Agítalo antes de usarlo. Utilizar 3 veces por semana en el día o en la noche, en todo el cuero cabelludo. No necesita enjuague.</p><p style="text-align:justify;">&nbsp;</p><p style="text-align:justify;"><strong>TRATAMIENTO CONTROL CAÍDA 3UL3OXIL</strong></p><p>Ayuda a prevenir la caída del cabello y estimula su crecimiento con nanotecnología que transporta extractos nutritivos como Centella Asiática, Biotina y energizantes como Cafeína y Guaraná que ayudan a estimular el rápido crecimiento del cabello y fortalecer el folículo piloso. Ideal para todo tipo de cabello, en especial los frágiles y propensos a la caída.<br>• Ayuda a estimular el rápido crecimiento del cabello<br>• Ayuda a controlar la caída del cabello a temprana edad en los hombres<br>• Fortalece el folículo piloso gracias a sus nano-activos liposomados<br>• Ayuda a prevenir la pérdida del cabello y su adelgazamiento.<br>• Tratamiento no enjuagable Fortalece el bulbo capilar</p><p style="text-align:justify;">PRESENTACIÓN: 12 AMPOLLETAS 10mL</p><p style="text-align:justify;">Modo de uso:</p><p>Lavar el cabello con el shampoo 3UL30XIL.<br>Aplicar la ampolleta sobre el cuero cabelludo, desde la zona fronto-temporal hasta la coronilla y masajear suavemente con los dedos durante 5 minutos. No enjuagar. Repetir el procedimiento día de por medio durante 4 meses, suspender 15 días como tiempo de reposo y volver a comenzar su tiempo de uso.</p><p style="text-align:justify;">Para mayores resultados, se puede aplicar durante el día o la noche 4 veces por semana.</p><p style="text-align:justify;">Lavar las manos después de la aplicación.</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 59477.00
+                    [suggested_price] => 104000.00
+                    [privated_product] => 
+                    [sku] => 510255
+                    [user] => stdClass Object
+                        (
+                            [id] => 110
+                            [subscription_plan_id] => 3
+                            [name] => NAPROLAB
+                            [white_brand_id] => 1
+                            [category_id] => 
+                            [store_name] => 
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 3
+                                    [name] => SUPPLIER AUTO FILL
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => 
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 1
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => uploads/images/products/219/7GA7tkIKpiYlvXze4hESWSD9QfWltjGJhYhGXP10.png
+                                    [main] => 1
+                                    [urlS3] => colombia/products/219/170310330517031033057GA7tkIKpiYlvXze4hESWSD9QfWltjGJhYhGXP10.png
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 24
+                                    [warehouse_id] => 1
+                                    [product_id] => 219
+                                    [created_at] => 2021-01-22 10:13:34
+                                    [updated_at] => 2024-05-30 23:26:11
+                                    [stock] => 99
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+        )
+
+    [count] => 0
+)
+
+2024-08-05T11:42:21+00:00 INFO $per_page 10
+2024-08-05T11:42:21+00:00 INFO $current_page 1
+2024-08-05T11:42:22+00:00 INFO Array
+(
+    [isSuccess] => 1
+    [status] => 200
+    [objects] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [id] => 928309
+                    [name] => Obsequio titan coffe
+                    [type] => SIMPLE
+                    [description] => <p>¡Somos una bodega dropshipping con 3 años de experiencia!</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Tenemos un contexto adecuado para que tengas éxito, contamos con</p><p>&nbsp;</p><p>productos exclusivos para dropshipping, herramientas en diseño y contenido.</p><p>&nbsp;</p><p>¡TODA LA INFORMACIÓN A TU DISPOSICIÓN!</p><p>&nbsp;</p><p>BIENVENIDO A UNMERCO&nbsp;🐆⚡🐆ES UN PLACER PARA NOSOTROS PODER&nbsp;SERVIRTE&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 0.00
+                    [suggested_price] => 0.00
+                    [privated_product] => 
+                    [sku] => 0000
+                    [user] => stdClass Object
+                        (
+                            [id] => 22984
+                            [subscription_plan_id] => 4
+                            [name] => Unmerco
+                            [white_brand_id] => 32
+                            [category_id] => 2
+                            [store_name] => 
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 32
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => 
+                                    [main] => 1
+                                    [urlS3] => colombia/products/928309/1719535319MUESTRA TITAN COFFEE.png
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Bienestar
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 928309
+                                            [category_id] => 1289
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 
+                                    [product_id] => 928309
+                                    [variation_id] => 
+                                    [variation] => 
+                                    [user_id] => 223444
+                                    [stock] => 0.00
+                                    [last_quantity_separed] => 50.00
+                                    [user] => stdClass Object
+                                        (
+                                            [id] => 223444
+                                            [name] => Aura Nelly
+                                        )
+
+                                    [created_at] => 
+                                    [updated_at] => 
+                                )
+
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 1127278
+                                    [warehouse_id] => 3264
+                                    [product_id] => 928309
+                                    [created_at] => 2024-07-19 11:35:42
+                                    [updated_at] => 2024-08-04 22:03:26
+                                    [stock] => 757
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [id] => 1054967
+                                    [warehouse_id] => 3322
+                                    [product_id] => 928309
+                                    [created_at] => 2024-06-27 19:41:54
+                                    [updated_at] => 2024-08-04 22:10:48
+                                    [stock] => 965
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+        )
+
+    [count] => 0
+)
+
+2024-08-05T11:42:22+00:00 INFO Array
+(
+    [isSuccess] => 1
+    [status] => 200
+    [objects] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [id] => 928309
+                    [name] => Obsequio titan coffe
+                    [type] => SIMPLE
+                    [description] => <p>¡Somos una bodega dropshipping con 3 años de experiencia!</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Tenemos un contexto adecuado para que tengas éxito, contamos con</p><p>&nbsp;</p><p>productos exclusivos para dropshipping, herramientas en diseño y contenido.</p><p>&nbsp;</p><p>¡TODA LA INFORMACIÓN A TU DISPOSICIÓN!</p><p>&nbsp;</p><p>BIENVENIDO A UNMERCO&nbsp;🐆⚡🐆ES UN PLACER PARA NOSOTROS PODER&nbsp;SERVIRTE&nbsp;</p>
+                    [attributes] => Array
+                        (
+                        )
+
+                    [sale_price] => 0.00
+                    [suggested_price] => 0.00
+                    [privated_product] => 
+                    [sku] => 0000
+                    [user] => stdClass Object
+                        (
+                            [id] => 22984
+                            [subscription_plan_id] => 4
+                            [name] => Unmerco
+                            [white_brand_id] => 32
+                            [category_id] => 2
+                            [store_name] => 
+                            [plan] => stdClass Object
+                                (
+                                    [id] => 4
+                                    [name] => SUPPLIER PREMIUM
+                                    [description] => El proveedor gestiona su logística pero genera la guía con el sistema de dropi, y no se le cobra comision
+                                    [active] => 1
+                                    [created_at] => 
+                                    [updated_at] => 2022-07-05 18:12:09
+                                    [auto_manage_delivery] => 1
+                                    [type] => SUPPLIER
+                                    [use_fullfillment] => 
+                                    [dropi_shipping_increment_amount] => 1000.00
+                                    [dropi_percent_product_supplier] => 0.00
+                                    [commission_product_supplier] => 0.00
+                                    [dropi_percent_product_drops] => 5.00
+                                    [deleted_at] => 
+                                    [profit_percentage_orders_influencers] => 0.00
+                                    [white_brand_id] => 1
+                                    [ignore_dropi_percent_product_supplier] => 
+                                    [dropi_product_supplier_increment_fixed] => 
+                                    [wb_comission_amount] => 
+                                    [wb_pay_comission_to] => 
+                                )
+
+                            [category_user] => stdClass Object
+                                (
+                                    [id] => 2
+                                    [created_at] => 2024-04-30 07:15:10
+                                    [updated_at] => 
+                                    [name] => VERIFICADO
+                                    [type] => SUPPLIER
+                                    [status] => activo
+                                    [icon] => verified
+                                    [style] => -
+                                    [description] => -
+                                    [max_order_quantity] => 0
+                                    [min_order_quantity] => 0
+                                    [user_id] => 22
+                                    [deleted_at] => 
+                                    [role_id] => 3
+                                    [reel] => 1
+                                    [swipe] => 
+                                )
+
+                            [white_brand] => stdClass Object
+                                (
+                                    [id] => 32
+                                )
+
+                        )
+
+                    [variations] => Array
+                        (
+                        )
+
+                    [gallery] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [url] => 
+                                    [main] => 1
+                                    [urlS3] => colombia/products/928309/1719535319MUESTRA TITAN COFFEE.png
+                                )
+
+                        )
+
+                    [categories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Bienestar
+                                    [pivot] => stdClass Object
+                                        (
+                                            [product_id] => 928309
+                                            [category_id] => 1289
+                                        )
+
+                                )
+
+                        )
+
+                    [private_product_inventories] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 
+                                    [product_id] => 928309
+                                    [variation_id] => 
+                                    [variation] => 
+                                    [user_id] => 223444
+                                    [stock] => 0.00
+                                    [last_quantity_separed] => 50.00
+                                    [user] => stdClass Object
+                                        (
+                                            [id] => 223444
+                                            [name] => Aura Nelly
+                                        )
+
+                                    [created_at] => 
+                                    [updated_at] => 
+                                )
+
+                        )
+
+                    [add_stock_in_return] => 
+                    [import_list] => Array
+                        (
+                        )
+
+                    [warehouse_product] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 1127278
+                                    [warehouse_id] => 3264
+                                    [product_id] => 928309
+                                    [created_at] => 2024-07-19 11:35:42
+                                    [updated_at] => 2024-08-04 22:03:26
+                                    [stock] => 757
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [id] => 1054967
+                                    [warehouse_id] => 3322
+                                    [product_id] => 928309
+                                    [created_at] => 2024-06-27 19:41:54
+                                    [updated_at] => 2024-08-04 22:10:48
+                                    [stock] => 965
+                                )
+
+                        )
+
+                    [dropi_percent_product_supplier] => 
+                    [dropi_product_supplier_increment_fixed] => 
+                    [dropi_percent_product_drops] => 
+                    [external_id] => 
+                    [store] => stdClass Object
+                        (
+                            [id] => 1
+                            [store] => Bim You
+                            [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTY3NjE1OTYsImV4cCI6NDg3MjQzNTE5NiwibmJmIjoxNzE2NzYxNTk2LCJqdGkiOiJRZzdYdGs5TE00NWg0UVVWIiwic3ViIjoxMDY0MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImF1ZCI6IldPT0NPTUVSQ0UiLCJ0b2tlbl90eXBlIjoiSU5URUdSQVRJT05TIiwiaW50ZWdyYXRpb25fdHlwZSI6IldPT0NPTUVSQ0UiLCJpbnRlZ3JhdGlvbl91cmwiOiIifQ.YJovvmiVD4QV60outfQO8tzq8fW3Z_NT3xo16IE95rs
+                            [create_prod_empr] => 
+                            [sync] => AUTOMÁTICAMENTE
+                        )
+
+                )
+
+        )
+
+    [count] => 0
+)
+
+2024-08-05T11:42:34+00:00 INFO $attach_id 292
+2024-08-05T11:42:40+00:00 INFO SUCCESS El registro se ha actualizado con exito!.
+2024-08-05T12:31:43+00:00 INFO status
+2024-08-05T12:31:44+00:00 INFO processing
+2024-08-05T12:46:13+00:00 INFO status
+2024-08-05T12:46:13+00:00 INFO processing
+2024-08-05T12:46:33+00:00 INFO status
+2024-08-05T12:46:33+00:00 INFO processing
+2024-08-05T12:48:23+00:00 INFO status
+2024-08-05T12:48:23+00:00 INFO processing
+2024-08-05T13:47:53+00:00 INFO status
+2024-08-05T13:47:53+00:00 INFO processing
+2024-08-05T13:49:40+00:00 INFO status
+2024-08-05T13:49:40+00:00 INFO processing
+2024-08-05T13:51:37+00:00 INFO status
+2024-08-05T13:51:37+00:00 INFO processing
+2024-08-05T13:54:06+00:00 INFO status
+2024-08-05T13:54:06+00:00 INFO processing
+2024-08-05T13:57:03+00:00 INFO status
+2024-08-05T13:57:03+00:00 INFO processing
+2024-08-05T13:59:19+00:00 INFO status
+2024-08-05T13:59:19+00:00 INFO processing
+2024-08-05T14:00:33+00:00 INFO status
+2024-08-05T14:00:33+00:00 INFO processing
+2024-08-05T14:04:01+00:00 INFO status
+2024-08-05T14:04:01+00:00 INFO processing
+2024-08-05T14:27:08+00:00 INFO status
+2024-08-05T14:27:08+00:00 INFO processing
+2024-08-05T14:31:20+00:00 INFO status
+2024-08-05T14:31:20+00:00 INFO processing
+2024-08-05T14:34:48+00:00 INFO status
+2024-08-05T14:34:48+00:00 INFO processing
+2024-08-05T14:35:22+00:00 INFO status
+2024-08-05T14:35:22+00:00 INFO processing
+2024-08-05T14:37:19+00:00 INFO status
+2024-08-05T14:37:19+00:00 INFO processing
+2024-08-05T14:38:35+00:00 INFO status
+2024-08-05T14:38:35+00:00 INFO processing
+2024-08-05T16:51:24+00:00 INFO status
+2024-08-05T16:51:24+00:00 INFO processing
+2024-08-05T16:56:53+00:00 INFO status
+2024-08-05T16:56:53+00:00 INFO processing
